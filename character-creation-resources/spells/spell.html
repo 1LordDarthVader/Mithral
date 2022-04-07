@@ -57,7 +57,7 @@
 				}
 
 				if (spell['table'] !== "" && !spell['description'].includes(spell['table'])) {
-					$('#table').html(spell['table']);
+					$('#table').html("<br>" + spell['table']);
 				}
 			}
 		</script>
@@ -80,7 +80,6 @@
 		</ul>
 		<div id="description">spellDescription</div>
 		<div id="higher-levels"></div>
-		<br>
 		<div id="table"></div>
 		<br>
 		<div>
