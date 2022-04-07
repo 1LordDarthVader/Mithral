@@ -57,10 +57,6 @@
 					}
 					$('#lists').append(spell['lists'][i]);
 				}
-
-				if (spell['table'] !== "" && !spell['description'].includes(spell['table']) && !spell['higher-levels'].includes(spell['table'])) {
-					$('#table').html("<br>" + spell['table']);
-				}
 			}
 		</script>
 		<style>
@@ -82,7 +78,6 @@
 		</ul>
 		<div id="description">spellDescription</div>
 		<div id="higher-levels"></div>
-		<div id="table"></div>
 		<br>
 		<div>
 			<strong>Spell Lists: </strong><span id="lists"></span>

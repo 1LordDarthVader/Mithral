@@ -2,7 +2,7 @@ import requests
 import winsound
 
 base_url = 'http://adamantine.wikidot.com/spell:list/p/'
-link_base_url = 'https://jpmchatton98.github.io/adamantine/character-creation-resources/spells/spell.html?spell_id='
+link_base_url = '../character-creation-resources/spells/spell.html?spell_id='
 
 spell_list = []
 
@@ -82,14 +82,10 @@ for spell in spell_list:
             elif tag == 'ritual':
                 ritual = 1
             else:
-                if tag == "Palemaster":
-                    tag = "Pale Master"
-                lists.append(tag.capitalize())
-
-        table = None
-        if '<table class="wiki-content-table">' in responseText:
-            table = '<table>' + responseText.split('<table class="wiki-content-table">')[1].split('</table>')[0] + '</table>'
-        # print(table)
+                if tag == "palemaster":
+                    lists.append('Pale Master')
+                else:
+                    lists.append(tag.capitalize())
 
         data = {
             'spell-index': spell_index,
@@ -106,8 +102,7 @@ for spell in spell_list:
             'description': description,
             'higher-levels': higher_levels,
             'lists': lists,
-            'ritual': ritual,
-            'table': table if table and table not in description else ''
+            'ritual': ritual
         }
         data_list.append(data)
 
