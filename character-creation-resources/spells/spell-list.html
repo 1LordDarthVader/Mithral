@@ -6,13 +6,15 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 		<script>
+		    let tables = [];
+
 		    function goto_spell(spell_id) {
 		        document.location.href = "C:/Users/Jon - Recreation/Desktop/Adamantine Wiki/character-creation-resources/spells/spell.html?spell_id=" + spell_id;
 		    }
 
 			function load_spells() {
 			    $('.tabcontent').each(function () {
-			        $(this).html(`<table id="${$(this).attr('id')}_table" style="width: 100%">
+			        $(this).html(`<table id="${$(this).attr('id')}_table" style="width: 100%" class="compact hover stripe row-border">
                                         <thead>
                                             <th>Spell</th>
                                             <th>School</th>
@@ -36,7 +38,7 @@
 			    let spell_data_8 = spell_data.filter(function (element) {return element['level'] === 8;});
 			    let spell_data_9 = spell_data.filter(function (element) {return element['level'] === 9;});
 
-				$('#spell_0_table').DataTable({
+				let table = $('#spell_0_table').DataTable({
 				    data: spell_data_0,
 				    columns: [
 				        {data: 'name-linked'},
@@ -48,7 +50,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_1_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_1_table').DataTable({
 				    data: spell_data_1,
 				    columns: [
 				        {data: 'name-linked'},
@@ -60,7 +64,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_2_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_2_table').DataTable({
 				    data: spell_data_2,
 				    columns: [
 				        {data: 'name-linked'},
@@ -72,7 +78,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_3_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_3_table').DataTable({
 				    data: spell_data_3,
 				    columns: [
 				        {data: 'name-linked'},
@@ -84,7 +92,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_4_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_4_table').DataTable({
 				    data: spell_data_4,
 				    columns: [
 				        {data: 'name-linked'},
@@ -96,7 +106,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_5_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_5_table').DataTable({
 				    data: spell_data_5,
 				    columns: [
 				        {data: 'name-linked'},
@@ -108,7 +120,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_6_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_6_table').DataTable({
 				    data: spell_data_6,
 				    columns: [
 				        {data: 'name-linked'},
@@ -120,7 +134,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_7_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_7_table').DataTable({
 				    data: spell_data_7,
 				    columns: [
 				        {data: 'name-linked'},
@@ -132,7 +148,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_8_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_8_table').DataTable({
 				    data: spell_data_8,
 				    columns: [
 				        {data: 'name-linked'},
@@ -144,7 +162,9 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
-				$('#spell_9_table').DataTable({
+				tables.push(table);
+
+				table = $('#spell_9_table').DataTable({
 				    data: spell_data_9,
 				    columns: [
 				        {data: 'name-linked'},
@@ -156,6 +176,7 @@
 				    ],
 				    paging: false, ordering: false, info: false
 				});
+				tables.push(table);
 
 				$('#tab_button_0').click();
 			}
@@ -201,7 +222,8 @@
         </style>
 	</head>
 	<body onload="load_spells();">
-		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Master Spell List</h1>
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Spell List</h1>
+
         <div class="tab">
             <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'spell_0');">Cantrips</button>
             <button class="tablinks" onclick="openTab(event, 'spell_1');">1st-Level</button>
