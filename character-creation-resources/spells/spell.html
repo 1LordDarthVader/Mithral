@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Adamantine - spellName</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../data/spells.js"></script>
+		<script>
+			function load_spells() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const spell_id = urlParams.get('spell_id');
+				
+				spell = spell_data[spell_id];
+				
+				$('#name').html(spell['name']);
+				$('#casting-time').html(spell['casting-time']);
+				$('#range').html(spell['range']);
+				$('#components').html(spell['components']);
+				$('#duration').html(spell['duration']);
+				$('#description').html(spell['description']);
+				
+				let spell_level = spell['level'];
+				let ritual = spell['ritual'];
+
+				if (ritual) {
+					ritual = ' (ritual)';
+				}
+				else {
+					ritual = '';
+				}
+
+				switch (spell_level) {
+					case 0:
+						$('#school-level').html(spell['school'] + " cantrip" + ritual);
+						break;
+					case 1:
+						$('#school-level').html("1st-level " + spell['school'].toLowerCase() + ritual);
+						break;
+					case 2:
+						$('#school-level').html("2nd-level " + spell['school'].toLowerCase() + ritual);
+						break;
+					case 3:
+						$('#school-level').html("3rd-level " + spell['school'].toLowerCase() + ritual);
+						break;
+					default:
+						$('#school-level').html(spell['level'] + "th-level " + spell['school'].toLowerCase() + ritual);
+						break;
+				}
+				
+				if (spell['higher-levels'] !== "") {
+					$('#higher-levels').html('<strong>At Higher Levels.</strong> ' + spell['higher-levels']);
+				}
+
+				for(let i = 0; i < spell['lists'].length; i++) {
+					if (i) {
+						$('#lists').append(', ');
+					}
+					$('#lists').append(spell['lists'][i]);
+				}
+
+				if (spell['table'] !== "" && !spell['description'].includes(spell['table'])) {
+					$('#table').html(spell['table']);
+				}
+			}
+		</script>
+		<style>
+			table, th, td {
+				border: 1px solid;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body onload="load_spells();">
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">spellName</h1>
+		<div id="school-level" style="font-style: italic;"></div>
+		<br>
+		<ul style="list-style-type: none; margin: 0; padding: 0;">
+			<li><strong>Casting Time: </strong><span id="casting-time">spellCastingTime</span></li>
+			<li><strong>Range: </strong><span id="range">spellRange</span></li>
+			<li><strong>Components: </strong><span id="components">spellComponents</span></li>
+			<li><strong>Duration: </strong><span id="duration">spellDuration</span></li>
+		</ul>
+		<div id="description">spellDescription</div>
+		<div id="higher-levels"></div>
+		<br>
+		<div id="table"></div>
+		<br>
+		<div>
+			<strong>Spell Lists: </strong><span id="lists"></span>
+		</div>
+	</body>
+</html>
