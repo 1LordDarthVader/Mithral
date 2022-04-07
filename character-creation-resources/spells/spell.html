@@ -58,7 +58,7 @@
 					$('#lists').append(spell['lists'][i]);
 				}
 
-				if (spell['table'] !== "" && !spell['description'].includes(spell['table'])) {
+				if (spell['table'] !== "" && !spell['description'].includes(spell['table']) && !spell['higher-levels'].includes(spell['table'])) {
 					$('#table').html("<br>" + spell['table']);
 				}
 			}
