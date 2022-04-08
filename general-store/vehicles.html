@@ -1,0 +1,279 @@
+<html>
+<head>
+    <title>Adamantine - Vehicles</title>
+    <link rel="icon" href="../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+
+    <script>
+        function load_items() {
+            $('#land_table').DataTable({
+                paging: false, ordering: false, info: false, search: false
+            });
+            $('#water_table').DataTable({
+                paging: false, ordering: false, info: false, search: false
+            });
+            $('#air_table').DataTable({
+                paging: false, ordering: false, info: false, search: false
+            });
+
+            $('#tab_button_0').click();
+        }
+
+        function openTab(evt, armor_type) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(armor_type).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../index.html">Home</a> > General Store > Vehicles
+<h1>Vehicles</h1>
+
+<div class="tab">
+    <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'land');">Land Vehicles</button>
+    <button class="tablinks" onclick="openTab(event, 'water');">Water Vehicles</button>
+    <button class="tablinks" onclick="openTab(event, 'air');">Air Vehicles</button>
+</div>
+
+<div class="tabcontent" id="land">
+    <table id="land_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Weight</th>
+                <th>Maximum Passengers</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carriage</td>
+                <td>100 gp</td>
+                <td>600 lbs</td>
+                <td>6</td>
+                <td>A well-crafted passenger cart favored by nobility.</td>
+            </tr>
+            <tr>
+                <td>Cart</td>
+                <td>15 gp</td>
+                <td>200 lbs</td>
+                <td>3</td>
+                <td>A simple, uncovered wooden cart used for hauling people or goods.</td>
+            </tr>
+            <tr>
+                <td>Chariot</td>
+                <td>250 gp</td>
+                <td>100 lbs</td>
+                <td>2</td>
+                <td>An open-backed cart used in combat.</td>
+            </tr>
+            <tr>
+                <td>Handcart</td>
+                <td>10 gp</td>
+                <td>150 lbs</td>
+                <td>2</td>
+                <td>A small wooden cart, designed to be pulled by people rather than animals, bought by those who cannot afford anything nicer.</td>
+            </tr>
+            <tr>
+                <td>Sled</td>
+                <td>20 gp</td>
+                <td>100 lbs</td>
+                <td>1</td>
+                <td>A flat vehicle often pulled by trained dogs in snowy areas.</td>
+            </tr>
+            <tr>
+                <td>Wagon</td>
+                <td>35 gp</td>
+                <td>400 lbs</td>
+                <td>6</td>
+                <td>A large, covered cart often pulled by oxen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="tabcontent" id="water">
+    <table id="water_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Top Speed</th>
+                <th>Minimum Crew</th>
+                <th>Maximum Passengers</th>
+                <th>Weight</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Canoe</td>
+                <td>50 gp</td>
+                <td>1.5 mph (0.5 mph upstream, 2.5 mph downstream)</td>
+                <td>1</td>
+                <td>6</td>
+                <td>100 lbs</td>
+                <td>A long, thin rowboat that excels at river transport.</td>
+            </tr>
+            <tr>
+                <td>Galley</td>
+                <td>3000 pp</td>
+                <td>4 mph</td>
+                <td>3</td>
+                <td>120</td>
+                <td>400 tons</td>
+                <td>A huge, three-masted sailing vessel.</td>
+            </tr>
+            <tr>
+                <td>Keelboat</td>
+                <td>3000 gp</td>
+                <td>1 mph (0.5 mph upstream, 2 mph downstream)</td>
+                <td>1</td>
+                <td>7</td>
+                <td>1,500 lbs</td>
+                <td>A small rowing vessel used to ferry to and from the coast and a larger ship too large to enter the shallows.</td>
+            </tr>
+            <tr>
+                <td>Longboat</td>
+                <td>1000 pp</td>
+                <td>3 mph</td>
+                <td>3</td>
+                <td>140</td>
+                <td>20 tons</td>
+                <td>A long, small single-masted ship favored in amphibious assaults.</td>
+            </tr>
+            <tr>
+                <td>Rowboat</td>
+                <td>50 gp</td>
+                <td>1.5 mph (0.5 mph upstream, 2.5 mph downstream)</td>
+                <td>1</td>
+                <td>4</td>
+                <td>100 lbs</td>
+                <td>A small, simple rowboat.</td>
+            </tr>
+            <tr>
+                <td>Schooner</td>
+                <td>1000 pp</td>
+                <td>2 mph</td>
+                <td>3</td>
+                <td>50</td>
+                <td>100 tons</td>
+                <td>A large, two-masted sailing vessel.</td>
+            </tr>
+            <tr>
+                <td>Warship</td>
+                <td>4500 pp</td>
+                <td>2.5 mph</td>
+                <td>3</td>
+                <td>120</td>
+                <td>500 tons</td>
+                <td>A galley outfitted for war.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="tabcontent" id="air">
+    <table id="air_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Top Speed</th>
+                <th>Minimum Crew</th>
+                <th>Maximum Passengers</th>
+                <th>Weight</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Air Galley</td>
+                <td>4000 pp</td>
+                <td>5 mph</td>
+                <td>3</td>
+                <td>120</td>
+                <td>350 tons</td>
+                <td>A two-decked ship held aloft by a massive balloon.</td>
+            </tr>
+            <tr>
+                <td>Balloon</td>
+                <td>250 gp</td>
+                <td>0.5 mph (0 mph upwind, 1.5 mph downwind)</td>
+                <td>1</td>
+                <td>4</td>
+                <td>800 lbs</td>
+                <td>A large balloon that uses hot air to stay airborne.</td>
+            </tr>
+            <tr>
+                <td>Dirigible</td>
+                <td>500 gp</td>
+                <td>2 mph</td>
+                <td>2</td>
+                <td>8</td>
+                <td>1200 lbs</td>
+                <td>A balloon outfitted with propellors that allow more control and speed.</td>
+            </tr>
+            <tr>
+                <td>Ornithopter</td>
+                <td>1,000 pp</td>
+                <td>3 mph</td>
+                <td>1</td>
+                <td>3</td>
+                <td>2000 lbs</td>
+                <td>A winged contraption that flies like a bird.</td>
+            </tr>
+            <tr>
+                <td>Warblimp</td>
+                <td>5,000 pp</td>
+                <td>6 mph</td>
+                <td>3</td>
+                <td>120</td>
+                <td>450 tons</td>
+                <td>An air galley outfitted for war.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

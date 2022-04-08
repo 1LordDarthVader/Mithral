@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Adamantine - Magical Foci</title>
+    <link rel="icon" href="../../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../data/general-store/adventuring-equipment/magical-foci.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <script>
+        function load_items() {
+            let local_data = magical_foci_data.filter(function (){return true});
+            for (let i = 0; i < local_data.length; i++) {
+                let cost = local_data[i]['cost'];
+                let weight = local_data[i]['weight'];
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                local_data[i]['cost'] = cost;
+
+                if (weight === 1) {
+                    weight = weight + " lb";
+                }
+                else {
+                    weight = weight + " lbs";
+                }
+                local_data[i]['weight'] = weight;
+            }
+
+            $('#item_table').DataTable({
+                data: local_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'type'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../../index.html">Home</a> > General Store > <a href="adventuring-equipment.html">Adventuring Equipment</a> > Magical Foci
+<h1>Magical Foci</h1>
+
+<table id="item_table" style="width: 100%" class="compact hover stripe row-border">
+    <thead>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Cost</th>
+        <th>Weight</th>
+        <th>Description</th>
+    </thead>
+    <tbody></tbody>
+</table>
+<br>
+<h2>Magical Focus Type Compatibility</h2>
+
+<h3>Arcane Foci</h3>
+The following classes and subclasses can make use of arcane foci:
+<ul>
+    <li>Pale Master</li>
+    <li>Sorcerer</li>
+    <li>Warlock</li>
+    <li>Wizard</li>
+    <br>
+    <li>Barbarian (Path of the Battle Mage)</li>
+    <li>Blood Hunter (Order of the Profane Soul)</li>
+    <li>Cleric (Arcana Domain)</li>
+    <li>Cleric (Knowledge Domain)</li>
+    <li>Demi-Dragon (Embodiment of the Arbiter)</li>
+    <li>Dragon Knight (Elemental Practice)</li>
+    <li>Fighter (Eldritch Knight Archetype)</li>
+    <li>Fighter (Pact Warrior Archetype)</li>
+    <li>Mentor (Mystical Archetype)</li>
+    <li>Ranger (Spellbreaker Conclave)</li>
+    <li>Rogue (Arcane Trickster Archetype)</li>
+</ul>
+
+<h3>Divine Foci</h3>
+The following classes and subclasses can make use of divine foci:
+<ul>
+    <li>Cleric</li>
+    <li>Paladin</li>
+    <li>Warlock</li>
+    <br>
+    <li>Atavist (Anomalous Aspect)</li>
+    <li>Atavist (Demonic Aspect)</li>
+    <li>Atavist (Heavenly Aspect)</li>
+    <li>Blood Hunter (Order of the Profane Soul)</li>
+    <li>Fighter (Pact Warrior Archetype)</li>
+    <li>Harbinger (Divine Focus)</li>
+    <li>Rogue (Divine Agent Archetype)</li>
+    <li>Sorcerer (Aberrant Mind)</li>
+    <li>Sorcerer (Divine Soul)</li>
+    <li>Sorcerer (Fallen Celestial)</li>
+    <li>Sorcerer (Hellspawn)</li>
+    <li>Wizard (School of Demonology)</li>
+    <li>Wizard (School of Restoration)</li>
+</ul>
+
+<h3>Druidic Foci</h3>
+The following classes and subclasses can make use of druidic foci:
+<ul>
+    <li>Druid</li>
+    <li>Harbinger</li>
+    <li>Keeper</li>
+    <li>Ranger</li>
+    <br>
+    <li>Cleric (Knowledge Domain)</li>
+    <li>Cleric (Nature Domain)</li>
+    <li>Cleric (Sky Domain)</li>
+    <li>Cleric (Tempest Domain)</li>
+    <li>Cleric (Winter Domain)</li>
+    <li>Paladin (Oath of the Ancients)</li>
+    <li>Paladin (Oath of the Open Sea)</li>
+    <li>Ranger (Warden Archetype)</li>
+    <li>Sorcerer (Fey Lineage)</li>
+    <li>Sorcerer (Lunar Magic)</li>
+    <li>Sorcerer (Storm Sorcery)</li>
+    <li>Sorcerer (Tideborn)</li>
+    <li>Warlock (Archfey)</li>
+    <li>Warlock (Fathomless)</li>
+    <li>Warlock (Stormbringer)</li>
+</ul>
+
+</body>
+</html>

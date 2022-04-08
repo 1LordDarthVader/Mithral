@@ -1,0 +1,351 @@
+<html>
+<head>
+    <title>Adamantine - Weapons</title>
+    <link rel="icon" href="../../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../data/general-store/weapons/melee-weapons.js"></script>
+    <script type="text/javascript" src="../../data/general-store/weapons/ranged-weapons.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border 1px solid #ccc;
+            border-top: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          text-decoration: underline;
+        }
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 240px;
+          background-color: black;
+          color: #fff;
+          border-radius: 6px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 50%;
+          margin-left: -200px;
+        }
+
+        .tooltip:hover {
+            text-decoration: none;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+
+    <script>
+        function modify_weapon_list(weapon_list) {
+            for (let i = 0; i < weapon_list.length; i++) {
+                let cost = weapon_list[i]['cost'];
+                let weight = weapon_list[i]['weight'];
+
+                let damage = weapon_list[i]['damage'] + " " + weapon_list[i]['damage-types'].toLowerCase();
+                weapon_list[i]['damage'] = damage;
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                weapon_list[i]['cost'] = cost;
+
+                if (weight === 1) {
+                    weight = weight + " lb";
+                }
+                else {
+                    weight = weight + " lbs";
+                }
+                weapon_list[i]['weight'] = weight;
+
+                let properties = weapon_list[i]['properties'];
+                let properties_list = "";
+                for (let j = 0; j < properties.length; j++) {
+                    if (j) {
+                        properties_list += ", ";
+                    }
+                    let html = `
+                    <span class="tooltip">${properties[j]['name']}
+                        <span class="tooltiptext"><strong>${properties[j]['name']}</strong><br>${properties[j]['description']}</span>
+                    </span>`;
+                    properties_list += html;
+                }
+                weapon_list[i]['properties-list'] = properties_list;
+
+                if(weapon_list[i].hasOwnProperty('range')) {
+                    let range = weapon_list[i]['range'];
+                    let long_range = weapon_list[i]['long-range'];
+
+                    weapon_list[i]['range'] = range + " ft";
+                    weapon_list[i]['long-range'] = long_range + " ft";
+                }
+            }
+
+            return weapon_list;
+        }
+        function load_items() {
+            let simple_melee_data = modify_weapon_list(melee_weapon_data.filter(function (element){
+                if (element['type'] === 0) {
+                    return true;
+                }
+            }));
+            let simple_ranged_data = modify_weapon_list(ranged_weapon_data.filter(function (element){
+                if (element['type'] === 0) {
+                    return true;
+                }
+            }));
+            let martial_melee_data = modify_weapon_list(melee_weapon_data.filter(function (element){
+                if (element['type'] === 1) {
+                    return true;
+                }
+            }));
+            let martial_ranged_data = modify_weapon_list(ranged_weapon_data.filter(function (element){
+                if (element['type'] === 1) {
+                    return true;
+                }
+            }));
+            let exotic_melee_data = modify_weapon_list(melee_weapon_data.filter(function (element){
+                if (element['type'] === 2) {
+                    return true;
+                }
+            }));
+            let exotic_ranged_data = modify_weapon_list(ranged_weapon_data.filter(function (element){
+                if (element['type'] === 2) {
+                    return true;
+                }
+            }));
+
+            $('#simple_melee_table').DataTable({
+                data: simple_melee_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#simple_ranged_table').DataTable({
+                data: simple_ranged_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'range'},
+                    {data: 'long-range'},
+                    {data: 'ammunition'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#martial_melee_table').DataTable({
+                data: martial_melee_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#martial_ranged_table').DataTable({
+                data: martial_ranged_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'range'},
+                    {data: 'long-range'},
+                    {data: 'ammunition'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#exotic_melee_table').DataTable({
+                data: exotic_melee_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#exotic_ranged_table').DataTable({
+                data: exotic_ranged_data,
+                columns: [
+                    {data: 'name-linked'},
+                    {data: 'damage'},
+                    {data: 'range'},
+                    {data: 'long-range'},
+                    {data: 'ammunition'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+
+            $('#tab_button_0').click();
+        }
+
+        function openTab(evt, weapon_type) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(weapon_type).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../../index.html">Home</a> > General Store > Weapons
+<h1>Weapons</h1>
+
+<div class="tab">
+    <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'simple_melee');">Simple Melee Weapons</button>
+    <button class="tablinks" onclick="openTab(event, 'simple_ranged');">Simple Ranged Weapons</button>
+    <button class="tablinks" onclick="openTab(event, 'martial_melee');">Martial Melee Weapons</button>
+    <button class="tablinks" onclick="openTab(event, 'martial_ranged');">Martial Ranged Weapons</button>
+    <button class="tablinks" onclick="openTab(event, 'exotic_melee');">Exotic Melee Weapons</button>
+    <button class="tablinks" onclick="openTab(event, 'exotic_ranged');">Exotic Ranged Weapons</button>
+</div>
+
+<div class="tabcontent" id="simple_melee">
+    <table id="simple_melee_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="simple_ranged">
+    <table id="simple_ranged_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Range</th>
+            <th>Long Range</th>
+            <th>Ammunition Type</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="martial_melee">
+    <table id="martial_melee_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="martial_ranged">
+    <table id="martial_ranged_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Range</th>
+            <th>Long Range</th>
+            <th>Ammunition Type</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="exotic_melee">
+    <table id="exotic_melee_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="exotic_ranged">
+    <table id="exotic_ranged_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Damage</th>
+            <th>Range</th>
+            <th>Long Range</th>
+            <th>Ammunition Type</th>
+            <th>Cost</th>
+            <th>Weight</th>
+            <th>Properties</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+</body>
+</html>

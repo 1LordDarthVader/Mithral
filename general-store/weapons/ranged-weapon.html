@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../data/general-store/weapons/melee-weapons.js"></script>
+    <script type="text/javascript" src="../../data/general-store/weapons/ranged-weapons.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          text-decoration: underline;
+        }
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 240px;
+          background-color: black;
+          color: #fff;
+          border-radius: 6px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 50%;
+          margin-left: -200px;
+        }
+
+        .tooltip:hover {
+            text-decoration: none;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+
+    <script>
+        function modify_weapon_list(weapon_list) {
+            for (let i = 0; i < weapon_list.length; i++) {
+                let cost = weapon_list[i]['cost'];
+                let weight = weapon_list[i]['weight'];
+
+                let damage = weapon_list[i]['damage'] + " " + weapon_list[i]['damage-types'].toLowerCase();
+                weapon_list[i]['damage'] = damage;
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                weapon_list[i]['cost'] = cost;
+
+                if (weight === 1) {
+                    weight = weight + " lb";
+                }
+                else {
+                    weight = weight + " lbs";
+                }
+                weapon_list[i]['weight'] = weight;
+
+                let properties = weapon_list[i]['properties'];
+                let properties_list = "";
+                for (let j = 0; j < properties.length; j++) {
+                    if (j) {
+                        properties_list += ", ";
+                    }
+                    let html = `
+                    <span class="tooltip">${properties[j]['name']}
+                        <span class="tooltiptext"><strong>${properties[j]['name']}</strong><br>${properties[j]['description']}</span>
+                    </span>`;
+                    properties_list += html;
+                }
+                weapon_list[i]['properties-list'] = properties_list;
+
+                if(weapon_list[i].hasOwnProperty('range')) {
+                    let range = weapon_list[i]['range'];
+                    let long_range = weapon_list[i]['long-range'];
+
+                    weapon_list[i]['range'] = range + " ft";
+                    weapon_list[i]['long-range'] = long_range + " ft";
+                }
+            }
+
+            return weapon_list;
+        }
+        function load_weapon() {
+            const urlParams = new URLSearchParams(window.location.search);
+			const weapon_id = urlParams.get('weapon_id');
+
+            let weapon_data = modify_weapon_list(ranged_weapon_data.filter(function (element){
+                if (element['weapon-index'] == weapon_id) {
+                    return true;
+                }
+            }));
+
+            window.document.title = "Adamantine - " + weapon_data[0]['name'];
+            $('.weapon-name').each(function () {
+                $(this).html(weapon_data[0]['name']);
+            });
+            $('#weapon-description').html(weapon_data[0]['description']);
+
+            $('#weapon_table').DataTable({
+                data: weapon_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'damage'},
+                    {data: 'range'},
+                    {data: 'long-range'},
+                    {data: 'ammunition'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'properties-list'}
+                ],
+                paging: false, ordering: false, info: false, searching: false
+            });
+        }
+    </script>
+</head>
+<body onload="load_weapon()">
+<a href="../../index.html">Home</a> > General Store > <a href="weapon_list.html">Weapons</a> > <span class="weapon-name"></span>
+<h1>General Store - <span id="weapon-name"></span></h1>
+
+<table id="weapon_table" style="width: 100%" class="compact row-border">
+    <thead>
+        <th>Name</th>
+        <th>Damage</th>
+        <th>Range</th>
+        <th>Long Range</th>
+        <th>Ammunition</th>
+        <th>Cost</th>
+        <th>Weight</th>
+        <th>Properties</th>
+    </thead>
+    <tbody></tbody>
+</table>
+<br>
+<div id="weapon-description"></div>
+
+</body>
+</html>

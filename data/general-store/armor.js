@@ -1,0 +1,233 @@
+const armor_data = [
+ {
+   "name": "Padded",
+   "cost": 5,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "Disadvantage",
+   "weight": 8,
+   "description": "Padded armor consists of quilted layers of cloth and batting.",
+   "type": 0
+ },
+ {
+   "name": "Leather",
+   "cost": 10,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 10,
+   "description": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
+   "type": 0
+ },
+ {
+   "name": "Leather, dark",
+   "cost": 50,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "(special)",
+   "weight": 10,
+   "description": "Leather armor that is made of darker materials and includes a cloak, making it ideal for stealth.",
+   "type": 0
+ },
+ {
+   "name": "Outfit, pride silk",
+   "cost": 500,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 4,
+   "description": "A set of fine clothing made from a material that affords it modest protection.",
+   "type": 0
+ },
+ {
+   "name": "Outlaw's Duster, leather",
+   "cost": 150,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 5,
+   "description": "A leather duster with many hidden pockets.",
+   "type": 0
+ },
+ {
+   "name": "Studded Leather",
+   "cost": 45,
+   "armor-class": 12,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 13,
+   "description": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
+   "type": 0
+ },
+ {
+   "name": "Studded Leather, dark",
+   "cost": 75,
+   "armor-class": 12,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "(special)",
+   "weight": 13,
+   "description": "Studded leather armor that is made of darker materials and includes a cloak, making it ideal for stealth.",
+   "type": 0
+ },
+ {
+   "name": "Outlaw's Duster, armorweave",
+   "cost": 350,
+   "armor-class": 12,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 6,
+   "description": "A duster made of a tough fabric called armorweave with many hidden pockets.",
+   "type": 0
+ },
+ {
+   "name": "Hide",
+   "cost": 10,
+   "armor-class": 12,
+   "max-dex": 3,
+   "str-req": null,
+   "stealth": "",
+   "weight": 12,
+   "description": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.",
+   "type": 0
+ },
+ {
+   "name": "Chain Shirt",
+   "cost": 50,
+   "armor-class": 13,
+   "max-dex": 2,
+   "str-req": null,
+   "stealth": "",
+   "weight": 20,
+   "description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
+   "type": 1
+ },
+ {
+   "name": "Scale Mail",
+   "cost": 50,
+   "armor-class": 14,
+   "max-dex": 2,
+   "str-req": null,
+   "stealth": "Disadvantage",
+   "weight": 45,
+   "description": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.",
+   "type": 1
+ },
+ {
+   "name": "Lamellar",
+   "cost": 200,
+   "armor-class": 14,
+   "max-dex": 3,
+   "str-req": null,
+   "stealth": "Disadvantage",
+   "weight": 20,
+   "description": "This armor consists of leather amor covered with heavier metal, similar to scale mail. It is favored by elves.",
+   "type": 1
+ },
+ {
+   "name": "Breastplate",
+   "cost": 400,
+   "armor-class": 14,
+   "max-dex": 3,
+   "str-req": null,
+   "stealth": "",
+   "weight": 20,
+   "description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.",
+   "type": 1
+ },
+ {
+   "name": "Half Plate",
+   "cost": 750,
+   "armor-class": 15,
+   "max-dex": 2,
+   "str-req": null,
+   "stealth": "Disadvantage",
+   "weight": 40,
+   "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.",
+   "type": 1
+ },
+ {
+   "name": "Ring Mail",
+   "cost": 30,
+   "armor-class": 14,
+   "max-dex": 1,
+   "str-req": null,
+   "stealth": "",
+   "weight": 40,
+   "description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.",
+   "type": 2
+ },
+ {
+   "name": "Light Plate",
+   "cost": 50,
+   "armor-class": 15,
+   "max-dex": 1,
+   "str-req": null,
+   "stealth": "",
+   "weight": 50,
+   "description": "Light plate consists of interlocking metal plates like plate armor, but is lighter and as such provides further mobility.",
+   "type": 2
+ },
+ {
+   "name": "Chain Mail",
+   "cost": 75,
+   "armor-class": 16,
+   "max-dex": 0,
+   "str-req": 13,
+   "stealth": "Disadvantage",
+   "weight": 55,
+   "description": "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.",
+   "type": 2
+ },
+ {
+   "name": "Splint",
+   "cost": 200,
+   "armor-class": 17,
+   "max-dex": 0,
+   "str-req": 15,
+   "stealth": "Disadvantage",
+   "weight": 60,
+   "description": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.",
+   "type": 2
+ },
+ {
+   "name": "Plate",
+   "cost": 1500,
+   "armor-class": 18,
+   "max-dex": 0,
+   "str-req": 15,
+   "stealth": "Disadvantage",
+   "weight": 65,
+   "description": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.",
+   "type": 2
+ },
+ {
+   "name": "Heavy Plate",
+   "cost": 3000,
+   "armor-class": 19,
+   "max-dex": 0,
+   "str-req": 18,
+   "stealth": "Disadvantage",
+   "weight": 75,
+   "description": "Heavy plate is heavier than normal plate armor and provides further protection. However, the added cost of metal makes this armor very expensive.",
+   "type": 2
+ },
+ {
+   "name": "Fortress Plate",
+   "cost": 5000,
+   "armor-class": 20,
+   "max-dex": 0,
+   "str-req": 20,
+   "stealth": "(special)",
+   "weight": 85,
+   "description": "Fortress plate, sometimes also called stoneplate, is extraordinarily heavy armor. No part of a wearer's body is left unprotected, and they are not so much wearing the armor as they are vaguely located inside of it.",
+   "type": 2
+ }
+];

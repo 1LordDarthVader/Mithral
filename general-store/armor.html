@@ -1,0 +1,254 @@
+<html>
+<head>
+    <title>Adamantine - General Equipment</title>
+    <link rel="icon" href="../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../data/general-store/armor.js"></script>
+    <script type="text/javascript" src="../data/general-store/shields.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        .tab button {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+
+    <script>
+        function modify_item_list(item_list) {
+            for (let i = 0; i < item_list.length; i++) {
+                let cost = item_list[i]['cost'];
+                let weight = item_list[i]['weight'];
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                item_list[i]['cost'] = cost;
+
+                if (weight === 1) {
+                    weight = weight + " lb";
+                }
+                else {
+                    weight = weight + " lbs";
+                }
+                item_list[i]['weight'] = weight;
+            }
+
+            return item_list;
+        }
+        function load_items() {
+            let light_data = modify_item_list(armor_data.filter(function (element){
+                if (element['type'] === 0) {
+                    return true;
+                }
+            }));
+            let medium_data = modify_item_list(armor_data.filter(function (element){
+                if (element['type'] === 1) {
+                    return true;
+                }
+            }));
+            let heavy_data = modify_item_list(armor_data.filter(function (element){
+                if (element['type'] === 2) {
+                    return true;
+                }
+            }));
+
+            let local_shield_data = modify_item_list(shield_data.filter(function (){return true}));
+
+            $('#light_table').DataTable({
+                data: light_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'armor-class'},
+                    {data: 'max-dex'},
+                    {data: 'str-req'},
+                    {data: 'stealth'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#medium_table').DataTable({
+                data: medium_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'armor-class'},
+                    {data: 'max-dex'},
+                    {data: 'str-req'},
+                    {data: 'stealth'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#heavy_table').DataTable({
+                data: heavy_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'armor-class'},
+                    {data: 'max-dex'},
+                    {data: 'str-req'},
+                    {data: 'stealth'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+            $('#shield_table').DataTable({
+                data: local_shield_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'weight'},
+                    {data: 'armor-class'},
+                    {data: 'str-req'},
+                    {data: 'stealth'},
+                    {data: 'damage'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+
+            $('#tab_button_0').click();
+        }
+
+        function openTab(evt, armor_type) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(armor_type).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../index.html">Home</a> > General Store > <a href="armor.html">Armor</a>
+<h1>Armor</h1>
+
+<div class="tab">
+    <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'light');">Light Armor</button>
+    <button class="tablinks" onclick="openTab(event, 'medium');">Medium Armor</button>
+    <button class="tablinks" onclick="openTab(event, 'heavy');">Heavy Armor</button>
+    <button class="tablinks" onclick="openTab(event, 'shields');">Shields</button>
+</div>
+
+<div class="tabcontent" id="light">
+    <table id="light_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Armor<br>Class</th>
+            <th>Max<br>DEX</th>
+            <th>STR<br>Requirement</th>
+            <th>Stealth</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Special Properties</h2>
+    <ul>
+        <li>Dark leather and dark studded leather grant advantage on Dexterity (Stealth) checks made to hide while in dim light or darkness.</li>
+        <li>Outlaw's dusters have three hidden pockets, each of which can hold up to 1 cubic foot of equipment.  A DC 15 Intelligence (Investigation) check is needed to find a hidden pocket.</li>
+    </ul>
+</div>
+<div class="tabcontent" id="medium">
+    <table id="medium_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Armor<br>Class</th>
+            <th>Max<br>DEX</th>
+            <th>STR<br>Requirement</th>
+            <th>Stealth</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="tabcontent" id="heavy">
+    <table id="heavy_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Armor<br>Class</th>
+            <th>Max<br>DEX</th>
+            <th>STR<br>Requirement</th>
+            <th>Stealth</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Special Properties</h2>
+
+    <ul>
+        <li>You automatically fail any Dexterity (Stealth) checks you make while wearing fortress plate.</li>
+    </ul>
+</div>
+<div class="tabcontent" id="shields">
+    <table id="shield_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Armor Class<br>Bonus</th>
+            <th>STR<br>Requirement</th>
+            <th>Stealth</th>
+            <th>Weight</th>
+            <th>Damage</th>
+            <th>Description</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Special Properties</h2>
+
+    <ul>
+        <li>While wielding a buckler, you can still use the hand it is in for the second hand of two-handed weapons with a weight less than or equal to your Strength score or to grasp a one-handed weapon with a weight less than or equal to your Strength modifier.</li>
+        <li>While wielding a tower shield, you gain a +2 bonus to Dexterity saving throws against effects you can see while you are not blinded or deafened.</li>
+    </ul>
+</div>
+</body>
+</html>
