@@ -1,0 +1,784 @@
+<html>
+<head>
+    <title>Adamantine - Ammunition</title>
+    <link rel="icon" href="../../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          text-decoration: underline;
+        }
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 240px;
+          background-color: black;
+          color: #fff;
+          border-radius: 6px;
+          padding: 5px;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 50%;
+          margin-left: -200px;
+        }
+
+        .tooltip:hover {
+            text-decoration: none;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+</head>
+<body onload="load_items()">
+<a href="../../index.html">Home</a> > General Store > <a href="weapon_list.html">Weapons</a> > Firearms
+
+<h1>Firearm Mechanics</h1>
+
+<h2>Jamming</h2>
+When a 1 is rolled on the d20 when making an attack roll with a firearm, the weapon becomes jammed, and the attack misses, but ammunition for this attack is not consumed.. Unjamming a weapon requires spending an amount of time needed to fully reload its magazine as you clear the jam. Unless stated otherwise, firearms have a d4 misfire die. Jammed weapons have a misfire score, which starts at 1. When making an attack roll with a jammed weapon, roll the firearm's misfire die. If you roll equal to or lower than the firearm's current misfire score, it remains jammed. The attack is wasted and the misfire score increases by 1. If a number higher than the firearm's current misfire score is rolled, the firearm unjams itself, and the attack proceeds as normal.
+
+When a firearm's misfire score reaches the maximum value of its misfire die, it becomes permanently jammed until it is manually unjammed by reloading it. A firearm's misfire score is reset back to 1 when it is unjammed.
+
+<h2>Modifying Firearms</h2>
+A firearm can be modified with Tinkers' Tools, so long as the user is proficient with them. Attachments can be removed or swapped out over a short rest, or over 10 minutes with a successful DC 15 skill check using Tinkers' Tools. Main Parts such as barrels can be swapped, removed, or added over a workweek minus a number of days equal to your Intelligence modifier, to a minimum of one workday.
+
+<h2>Proficiency</h2>
+Firearms fall under both the simple and martial categories. For the purposes of becoming proficient with firearms, matchlocks and flintlocks are simple ranged weapons, while the rest (break-action, bolt-action, etc.) are martial ranged weapons. Characters with proficiency in all simple weapons are also proficient in simple firearms. Characters with proficiency in at least one martial ranged weapon are proficient in martial firearms.
+
+<h2>Weight</h2>
+A firearm that is is 5 lb. or less is light. A firearm that is 30 lb. or more is heavy, requires a STR score of 13 to use, and uses STR modifier instead of DEX modifier for the attack and damage rolls. For every 10 lb. after 30, the STR requirement increases by 1. For example, a firearm that weighs 50 lb. would require a STR score of 15 to use, and use the STR modifier for attack and damage rolls made with it.
+
+Characters who lack the Strength score requirement for a firearm make all attacks using that firearm at disadvantage.
+
+<h2>Creating Firearms</h2>
+A firearm must have a selected class, firing mechanism, body material, barrel, and stock.
+
+<h3>Step 1: Firearm Class</h3>
+The weight modifier only applies to the material's weight.
+
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Damage</th>
+            <th>Weight Modifier</th>
+            <th>Simple Ammunition Type</th>
+            <th>Martial Ammunition Type</th>
+            <th>Properties</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pistol</td>
+            <td>1d10 piercing</td>
+            <td>0.5x</td>
+            <td>Musketballs</td>
+            <td>Pistol Cartridges</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Rifle</td>
+            <td>2d6 piercing</td>
+            <td>1x</td>
+            <td>Musketballs</td>
+            <td>Rifle Cartridges</td>
+            <td><span class="tooltip">Two-handed<span class="tooltiptext">This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</span></span></td>
+        </tr>
+        <tr>
+            <td>Blunderbuss / Shotgun *</td>
+            <td>2d8 piercing</td>
+            <td>3x</td>
+            <td>Blunderbuss Shots</td>
+            <td>Shotgun Shells</td>
+            <td>Range 0.75x, <span class="tooltip">Two-handed<span class="tooltiptext">This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</span></span></td>
+        </tr>
+        <tr>
+            <td>Hand-Cannon</td>
+            <td>2d12 piercing</td>
+            <td>6x</td>
+            <td>Hand-Cannonball</td>
+            <td>N/A</td>
+            <td>No Long Range, <span class="tooltip">Heavy<span class="tooltiptext">Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.</span></span>, <span class="tooltip">Two-handed<span class="tooltiptext">This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</span></span></td>
+        </tr>
+        <tr>
+            <td>Crank Gun</td>
+            <td>1d10 piercing</td>
+            <td>10x</td>
+            <td>N/A</td>
+            <td>Crank Gun Belt</td>
+            <td>Must Be Cylinder-action, <span class="tooltip">Heavy<span class="tooltiptext">Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.</span></span>, <span class="tooltip">Two-handed<span class="tooltiptext">This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</span></span></td>
+        </tr>
+    </tbody>
+</table>
+
+* A blunderbuss that is not matchlock or flintlock is classified as a shotgun.
+
+<h3>Crank Gun</h3>
+Marvels of technology and engineering, these special firearms send a flurry of lead downrange, shredding countless opponents to bits. These guns generally must be mounted onto specially made mounts due to their immense weight.
+
+Crank guns fire at an unprecedented rate, though take the longest to reload out of all firearms. For each attack made with a crank gun, the gun fires 6 times. Attack rolls are made for each shot.
+
+Furthermore, While a crank gun is mounted to a crank gun stand, for the purposes of circumventing the gun's heavy property and weight, the wielder is not considered to be carrying the crank gun, so long as the crank gun remains attached to its stand and the wielder is not carrying the stand.
+
+<h3>Step 2: Firing Mechanism</h3>
+The cost modifier only applies to the material's cost.
+
+<table>
+    <thead>
+        <tr>
+            <th>Mechanism</th>
+            <th>Weapon Type</th>
+            <th>Cost Modifier</th>
+            <th>Magazine Size</th>
+            <th>Reload Time</th>
+            <th>Special</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Matchlock</td>
+            <td>Simple</td>
+            <td>1x</td>
+            <td>1</td>
+            <td>1 action</td>
+            <td>Fires at the end of the round. May change target with disadvantage. Cannot fire underwater or in heavy rain.</td>
+        </tr>
+        <tr>
+            <td>Flintlock</td>
+            <td>Simple</td>
+            <td>1.5x</td>
+            <td>1</td>
+            <td>1 action</td>
+            <td>Cannot fire underwater.</td>
+        </tr>
+        <tr>
+            <td>Break-action</td>
+            <td>Martial</td>
+            <td>2x</td>
+            <td>Barrel Amount</td>
+            <td>1 action or 2 bonus actions</td>
+            <td>Can have multiple barrel parts.</td>
+        </tr>
+        <tr>
+            <td>Bolt-action</td>
+            <td>Martial</td>
+            <td>3x</td>
+            <td>5</td>
+            <td>1 action loads PB</td>
+            <td>Loading, Must be Two-handed</td>
+        </tr>
+        <tr>
+            <td>Lever-action, small</td>
+            <td>Martial</td>
+            <td>4x</td>
+            <td>6</td>
+            <td>1 action loads PB + 1</td>
+            <td>Must be Two-handed</td>
+        </tr>
+        <tr>
+            <td>Lever-action, medium</td>
+            <td>Martial</td>
+            <td>5x</td>
+            <td>9</td>
+            <td>1 action loads PB + 1</td>
+            <td>Must be Two-handed</td>
+        </tr>
+        <tr>
+            <td>Lever-action, large</td>
+            <td>Martial</td>
+            <td>6x</td>
+            <td>12</td>
+            <td>1 action loads PB + 1</td>
+            <td>Must be Two-handed</td>
+        </tr>
+        <tr>
+            <td>Cylinder-action</td>
+            <td>Martial</td>
+            <td>6x</td>
+            <td>6</td>
+            <td>1 action loads PB - 1</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Step 3: Body Material</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Material</th>
+            <th>Weight Limit</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cedar</td>
+            <td>10 lbs</td>
+            <td>3 lbs</td>
+            <td>50 gp</td>
+        </tr>
+        <tr>
+            <td>Pine</td>
+            <td>20 lbs</td>
+            <td>3 lbs</td>
+            <td>70 gp</td>
+        </tr>
+        <tr>
+            <td>Cherry</td>
+            <td>30 lbs</td>
+            <td>4 lbs</td>
+            <td>85 gp</td>
+        </tr>
+        <tr>
+            <td>Mahogany</td>
+            <td>40 lbs</td>
+            <td>5 lbs</td>
+            <td>100 gp</td>
+        </tr>
+        <tr>
+            <td>Walnut</td>
+            <td>50 lbs</td>
+            <td>6 lbs</td>
+            <td>125 gp</td>
+        </tr>
+        <tr>
+            <td>Oak</td>
+            <td>60 lbs</td>
+            <td>8 lbs</td>
+            <td>140 gp</td>
+        </tr>
+        <tr>
+            <td>Hickory</td>
+            <td>70 lbs</td>
+            <td>6 lbs</td>
+            <td>210 gp</td>
+        </tr>
+        <tr>
+            <td>Iron</td>
+            <td>100 lbs</td>
+            <td>9 lbs</td>
+            <td>180 gp</td>
+        </tr>
+        <tr>
+            <td>Steel</td>
+            <td>120 lbs</td>
+            <td>8 lbs</td>
+            <td>250 gp</td>
+        </tr>
+        <tr>
+            <td>Mithral</td>
+            <td>130 lbs</td>
+            <td>5 lbs</td>
+            <td>5000 gp</td>
+        </tr>
+        <tr>
+            <td>Adamantine</td>
+            <td>200 lbs</td>
+            <td>18 lbs</td>
+            <td>2000 gp</td>
+        </tr>
+        <tr>
+            <td>Mechanus-Forged Copper</td>
+            <td>&#8734;</td>
+            <td>8 lbs</td>
+            <td>10000 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Step 4: Barrel</h3>
+Most firearms can only have a single barrel, but break-action firearms can have as many barrels as you want.
+
+<table>
+    <thead>
+        <tr>
+            <th>Barrel</th>
+            <th>Range</th>
+            <th>Long Range</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Snub</td>
+            <td>15 ft</td>
+            <td>40 ft</td>
+            <td>1 lb</td>
+            <td>15 gp</td>
+        </tr>
+        <tr>
+            <td>Short</td>
+            <td>30 ft</td>
+            <td>60 ft</td>
+            <td>2 lbs</td>
+            <td>20 gp</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>60 ft</td>
+            <td>120 ft</td>
+            <td>4 lbs</td>
+            <td>40 gp</td>
+        </tr>
+        <tr>
+            <td>Long</td>
+            <td>70 ft</td>
+            <td>200 ft</td>
+            <td>6 lbs</td>
+            <td>80 gp</td>
+        </tr>
+        <tr>
+            <td>Pole</td>
+            <td>100 ft</td>
+            <td>400 ft</td>
+            <td>8 lbs</td>
+            <td>150 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Step 5: Stock</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Stock</th>
+            <th>Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>-3 to attack rolls at long range. No disadvantage to attack rolls against creatures within 5ft.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Short</td>
+            <td>+1 to attack rolls within normal range but -2 to attack rolls at long range.</td>
+            <td>2 lbs</td>
+            <td>10 gp</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td></td>
+            <td>3 lbs</td>
+            <td>15 gp</td>
+        </tr>
+        <tr>
+            <td>Wide</td>
+            <td>+1 to attack rolls at long range , but -2 to attack rolls against creatures within 5ft.</td>
+            <td>4 lbs</td>
+            <td>25 gp</td>
+        </tr>
+        <tr>
+            <td>Hydraulic</td>
+            <td>+1 to attack rolls for every consecutive attack made on the same turn.</td>
+            <td>8 lbs</td>
+            <td>350 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Attachments</h3>
+Attachments are parts that change the gun's statistics. Up to one of each type of attachment may be installed on a given firearm, unless stated otherwise. They count towards the total weight that the Body Material can support. They can be added to or removed from a firearm using Tinkers' Tools.
+
+<h4>Barrel</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Attachment</th>
+            <th>Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Rifling</td>
+            <td>2x normal range, 2x long range</td>
+            <td></td>
+            <td>3x barrel</td>
+        </tr>
+        <tr>
+            <td>Barrel of Slipperiness</td>
+            <td>This firearm cannot become jammed</td>
+            <td></td>
+            <td>820 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Barrel-Ends</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Attachment</th>
+            <th>Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Barrel Extender</td>
+            <td>1.1x normal range, 1.1x long range	</td>
+            <td>2 lbs</td>
+            <td>120 gp</td>
+        </tr>
+        <tr>
+            <td>Flash Hider</td>
+            <td>-10 ft normal range, -10 ft long range, prevents visual muzzle-flash</td>
+            <td>2 lbs</td>
+            <td>300 gp</td>
+        </tr>
+        <tr>
+            <td>Suppressor</td>
+            <td>-20 ft normal range, -20 ft long range, silences shot to creatures outside firearm's normal range</td>
+            <td>6 lbs</td>
+            <td>1500 gp</td>
+        </tr>
+        <tr>
+            <td>Elemental Enhancer</td>
+            <td>Adds 1d6 fire, cold, lightning, poison, or acid damage</td>
+            <td>3 lbs</td>
+            <td>2000 gp</td>
+        </tr>
+        <tr>
+            <td>Adjustable Elemental Enhancer</td>
+            <td>Adds 1d6 fire, cold, lightning, poison, or acid damage, damage type adjustable with a bonus action</td>
+            <td>3 lbs</td>
+            <td>6250 gp</td>
+        </tr>
+        <tr>
+            <td>Ethereal Entangler</td>
+            <td>Can send the bullet into the ethereal plane, toggled on and off with a bonus action. Additionally, creatures with the etherealness or incorporeal movement traits are vulnerable to damage from this firearm (but other resistances still apply)</td>
+            <td>6 lbs</td>
+            <td>3250 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Firing Mechanism</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Attachment</th>
+            <th>Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Straightbolt</td>
+            <td>Negates loading property of 1 shot per turn, requires bolt-action</td>
+            <td></td>
+            <td>225 gp</td>
+        </tr>
+        <tr>
+            <td>Swing-out Cylinder</td>
+            <td>Allows use of speedloaders with cylinder-fed firearms, requires cylinder-action</td>
+            <td></td>
+            <td>425 gp</td>
+        </tr>
+        <tr>
+            <td>Elemental Receiver</td>
+            <td>Changes damage type to fire, cold, lightning, poison, or acid</td>
+            <td></td>
+            <td>2250 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Optics</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Attachment</th>
+            <th>Normal Range Boost</th>
+            <th>Long Range Boost</th>
+            <th>Other Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pip Sight</td>
+            <td>+10 ft</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>10 gp</td>
+        </tr>
+        <tr>
+            <td>Ring Sight</td>
+            <td>+25 ft</td>
+            <td>+10 ft</td>
+            <td></td>
+            <td></td>
+            <td>25 gp</td>
+        </tr>
+        <tr>
+            <td>Glass Sight</td>
+            <td>+30 ft</td>
+            <td>+30 ft</td>
+            <td></td>
+            <td></td>
+            <td>120 gp</td>
+        </tr>
+        <tr>
+            <td>Tube Sight</td>
+            <td>+30 ft</td>
+            <td>+30 ft</td>
+            <td>+1 to attack rolls at long range</td>
+            <td>1 lb</td>
+            <td>450 gp</td>
+        </tr>
+        <tr>
+            <td>Scope</td>
+            <td>+100 ft</td>
+            <td>+100 ft</td>
+            <td>+2 to attack rolls at long range</td>
+            <td>2 lbs</td>
+            <td>1000 gp</td>
+        </tr>
+        <tr>
+            <td>Ethereal Sight</td>
+            <td></td>
+            <td></td>
+            <td>Allows sight of creatures inside the Ethereal Plane, though checks made to spot them are made at disadvantage</td>
+            <td>8 lbs</td>
+            <td>3200 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Underbarrels</h4>
+
+<table>
+    <thead>
+        <tr>
+            <th>Attachment</th>
+            <th>Effect</th>
+            <th>Weight</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sling</td>
+            <td>You may draw or stow this firearm as a free action</td>
+            <td>2 lbs</td>
+            <td>20 gp</td>
+        </tr>
+        <tr>
+            <td>Gun-legs</td>
+            <td>+50 ft long range while in half-cover or prone</td>
+            <td>4 lbs</td>
+            <td>100 gp</td>
+        </tr>
+        <tr>
+            <td>Bayonet, small</td>
+            <td>Firearm may be used to make a melee weapon attack, dealing 1d4 piercing damage</td>
+            <td>1 lb</td>
+            <td>15 gp</td>
+        </tr>
+        <tr>
+            <td>Bayonet, large</td>
+            <td>Firearm may be used to make a melee weapon attack, dealing 1d8 piercing damage; must be two-handed</td>
+            <td>2 lbs</td>
+            <td>45 gp</td>
+        </tr>
+    </tbody>
+</table>
+
+<h5>Bayonets</h5>
+If the total weight of the firearm, including the bayonet, would still be considered light, then the bayonet attack is considered to have the finesse property. If the barrel it is attached to is a pole barrel, the bayonet attack is considered to have the reach property.
+
+Bayonets can also be attached to crossbows.  For the purposes of bayonets, hand crossbows are considered pistols and all other crossbows are considered rifles.
+
+<h3>Ammunition</h3>
+
+<h4>Standard Ammunition</h4>
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Musketball (20)</td>
+    <td>2 gp</td>
+    <td>1/32 lbs each</td>
+  </tr>
+  <tr>
+    <td>Blunderbuss Shot (20)</td>
+    <td>5 gp</td>
+    <td>1/16 lbs each</td>
+  </tr>
+  <tr>
+    <td>Pistol Cartridge (12)</td>
+    <td>4 gp</td>
+    <td>1/32 lbs each</td>
+  </tr>
+  <tr>
+    <td>Rifle Cartridge (12)</td>
+    <td>6 gp</td>
+    <td>1/32 lbs each</td>
+  </tr>
+  <tr>
+    <td>Shotgun Shell (12)</td>
+    <td>8 gp</td>
+    <td>1/16 lbs each</td>
+  </tr>
+  <tr>
+    <td>Hand-cannonball</td>
+    <td>5 sp</td>
+    <td>4 lbs</td>
+  </tr>
+</tbody>
+</table>
+
+<h4>Special Ammunition</h4>
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Replaces</th>
+    <th>Effect</th>
+    <th>Cost</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Inscribed Round</td>
+    <td>Any</td>
+    <td>Delivers spell via impact, replaces damage</td>
+    <td>Spell scroll cost</td>
+  </tr>
+  <tr>
+    <td>Aether Round</td>
+    <td>Any</td>
+    <td>Additional 1d8 force damage in 5 ft. radius</td>
+    <td>100 gp</td>
+  </tr>
+  <tr>
+    <td>Ceramic Round</td>
+    <td>Musketball, Hand-cannonball</td>
+    <td>Attack becomes 15ft. cone slashing damage, DC 12 DEX save for half damage</td>
+    <td>2x</td>
+  </tr>
+  <tr>
+    <td>Full Metal Jacket</td>
+    <td>Cartridge</td>
+    <td>+2 to hit against targets wearing heavy armor, negates half cover</td>
+    <td>3x</td>
+  </tr>
+  <tr>
+    <td>Hollow-Point</td>
+    <td>Cartridge</td>
+    <td>1 additional damage die against targets with no armor</td>
+    <td>3x</td>
+  </tr>
+  <tr>
+    <td>Slug</td>
+    <td>Shotgun Shell</td>
+    <td>Negates blunderbuss range penalty for close range only</td>
+    <td>2x</td>
+  </tr>
+  <tr>
+    <td>Birdshot</td>
+    <td>Shotgun Shell</td>
+    <td>Change base damage to 4d4 piercing</td>
+    <td>2x</td>
+  </tr>
+  <tr>
+    <td>Dragon's Breath</td>
+    <td>Shotgun Shell</td>
+    <td>Attack becomes 15ft. cone for 2d6 fire damage, DC 14 DEX save for half damage</td>
+    <td>50 gp</td>
+  </tr>
+</tbody>
+</table>
+
+<h4>Miscellaneous Firearm Equipment</h4>
+
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Cost</th>
+    <th>Weight</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Ammunition Belt</td>
+    <td>10 gp</td>
+    <td>20 lbs</td>
+  </tr>
+  <tr>
+    <td>Crank Gun Stand</td>
+    <td>15 gp</td>
+    <td>30 lbs</td>
+  </tr>
+  <tr>
+    <td>Stripper-clip</td>
+    <td>(2x size) gp</td>
+    <td>1/16 lbs</td>
+  </tr>
+  <tr>
+    <td>Speerloader</td>
+    <td>(1x size) gp</td>
+    <td>1/16 lbs</td>
+  </tr>
+</tbody>
+</table>
+
+<h5>Ammunition Belt</h5>
+Ammunition belts are how ammunition is delivered into the mechanism of the crank gun. Each ammo belt weighs 20 pounds, which is counted toward to the total weight of the gun while attached to it. Each belt can hold up to 60 pistol cartridges.
+
+Once exhausted, the ammunition belt must be loaded over the course of 10 minutes. An ammunition belt cannot be loaded while attached to a crank gun.
+
+Removing or attaching an ammo belt to a crank gun requires an action. A crank gun may only have one ammo belt attached to it at a time.
+
+<h5>Crank Gun Stand</h5>
+A crank gun stand is a special tripod made for supporting crank guns. It stands about three feet tall and has implements and attachment points needed to mount any crank gun to it. Doing so requires five minutes and the use of someone proficient with Tinker's Tools.
+
+<h5>Loaders</h5>
+
+
+
+Loaders reduce the time required to reload a firearm. Instead of spending a whole action reloading, you can instead use an item interaction to take the Reload action, taking ammunition from the loader. Loading a loader takes 1 minute.
+
+</body>
+</html>

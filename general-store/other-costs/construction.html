@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Adamantine - Accommodations</title>
+    <link rel="icon" href="../../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../data/general-store/other-costs/construction.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <script>
+        function load_items() {
+            let local_data = construction_data.filter(function (){return true});
+
+            for (let i = 0; i < local_data.length; i++) {
+                let cost = local_data[i]['construction-cost'];
+                let purchase_cost = local_data[i]['purchase-cost'];
+                let upkeep = local_data[i]['daily-upkeep'];
+
+                let time = local_data[i]['construction-time'];
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                local_data[i]['construction-cost'] = cost;
+
+                if (purchase_cost === null) {
+                    purchase_cost = "N/A";
+                }
+                else if (purchase_cost <= 0.09) {
+                    purchase_cost = purchase_cost * 100 + " cp";
+                }
+                else if (purchase_cost <= 0.9) {
+                    purchase_cost = purchase_cost * 10 + " sp";
+                }
+                else if (purchase_cost <= 10000) {
+                    purchase_cost = purchase_cost + " gp";
+                }
+                else {
+                    purchase_cost = purchase_cost / 10 + " pp";
+                }
+                local_data[i]['purchase-cost'] = purchase_cost;
+
+                if (upkeep <= 0.09) {
+                    upkeep = upkeep * 100 + " cp";
+                }
+                else if (upkeep <= 0.9) {
+                    upkeep = upkeep * 10 + " sp";
+                }
+                else if (upkeep <= 10000) {
+                    upkeep = upkeep + " gp";
+                }
+                else {
+                    upkeep = upkeep / 10 + " pp";
+                }
+                local_data[i]['daily-upkeep'] = upkeep;
+
+                if (time === 1) {
+                    time = time + " day";
+                }
+                else if (time < 10) {
+                    time = time + " days";
+                }
+                else if (time < 20) {
+                    time = time / 10 + " week";
+                }
+                else {
+                    time = time / 10 + " weeks";
+                }
+                local_data[i]['construction-time'] = time;
+            }
+
+            $('#item_table').DataTable({
+                data: local_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'purchase-cost'},
+                    {data: 'construction-cost'},
+                    {data: 'construction-time'},
+                    {data: 'daily-upkeep'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../../index.html">Home</a> > General Store > <a href="other-costs.html">Other Costs</a> > Construction
+<h1>Construction</h1>
+
+<table id="item_table" style="width: 100%" class="compact hover stripe row-border">
+    <thead>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Construction Cost</th>
+        <th>Construction Time</th>
+        <th>Daily Upkeep</th>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+</html>

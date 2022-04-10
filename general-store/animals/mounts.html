@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Adamantine - Mounts</title>
+    <link rel="icon" href="../../adamantine.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../data/general-store/animals/mounts.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <script>
+        function load_items() {
+            let local_data = mount_data.filter(function (){return true});
+            for (let i = 0; i < local_data.length; i++) {
+                let cost = local_data[i]['cost'];
+                let size = local_data[i]['size'];
+                let speed = local_data[i]['speed'];
+                let weight = local_data[i]['weight'];
+                let carry_capacity = local_data[i]['carry-capacity'];
+
+                if (cost <= 0.09) {
+                    cost = cost * 100 + " cp";
+                }
+                else if (cost <= 0.9) {
+                    cost = cost * 10 + " sp";
+                }
+                else if (cost <= 10000) {
+                    cost = cost + " gp";
+                }
+                else {
+                    cost = cost / 10 + " pp";
+                }
+                local_data[i]['cost'] = cost;
+
+                speed = speed + " ft";
+                local_data[i]['speed'] = speed;
+
+                switch(size) {
+                    case -2: {
+                        size = 'Tiny';
+                        break;
+                    }
+                    case -1: {
+                        size = 'Small';
+                        break;
+                    }
+                    case 0: {
+                        size = 'Medium';
+                        break;
+                    }
+                    case 1: {
+                        size = 'Large';
+                        break;
+                    }
+                    case 2: {
+                        size = 'Huge';
+                        break;
+                    }
+                    default: {
+                        size = 'Invalid Size';
+                        break;
+                    }
+                }
+                local_data[i]['size'] = size;
+
+                if (weight === 1) {
+                    weight = weight + " lb";
+                }
+                else {
+                    weight = weight + " lbs";
+                }
+                local_data[i]['weight'] = weight;
+
+                if (carry_capacity === 1) {
+                    carry_capacity = carry_capacity + " lb";
+                }
+                else {
+                    carry_capacity = carry_capacity + " lbs";
+                }
+                local_data[i]['carry-capacity'] = carry_capacity;
+            }
+
+            $('#item_table').DataTable({
+                data: local_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'size'},
+                    {data: 'speed'},
+                    {data: 'weight'},
+                    {data: 'carry-capacity'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
+        }
+    </script>
+</head>
+<body onload="load_items()">
+<a href="../../index.html">Home</a> > General Store > <a href="animals.html">Animals</a> > Mounts
+<h1>Mounts</h1>
+
+<table id="item_table" style="width: 100%" class="compact hover stripe row-border">
+    <thead>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Size</th>
+        <th>Speed</th>
+        <th>Weight</th>
+        <th>Carrying Capacity</th>
+        <th>Description</th>
+    </thead>
+    <tbody></tbody>
+</table>
+
+</body>
+</html>

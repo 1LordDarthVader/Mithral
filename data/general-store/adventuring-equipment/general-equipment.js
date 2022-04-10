@@ -354,16 +354,34 @@ const general_equipment_data = [
    "description": "These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves&apos; tools can pick the manacles&apos; lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
  },
  {
-   "name": "Manacles, Adamantine",
-   "cost": 500,
-   "weight": 4,
-   "description": "These manacles are far tougher than normal manacles. They have 45 hit points, the DCs to escape them through finesse or strength is increased to 30, and they are immune to nonmagical damage."
+   "name": "Manacles, Small",
+   "cost": 1,
+   "weight": 3,
+   "description": "These metal restraints can bind a Tiny creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves&apos; tools can pick the manacles&apos; lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
+ },
+ {
+   "name": "Manacles, Large",
+   "cost": 5,
+   "weight": 10,
+   "description": "These metal restraints can bind a Large or Huge creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves&apos; tools can pick the manacles&apos; lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
  },
  {
    "name": "Manacles, False",
    "cost": 10,
    "weight": 6,
    "description": "These manacles appear real, but can be broken out of much easier. No ability check is required to escape these manacles. A creature within 5 feet can identify the manacles as false with a successful DC 15 Intelligence (Investigation) check."
+ },
+ {
+   "name": "Manacles, Cold Iron",
+   "cost": 100,
+   "weight": 6,
+   "description": "These manacles are made of cold iron, and are thus innately warded against transposition magic.  A creature restrained by cold iron manacles cannot use transposition magic to escape them.  They are otherwise normal manacles."
+ },
+ {
+   "name": "Manacles, Adamantine",
+   "cost": 500,
+   "weight": 4,
+   "description": "These manacles are made of adamantine, and are thus far tougher than normal manacles. They have 45 hit points, the DCs to escape or pick the lock is increased to 30, and they are immune to nonmagical damage."
  },
  {
    "name": "Map Case",
