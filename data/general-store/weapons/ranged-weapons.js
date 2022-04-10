@@ -2,7 +2,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 0,
     'name': 'Atltal',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=0>Atltal</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=0>Atltal</a>',
     'description': 'A simple catapult used for throwing javelins further and with more force.',
     'damage': '1d8',
     'damage-types': 'Piercing',
@@ -22,7 +22,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 1,
     'name': 'Blowgun',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=1>Blowgun</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=1>Blowgun</a>',
     'description': 'A short pipe made of reed or bamboo that can quietly launch darts.',
     'damage': '1d4',
     'damage-types': 'Piercing',
@@ -54,7 +54,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 2,
     'name': 'Crossbow, great',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=2>Crossbow, great</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=2>Crossbow, great</a>',
     'description': 'A massive, four-armed crossbow that fires heavier bolts.',
     'damage': '2d8',
     'damage-types': 'Piercing',
@@ -86,7 +86,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 3,
     'name': 'Crossbow, hand',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=3>Crossbow, hand</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=3>Crossbow, hand</a>',
     'description': 'A light and small crossbow used in one hand.',
     'damage': '1d6',
     'damage-types': 'Piercing',
@@ -110,7 +110,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 4,
     'name': 'Crossbow, hand (repeating)',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=4>Crossbow, hand (repeating)</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=4>Crossbow, hand (repeating)</a>',
     'description': "A hand crossbow that doesn't need to be reloaded through a miracle of artifice.",
     'damage': '1d6',
     'damage-types': 'Piercing',
@@ -130,7 +130,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 5,
     'name': 'Crossbow, heavy',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=5>Crossbow, heavy</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=5>Crossbow, heavy</a>',
     'description': 'A large and heavy crossbow.',
     'damage': '1d10',
     'damage-types': 'Piercing',
@@ -158,7 +158,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 6,
     'name': 'Crossbow, heavy (repeating)',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=6>Crossbow, heavy (repeating)</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=6>Crossbow, heavy (repeating)</a>',
     'description': 'A heavy crossbow equipped with a crank that automatically reloads it.',
     'damage': '1d10',
     'damage-types': 'Piercing',
@@ -182,7 +182,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 7,
     'name': 'Crossbow, light',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=7>Crossbow, light</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=7>Crossbow, light</a>',
     'description': 'A smaller crossbow used by those to whom a heavier crossbow is too expensive or too heavy.',
     'damage': '1d8',
     'damage-types': 'Piercing',
@@ -206,7 +206,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 8,
     'name': 'Crossbow, light (repeating)',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=8>Crossbow, light (repeating)</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=8>Crossbow, light (repeating)</a>',
     'description': 'A light crossbow equipped with a crank that automatically reloads it.',
     'damage': '1d8',
     'damage-types': 'Piercing',
@@ -226,7 +226,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 9,
     'name': 'Longbow',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=9>Longbow</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=9>Longbow</a>',
     'description': 'A large, long-ranged bow.',
     'damage': '1d8',
     'damage-types': 'Bludgeoning, Piercing, or Slashing',
@@ -254,7 +254,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 10,
     'name': 'Longbow, composite',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=10>Longbow, composite</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=10>Longbow, composite</a>',
     'description': "A longbow that is modified to make use of its user's strength.",
     'damage': '1d8',
     'damage-types': 'Bludgeoning, Piercing, or Slashing',
@@ -286,7 +286,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 11,
     'name': 'Shortbow',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=11>Shortbow</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=11>Shortbow</a>',
     'description': 'A small bow used by those whom to longbows are too heavy or too difficult to use.',
     'damage': '1d6',
     'damage-types': 'Bludgeoning, Piercing, or Slashing',
@@ -306,7 +306,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 12,
     'name': 'Shortbow, composite',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=12>Shortbow, composite</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=12>Shortbow, composite</a>',
     'description': "A shortbow that is modified to make use of its user's strength.",
     'damage': '1d6',
     'damage-types': 'Bludgeoning, Piercing, or Slashing',
@@ -330,7 +330,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 13,
     'name': 'Sling',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=13>Sling</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=13>Sling</a>',
     'description': 'A simple leather strap that can launch stones. Ball bearings can also be used as sling ammunition.',
     'damage': '1d4',
     'damage-types': 'Bludgeoning',
@@ -346,7 +346,7 @@ const ranged_weapon_data = [
 {
     'weapon-index': 14,
     'name': 'Warbow',
-    'name-linked': '<a href=../weapons/ranged-weapon.html?weapon_id=14>Warbow</a>',
+    'name-linked': '<a class="weapon" href=../weapons/ranged-weapon.html?weapon_id=14>Warbow</a>',
     'description': 'A massive elven bow used by only those with the strength to master it.',
     'damage': '2d6',
     'damage-types': 'Bludgeoning, Piercing, or Slashing',
