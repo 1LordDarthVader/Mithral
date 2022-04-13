@@ -2,7 +2,9 @@
         <html>
         <head>
             <title>Adamantine Wiki - Circle of the Land</title>
-            <link rel="icon" href="../../../adamantine.png">
+            <link rel="icon" href="../../../../adamantine.png">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
             <style>
                 table, tr, td, th {
@@ -10,9 +12,10 @@
                     border-collapse: collapse;
                 }
             </style>
-            <script src="../../../auto-linker.js"></script>
+            <script src="../../../../auto-linker.js"></script>
+            <link rel="stylesheet" href="../../../../master-styles.css">
         </head>
-        <body>
+        <body onload="auto_link()">
         <a href="../../../../index.html">Home</a> > <a href="../../../index.html">Character Creation Resources</a> > Classes > <a href="../druid.html">Druid</a> > Circle of the Land
 
         <h1>Circle of the Land</h1>
@@ -35,19 +38,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Spike Growth</td>
+<td>Hold Person, Spike Growth</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Slow</td>
+<td>Sleet Storm, Slow</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Ice Storm</td>
+<td>Freedom of Movement, Ice Storm</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Cone of Cold</td>
+<td>Commune with Nature, Cone of Cold</td>
 </tr>
 <tr>
 <th colspan="2">Coast</th>
@@ -58,19 +61,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Misty Step</td>
+<td>Mirror Image, Misty Step</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Water Walk</td>
+<td>Water Breathing, Water Walk</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Freedom of Movement</td>
+<td>Control Water, Freedom of Movement</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Scrying</td>
+<td>Conjure Elemental, Scrying</td>
 </tr>
 <tr>
 <th colspan="2">Desert</th>
@@ -81,19 +84,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Silence</td>
+<td>Blur, Silence</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Protection from Energy</td>
+<td>Create Food and Water, Protection from Energy</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Hallucinatory Terrain</td>
+<td>Blight, Hallucinatory Terrain</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Wall of Stone</td>
+<td>Insect Plague, Wall of Stone</td>
 </tr>
 <tr>
 <th colspan="2">Forest</th>
@@ -104,19 +107,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Spider Climb</td>
+<td>Barkskin, Spider Climb</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Plant Growth</td>
+<td>Call Lightning, Plant Growth</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Freedom of Movement</td>
+<td>Divination, Freedom of Movement</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Tree Stride</td>
+<td>Commune with Nature, Tree Stride</td>
 </tr>
 <tr>
 <th colspan="2">Grassland</th>
@@ -127,19 +130,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Pass Without Trace</td>
+<td>Invisibility, Pass Without Trace</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Haste</td>
+<td>Daylight, Haste</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Freedom of Movement</td>
+<td>Divination, Freedom of Movement</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Insect Plague</td>
+<td>Dream, Insect Plague</td>
 </tr>
 <tr>
 <th colspan="2">Mountain</th>
@@ -150,19 +153,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Spike Growth</td>
+<td>Spider Climb, Spike Growth</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Meld Into Stone</td>
+<td>Lightning Bolt, Meld Into Stone</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Stoneskin</td>
+<td>Stone Shape, Stoneskin</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Wall of Stone</td>
+<td>Passwall, Wall of Stone</td>
 </tr>
 <tr>
 <th colspan="2">Swamp</th>
@@ -173,19 +176,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Melf's Acid Arrow</td>
+<td>Darkness, Melf's Acid Arrow</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Water Walk</td>
+<td>Stinking Cloud, Water Walk</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Locate Creature</td>
+<td>Freedom of Movement, Locate Creature</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Scrying</td>
+<td>Insect Plague, Scrying</td>
 </tr>
 <tr>
 <th colspan="2">Underdark</th>
@@ -196,19 +199,19 @@ Once you gain access to a circle spell, you always have it prepared, and it does
 </tr>
 <tr>
 <td>3rd</td>
-<td>Web</td>
+<td>Spider Climb, Web</td>
 </tr>
 <tr>
 <td>5th</td>
-<td>Stinking Cloud</td>
+<td>Gaseous Form, Stinking Cloud</td>
 </tr>
 <tr>
 <td>7th</td>
-<td>Stone Shape</td>
+<td>Greater Invisibility, Stone Shape</td>
 </tr>
 <tr>
 <td>9th</td>
-<td>Insect Plague</td>
+<td>Cloudkill, Insect Plague</td>
 </tr>
 </table>
 <h2>Land's Stride</h2>
