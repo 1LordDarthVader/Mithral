@@ -46,6 +46,8 @@
 
 <h1>Firearm Mechanics</h1>
 
+<a href="../../AdamantineFirearmGenerator.zip">Download Firearm Generator</a>
+
 <h2>Jamming</h2>
 When a 1 is rolled on the d20 when making an attack roll with a firearm, the weapon becomes jammed, and the attack misses, but ammunition for this attack is not consumed.. Unjamming a weapon requires spending an amount of time needed to fully reload its magazine as you clear the jam. Unless stated otherwise, firearms have a d4 misfire die. Jammed weapons have a misfire score, which starts at 1. When making an attack roll with a jammed weapon, roll the firearm's misfire die. If you roll equal to or lower than the firearm's current misfire score, it remains jammed. The attack is wasted and the misfire score increases by 1. If a number higher than the firearm's current misfire score is rolled, the firearm unjams itself, and the attack proceeds as normal.
 
@@ -99,7 +101,7 @@ The weight modifier only applies to the material's weight.
         <tr>
             <td>Blunderbuss / Shotgun *</td>
             <td>2d8 piercing</td>
-            <td>3x</td>
+            <td>1x</td>
             <td>Blunderbuss Shots</td>
             <td>Shotgun Shells</td>
             <td>Range 0.75x, <span class="tooltip">Two-handed<span class="tooltiptext">This weapon requires two hands when you attack with it. This property is relevant only when you attack with the weapon, not when you simply hold it.</span></span></td>
@@ -169,7 +171,7 @@ The cost modifier only applies to the material's cost.
             <td>2x</td>
             <td>Barrel Amount</td>
             <td>1 action or 2 bonus actions</td>
-            <td>Can have multiple barrel parts.</td>
+            <td>Can have multiple barrel parts. *</td>
         </tr>
         <tr>
             <td>Bolt-action</td>
@@ -213,6 +215,14 @@ The cost modifier only applies to the material's cost.
         </tr>
     </tbody>
 </table>
+
+<h4>Rifling</h4>
+
+Barrels can be rifled, meaning that small grooves are carved into their inner walls, putting a spin on the bullet and thus improving accuracy.
+
+Rifling a barrel doubles the cost, but also doubles the normal range and long range of the firearm.
+
+* All barrels must be of the same type, the cost of rifling increases proportionally, and only one barrel-end attachment is allowed
 
 <h3>Step 3: Body Material</h3>
 
@@ -344,7 +354,7 @@ Most firearms can only have a single barrel, but break-action firearms can have 
             <td>80 gp</td>
         </tr>
         <tr>
-            <td>Pole</td>
+            <td>Pole *</td>
             <td>100 ft</td>
             <td>400 ft</td>
             <td>8 lbs</td>
@@ -352,6 +362,8 @@ Most firearms can only have a single barrel, but break-action firearms can have 
         </tr>
     </tbody>
 </table>
+
+* Bayonet attacks made with a firearm that has a pole barrel gain the Reach property.
 
 <h3>Step 5: Stock</h3>
 
@@ -400,33 +412,6 @@ Most firearms can only have a single barrel, but break-action firearms can have 
 
 <h3>Attachments</h3>
 Attachments are parts that change the gun's statistics. Up to one of each type of attachment may be installed on a given firearm, unless stated otherwise. They count towards the total weight that the Body Material can support. They can be added to or removed from a firearm using Tinkers' Tools.
-
-<h4>Barrel</h4>
-
-<table>
-    <thead>
-        <tr>
-            <th>Attachment</th>
-            <th>Effect</th>
-            <th>Weight</th>
-            <th>Cost</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Rifling</td>
-            <td>2x normal range, 2x long range</td>
-            <td></td>
-            <td>3x barrel</td>
-        </tr>
-        <tr>
-            <td>Barrel of Slipperiness</td>
-            <td>This firearm cannot become jammed</td>
-            <td></td>
-            <td>820 gp</td>
-        </tr>
-    </tbody>
-</table>
 
 <h4>Barrel-Ends</h4>
 
@@ -491,6 +476,12 @@ Attachments are parts that change the gun's statistics. Up to one of each type o
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>Barrel of Slipperiness</td>
+            <td>This firearm cannot become jammed</td>
+            <td></td>
+            <td>820 gp</td>
+        </tr>
         <tr>
             <td>Straightbolt</td>
             <td>Negates loading property of 1 shot per turn, requires bolt-action</td>
@@ -619,7 +610,7 @@ Attachments are parts that change the gun's statistics. Up to one of each type o
 <h5>Bayonets</h5>
 If the total weight of the firearm, including the bayonet, would still be considered light, then the bayonet attack is considered to have the finesse property. If the barrel it is attached to is a pole barrel, the bayonet attack is considered to have the reach property.
 
-Bayonets can also be attached to crossbows.  For the purposes of bayonets, hand crossbows are considered pistols and all other crossbows are considered rifles.
+Bayonets can also be attached to crossbows.  Large bayonets cannot be attached to hand crossbows.
 
 <h3>Ammunition</h3>
 
