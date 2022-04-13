@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Adamantine - Paladin Spells</title>
+		<title>Adamantine - Ritual Spells</title>
         <link rel="icon" href="../../../adamantine.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script type="text/javascript" src="../../../data/character-creation-resources/spells.js"></script>
@@ -25,16 +25,16 @@
                                     </table>`);
 			    });
 
-			    let spell_data_0 = spell_data.filter(function (element) {return element['level'] === 0 && element['lists'].includes('Paladin');});
-			    let spell_data_1 = spell_data.filter(function (element) {return element['level'] === 1 && element['lists'].includes('Paladin');});
-			    let spell_data_2 = spell_data.filter(function (element) {return element['level'] === 2 && element['lists'].includes('Paladin');});
-			    let spell_data_3 = spell_data.filter(function (element) {return element['level'] === 3 && element['lists'].includes('Paladin');});
-			    let spell_data_4 = spell_data.filter(function (element) {return element['level'] === 4 && element['lists'].includes('Paladin');});
-			    let spell_data_5 = spell_data.filter(function (element) {return element['level'] === 5 && element['lists'].includes('Paladin');});
-			    let spell_data_6 = spell_data.filter(function (element) {return element['level'] === 6 && element['lists'].includes('Paladin');});
-			    let spell_data_7 = spell_data.filter(function (element) {return element['level'] === 7 && element['lists'].includes('Paladin');});
-			    let spell_data_8 = spell_data.filter(function (element) {return element['level'] === 8 && element['lists'].includes('Paladin');});
-			    let spell_data_9 = spell_data.filter(function (element) {return element['level'] === 9 && element['lists'].includes('Paladin');});
+			    let spell_data_0 = spell_data.filter(function (element) {return element['level'] === 0 && element['ritual'];});
+			    let spell_data_1 = spell_data.filter(function (element) {return element['level'] === 1 && element['ritual'];});
+			    let spell_data_2 = spell_data.filter(function (element) {return element['level'] === 2 && element['ritual'];});
+			    let spell_data_3 = spell_data.filter(function (element) {return element['level'] === 3 && element['ritual'];});
+			    let spell_data_4 = spell_data.filter(function (element) {return element['level'] === 4 && element['ritual'];});
+			    let spell_data_5 = spell_data.filter(function (element) {return element['level'] === 5 && element['ritual'];});
+			    let spell_data_6 = spell_data.filter(function (element) {return element['level'] === 6 && element['ritual'];});
+			    let spell_data_7 = spell_data.filter(function (element) {return element['level'] === 7 && element['ritual'];});
+			    let spell_data_8 = spell_data.filter(function (element) {return element['level'] === 8 && element['ritual'];});
+			    let spell_data_9 = spell_data.filter(function (element) {return element['level'] === 9 && element['ritual'];});
 
 				let table = $('#spell_0_table').DataTable({
 				    data: spell_data_0,
@@ -232,21 +232,31 @@
         </style>
 	</head>
 	<body onload="load_spells();">
-    <a class="breadcrumb" href="../../../index.html">Home</a> > <a class="breadcrumb" href="../../index.html">Character Creation Resources</a> > <a class="breadcrumb" href="../spell-list.html">Spells</a> > Paladin Spells
+    <a class="breadcrumb" href="../../../index.html">Home</a> > <a class="breadcrumb" href="../../index.html">Character Creation Resources</a> > <a class="breadcrumb" href="../spell-list.html">Spells</a> > Ritual Spells
 
-		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Paladin Spells</h1>
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Ritual Spells</h1>
 
         <div class="tab">
-            <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'spell_1');">1st-Level</button>
+            <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'spell_0');">Cantrips</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_1');">1st-Level</button>
             <button class="tablinks" onclick="openTab(event, 'spell_2');">2nd-Level</button>
             <button class="tablinks" onclick="openTab(event, 'spell_3');">3rd-Level</button>
             <button class="tablinks" onclick="openTab(event, 'spell_4');">4th-Level</button>
             <button class="tablinks" onclick="openTab(event, 'spell_5');">5th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_6');">6th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_7');">7th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_8');">8th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_9');">9th-Level</button>
         </div>
+        <div id="spell_0" class="tabcontent"></div>
         <div id="spell_1" class="tabcontent"></div>
         <div id="spell_2" class="tabcontent"></div>
         <div id="spell_3" class="tabcontent"></div>
         <div id="spell_4" class="tabcontent"></div>
         <div id="spell_5" class="tabcontent"></div>
+        <div id="spell_6" class="tabcontent"></div>
+        <div id="spell_7" class="tabcontent"></div>
+        <div id="spell_8" class="tabcontent"></div>
+        <div id="spell_9" class="tabcontent"></div>
 	</body>
 </html>

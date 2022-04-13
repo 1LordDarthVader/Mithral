@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title></title>
+		<link rel="icon" href="../../adamantine.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script type="text/javascript" src="../../data/character-creation-resources/spells.js"></script>
 		<script>
@@ -12,6 +13,7 @@
 
 				window.document.title = "Adamantine - " + spell['name'];
 
+				$('#breadcrumb-name').html(spell['name']);
 				$('#name').html(spell['name']);
 				$('#casting-time').html(spell['casting-time']);
 				$('#range').html(spell['range']);
@@ -67,6 +69,8 @@
 		</style>
 	</head>
 	<body onload="load_spells();">
+	<a class="breadcrumb" href="../../index.html">Home</a> > <a class="breadcrumb" href="../index.html">Character Creation Resources</a> > <a href="./spell-list.html">Spells</a> > <span id="breadcrumb-name"></span>
+
 		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">spellName</h1>
 		<div id="school-level" style="font-style: italic;"></div>
 		<br>

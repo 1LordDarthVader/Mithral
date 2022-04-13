@@ -1,0 +1,262 @@
+<html>
+	<head>
+		<title>Adamantine - Divination Spells</title>
+        <link rel="icon" href="../../../adamantine.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../data/character-creation-resources/spells.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+        <script>
+		    let tables = [];
+
+			function load_spells() {
+			    $('.tabcontent').each(function () {
+			        $(this).html(`<table id="${$(this).attr('id')}_table" style="width: 100%" class="compact hover stripe row-border">
+                                        <thead>
+                                            <th>Spell</th>
+                                            <th>School</th>
+                                            <th>Casting Time</th>
+                                            <th>Range</th>
+                                            <th>Duration</th>
+                                            <th>Components</th>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>`);
+			    });
+
+			    let spell_data_0 = spell_data.filter(function (element) {return element['level'] === 0 && element['school'] === 'Divination';});
+			    let spell_data_1 = spell_data.filter(function (element) {return element['level'] === 1 && element['school'] === 'Divination';});
+			    let spell_data_2 = spell_data.filter(function (element) {return element['level'] === 2 && element['school'] === 'Divination';});
+			    let spell_data_3 = spell_data.filter(function (element) {return element['level'] === 3 && element['school'] === 'Divination';});
+			    let spell_data_4 = spell_data.filter(function (element) {return element['level'] === 4 && element['school'] === 'Divination';});
+			    let spell_data_5 = spell_data.filter(function (element) {return element['level'] === 5 && element['school'] === 'Divination';});
+			    let spell_data_6 = spell_data.filter(function (element) {return element['level'] === 6 && element['school'] === 'Divination';});
+			    let spell_data_7 = spell_data.filter(function (element) {return element['level'] === 7 && element['school'] === 'Divination';});
+			    let spell_data_8 = spell_data.filter(function (element) {return element['level'] === 8 && element['school'] === 'Divination';});
+			    let spell_data_9 = spell_data.filter(function (element) {return element['level'] === 9 && element['school'] === 'Divination';});
+
+				let table = $('#spell_0_table').DataTable({
+				    data: spell_data_0,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_1_table').DataTable({
+				    data: spell_data_1,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_2_table').DataTable({
+				    data: spell_data_2,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_3_table').DataTable({
+				    data: spell_data_3,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_4_table').DataTable({
+				    data: spell_data_4,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_5_table').DataTable({
+				    data: spell_data_5,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_6_table').DataTable({
+				    data: spell_data_6,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_7_table').DataTable({
+				    data: spell_data_7,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_8_table').DataTable({
+				    data: spell_data_8,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#spell_9_table').DataTable({
+				    data: spell_data_9,
+				    columns: [
+				        {data: 'name-linked'},
+				        {data: 'school'},
+				        {data: 'casting-time-list'},
+				        {data: 'range'},
+				        {data: 'duration'},
+				        {data: 'components-list'}
+				    ],
+				    paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				$('#tab_button_0').click();
+			}
+			function openTab(evt, spell_level) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(spell_level).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+		</script>
+        <style>
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+            }
+            .tab button {
+                background-color: #ddd;
+            }
+            .tab button.active {
+                background-color: #ccc;
+            }
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border 1px solid #ccc;
+                border-top: none;
+            }
+
+            a.breadcrumb {
+                all: revert;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+	</head>
+	<body onload="load_spells();">
+    <a class="breadcrumb" href="../../../index.html">Home</a> > <a class="breadcrumb" href="../../index.html">Character Creation Resources</a> > <a class="breadcrumb" href="../spell-list.html">Spells</a> > Divination Spells
+
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Divination Spells</h1>
+
+        <div class="tab">
+            <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'spell_0');">Cantrips</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_1');">1st-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_2');">2nd-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_3');">3rd-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_4');">4th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_5');">5th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_6');">6th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_7');">7th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_8');">8th-Level</button>
+            <button class="tablinks" onclick="openTab(event, 'spell_9');">9th-Level</button>
+        </div>
+        <div id="spell_0" class="tabcontent"></div>
+        <div id="spell_1" class="tabcontent"></div>
+        <div id="spell_2" class="tabcontent"></div>
+        <div id="spell_3" class="tabcontent"></div>
+        <div id="spell_4" class="tabcontent"></div>
+        <div id="spell_5" class="tabcontent"></div>
+        <div id="spell_6" class="tabcontent"></div>
+        <div id="spell_7" class="tabcontent"></div>
+        <div id="spell_8" class="tabcontent"></div>
+        <div id="spell_9" class="tabcontent"></div>
+	</body>
+</html>

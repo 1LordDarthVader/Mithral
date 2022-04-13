@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Adamantine - Spells</title>
+        <link rel="icon" href="../../adamantine.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script type="text/javascript" src="../../data/character-creation-resources/spells.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
@@ -8,10 +9,6 @@
 
         <script>
 		    let tables = [];
-
-		    function goto_spell(spell_id) {
-		        document.location.href = "C:/Users/Jon - Recreation/Desktop/Adamantine Wiki/character-creation-resources/spells/spell.html?spell_id=" + spell_id;
-		    }
 
 			function load_spells() {
 			    $('.tabcontent').each(function () {
@@ -221,6 +218,10 @@
                 border-top: none;
             }
 
+            a.breadcrumb {
+                all: revert;
+            }
+
             a {
                 color: black;
                 text-decoration: none;
@@ -231,6 +232,8 @@
         </style>
 	</head>
 	<body onload="load_spells();">
+        <a class="breadcrumb" href="../../index.html">Home</a> > <a class="breadcrumb" href="../index.html">Character Creation Resources</a> > Spells
+
 		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Spell List</h1>
 
         <div class="tab">
@@ -255,5 +258,46 @@
         <div id="spell_7" class="tabcontent"></div>
         <div id="spell_8" class="tabcontent"></div>
         <div id="spell_9" class="tabcontent"></div>
+
+        <div style="float: left; width: 25%">
+            <h2>Filter by Class</h2>
+            <ul>
+                <li><a class="breadcrumb" href="./classes/arcane.html">Arcane</a></li>
+                <li><a class="breadcrumb" href="./classes/artificer.html">Artificer</a></li>
+                <li><a class="breadcrumb" href="./classes/atavist.html">Atavist</a></li>
+                <li><a class="breadcrumb" href="./classes/bard.html">Bard</a></li>
+                <li><a class="breadcrumb" href="./classes/cleric.html">Cleric</a></li>
+                <li><a class="breadcrumb" href="./classes/druid.html">Druid</a></li>
+                <li><a class="breadcrumb" href="./classes/harbinger.html">Harbinger</a></li>
+                <li><a class="breadcrumb" href="./classes/keeper.html">Keeper</a></li>
+                <li><a class="breadcrumb" href="./classes/paladin.html">Paladin</a></li>
+                <li><a class="breadcrumb" href="./classes/pale-master.html">Pale Master</a></li>
+                <li><a class="breadcrumb" href="./classes/ranger.html">Ranger</a></li>
+                <li><a class="breadcrumb" href="./classes/warlock.html">Warlock</a></li>
+            </ul>
+        </div>
+        <div style="float: left; width: 25%">
+            <h2>Filter by School</h2>
+            <ul>
+                <li><a class="breadcrumb" href="./schools/abjuration.html">Abjuration</a></li>
+                <li><a class="breadcrumb" href="./schools/conjuration.html">Conjuration</a></li>
+                <li><a class="breadcrumb" href="./schools/divination.html">Divination</a></li>
+                <li><a class="breadcrumb" href="./schools/enchantment.html">Enchantment</a></li>
+                <li><a class="breadcrumb" href="./schools/evocation.html">Evocation</a></li>
+                <li><a class="breadcrumb" href="./schools/illusion.html">Illusion</a></li>
+                <li><a class="breadcrumb" href="./schools/necromancy.html">Necromancy</a></li>
+                <li><a class="breadcrumb" href="./schools/restoration.html">Restoration</a></li>
+                <li><a class="breadcrumb" href="./schools/transmutation.html">Transmutation</a></li>
+                <li><a class="breadcrumb" href="./schools/transposition.html">Transposition</a></li>
+            </ul>
+        </div>
+        <div style="float: left; width: 25%">
+            <h2>Other Filters</h2>
+            <ul>
+                <li><a class="breadcrumb" href="./other/concentration.html">Concentration</a></li>
+                <li><a class="breadcrumb" href="./other/non-concentration.html">Non-concentration</a></li>
+                <li><a class="breadcrumb" href="./other/rituals.html">Rituals</a></li>
+            </ul>
+        </div>
 	</body>
 </html>
