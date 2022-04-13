@@ -8,12 +8,16 @@ function do_auto_link() {
     let body_text = $('body').html();
     for (let i = 0; i < Object.keys(spell_reference).length; i++) {
         let key = Object.keys(spell_reference)[i];
-        if (body_text.includes(key + ' cantrip') || body_text.includes(key + ' spell') || body_text.includes(key + '</td>') || body_text.includes(key + ',')) {
+        if (body_text.includes(key + ' cantrip') || body_text.includes(key + ' spell') || body_text.includes('<td>' + key + ',') || body_text.includes(', ' + key + '</td>') || body_text.includes('<td>' + key + '</td>') || body_text.includes(', ' + key + ',')) {
             console.log(key);
             url = spell_reference[key]
             base_url = "https://jpmchatton98.github.io/adamantine/character-creation-resources/spells"
-            body_text = body_text.replace(key + '</td>', url.replace('base_url', base_url));
-            body_text = body_text.replace(key + ',', url.replace('base_url', base_url));
+
+            let regex_table = new RegExp(key + '(?=</td>)')
+            let regex_comma = new RegExp(key + '(?=,)')
+
+            body_text = body_text.replace(regex_table, url.replace('base_url', base_url));
+            body_text = body_text.replace(regex_comma, url.replace('base_url', base_url));
 
             let regex_cantrip = new RegExp(key + '(?= cantrip)');
             let regex_spell = new RegExp(key + '(?= spell)');
