@@ -54,10 +54,12 @@
 				}
 
 				for(let i = 0; i < spell['lists'].length; i++) {
-					if (i) {
-						$('#lists').append(', ');
+					if (spell['lists'][i] !== "Witch") {
+						if (i) {
+							$('#lists').append(', ');
+						}
+						$('#lists').append(spell['lists'][i]);
 					}
-					$('#lists').append(spell['lists'][i]);
 				}
 			}
 		</script>
