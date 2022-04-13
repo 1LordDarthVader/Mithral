@@ -10,7 +10,7 @@ function do_auto_link() {
     let body_text = $('body').html();
     for (let i = 0; i < spell_reference.keys().length; i++) {
         let key = spell_reference.keys()[i]
-        if (body_text.includes(key) {
+        if (body_text.includes(key)) {
             url = spell_reference[key]
             base_url = "https://https://jpmchatton98.github.io/adamantine/character-creation-resources/spells/"
             body_text.replace(key, url.replace('base_url', base_url));
