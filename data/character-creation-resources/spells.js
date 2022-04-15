@@ -1,3 +1,7 @@
+/*
+IF YOU ADD A NEW SPELL, ADD IT TO THE END OF THE LIST OR IT'LL BREAK EVERYTHING
+*/
+
 const spell_data = [
   {
     'spell-index': 0,
