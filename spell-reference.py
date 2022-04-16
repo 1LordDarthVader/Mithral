@@ -3,17 +3,23 @@ spell_reference = {"Abi-Dalzim's Horrid Wilting": "<a href=\"base_url/spell.html
 spell_reference = dict((k.lower(), v) for k, v in spell_reference.items())
 
 while True:
-    spell_name = input('Spell name: ')
-    if spell_name.lower() in spell_reference.keys():
-        while True:
-            page_type = input('Class or subclass: ')
-            if page_type.lower() == 'c':
-                print(spell_reference[spell_name].replace('base_url', '../../spells'))
-                break
-            elif page_type.lower() == 's':
-                print(spell_reference[spell_name].replace('base_url', '../../../spells'))
-                break
-            else:
-                print('Invalid selection')
+    page_type = input('Class or subclass: ')
+    if page_type.lower() == 'c':
+        pass
+    elif page_type.lower() == 's':
+        pass
     else:
-        print('Invalid spell')
+        print('Invalid selection')
+
+    while True:
+        spell_name = input('Spell name: ')
+        if spell_name.lower() in spell_reference.keys():
+            if page_type.lower() == 's':
+                print(spell_reference[spell_name].replace('base_url', '../../../spells'))
+            elif page_type.lower() == 'c':
+                print(spell_reference[spell_name].replace('base_url', '../../spells'))
+        elif spell_name.lower() == 'q':
+            break
+        else:
+            print('Invalid spell')
+    break

@@ -25,16 +25,21 @@
                                     </table>`);
 			    });
 
-			    let spell_data_0 = spell_data.filter(function (element) {return element['level'] === 0 && element['school'] === 'Transmutation';});
-			    let spell_data_1 = spell_data.filter(function (element) {return element['level'] === 1 && element['school'] === 'Transmutation';});
-			    let spell_data_2 = spell_data.filter(function (element) {return element['level'] === 2 && element['school'] === 'Transmutation';});
-			    let spell_data_3 = spell_data.filter(function (element) {return element['level'] === 3 && element['school'] === 'Transmutation';});
-			    let spell_data_4 = spell_data.filter(function (element) {return element['level'] === 4 && element['school'] === 'Transmutation';});
-			    let spell_data_5 = spell_data.filter(function (element) {return element['level'] === 5 && element['school'] === 'Transmutation';});
-			    let spell_data_6 = spell_data.filter(function (element) {return element['level'] === 6 && element['school'] === 'Transmutation';});
-			    let spell_data_7 = spell_data.filter(function (element) {return element['level'] === 7 && element['school'] === 'Transmutation';});
-			    let spell_data_8 = spell_data.filter(function (element) {return element['level'] === 8 && element['school'] === 'Transmutation';});
-			    let spell_data_9 = spell_data.filter(function (element) {return element['level'] === 9 && element['school'] === 'Transmutation';});
+			    let local_data = spell_data.filter(function (element) {return true;});
+			    for (let i = 0; i < local_data.length; i++) {
+			        local_data[i]['name-linked'] = local_data[i]['name-linked'].replace('./', '../');
+			    }
+
+			    let spell_data_0 = local_data.filter(function (element) {return element['level'] === 0 && element['school'] === 'Transmutation';});
+			    let spell_data_1 = local_data.filter(function (element) {return element['level'] === 1 && element['school'] === 'Transmutation';});
+			    let spell_data_2 = local_data.filter(function (element) {return element['level'] === 2 && element['school'] === 'Transmutation';});
+			    let spell_data_3 = local_data.filter(function (element) {return element['level'] === 3 && element['school'] === 'Transmutation';});
+			    let spell_data_4 = local_data.filter(function (element) {return element['level'] === 4 && element['school'] === 'Transmutation';});
+			    let spell_data_5 = local_data.filter(function (element) {return element['level'] === 5 && element['school'] === 'Transmutation';});
+			    let spell_data_6 = local_data.filter(function (element) {return element['level'] === 6 && element['school'] === 'Transmutation';});
+			    let spell_data_7 = local_data.filter(function (element) {return element['level'] === 7 && element['school'] === 'Transmutation';});
+			    let spell_data_8 = local_data.filter(function (element) {return element['level'] === 8 && element['school'] === 'Transmutation';});
+			    let spell_data_9 = local_data.filter(function (element) {return element['level'] === 9 && element['school'] === 'Transmutation';});
 
 				let table = $('#spell_0_table').DataTable({
 				    data: spell_data_0,
