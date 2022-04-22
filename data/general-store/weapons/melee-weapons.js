@@ -4,7 +4,7 @@ const melee_weapon_data = [
     'name': 'Bastard Sword',
     'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=0>Bastard Sword</a>',
     'description': 'A large sword that is a cross between a longsword and a greatsword.',
-    'damage': '1d10',
+    'damage': '2d5',
     'damage-types': 'Slashing',
     'cost': 20,
     'weight': 7.0,
@@ -54,6 +54,26 @@ const melee_weapon_data = [
         'description': 'You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack.'
     }],
     'type': 1
+},
+{
+    'weapon-index': 89,
+    'name': 'Bearded Axe',
+    'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=89>Bearded Axe</a>',
+    'description': 'A large, heavy axe with a tall head',
+    'damage': '1d10',
+    'damage-types': 'Slashing',
+    'cost': 20,
+    'weight': 7,
+    'properties': [
+    {
+        'name': 'Heavy',
+        'description': 'Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.'
+    },
+    {
+        'name': 'Special',
+        'description': 'A bearded axe can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand.'
+    }],
+    'type': 2
 },
 {
     'weapon-index': 3,
@@ -1124,6 +1144,26 @@ const melee_weapon_data = [
     'type': 1
 },
 {
+    'weapon-index': 91,
+    'name': 'Longpick',
+    'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=91>Longpick</a>',
+    'description': 'A topheavy pickaxe with an overly long head',
+    'damage': '2d5',
+    'damage-types': 'Piercing',
+    'cost': 20,
+    'weight': 7,
+    'properties': [
+    {
+        'name': 'Heavy',
+        'description': 'Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.'
+    },
+    {
+        'name': 'Special',
+        'description': 'A longpick can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand.'
+    }],
+    'type': 2
+},
+{
     'weapon-index': 50,
     'name': 'Longspear',
     'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=50>Longspear</a>',
@@ -1480,6 +1520,26 @@ const melee_weapon_data = [
     'type': 1
 },
 {
+    'weapon-index': 90,
+    'name': 'Quad Spear',
+    'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=90>Quad Spear</a>',
+    'description': 'A heavy spear, with four heads set at an angle',
+    'damage': '1d10',
+    'damage-types': 'Piercing',
+    'cost': 20,
+    'weight': 7,
+    'properties': [
+    {
+        'name': 'Heavy',
+        'description': 'Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.'
+    },
+    {
+        'name': 'Special',
+        'description': 'A quad spear can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand.'
+    }],
+    'type': 2
+},
+{
     'weapon-index': 67,
     'name': 'Quarterstaff',
     'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=67>Quarterstaff</a>',
@@ -1716,6 +1776,26 @@ const melee_weapon_data = [
     'type': 2
 },
 {
+    'weapon-index': 92,
+    'name': 'Springflail',
+    'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=92>Springflail</a>',
+    'description': 'A heavy and spring-loaded flail',
+    'damage': '1d10',
+    'damage-types': 'Bludgeoning',
+    'cost': 20,
+    'weight': 7,
+    'properties': [
+    {
+        'name': 'Heavy',
+        'description': 'Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.'
+    },
+    {
+        'name': 'Special',
+        'description': 'A springflail can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand.'
+    }],
+    'type': 2
+},
+{
     'weapon-index': 79,
     'name': 'Stake',
     'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=80>Stake</a>',
@@ -1890,6 +1970,26 @@ const melee_weapon_data = [
         'description': 'You can use one or two hands to attack with this weapon. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack.'
     }],
     'type': 1
+},
+{
+    'weapon-index': 93,
+    'name': 'War Mallet',
+    'name-linked': '<a class="weapon" href=../weapons/melee-weapon.html?weapon_id=93>War Mallet</a>',
+    'description': 'An oversized warhammer that is difficult to use',
+    'damage': '2d5',
+    'damage-types': 'Bludgeoning',
+    'cost': 20,
+    'weight': 7,
+    'properties': [
+    {
+        'name': 'Heavy',
+        'description': 'Small creatures suffer disadvantage on attack rolls with the weapon. Tiny creatures cannot use them.'
+    },
+    {
+        'name': 'Special',
+        'description': 'A war mallet can be used in two hands as a martial weapon, but requires exotic proficiency to use in one hand.'
+    }],
+    'type': 2
 },
 {
     'weapon-index': 88,
