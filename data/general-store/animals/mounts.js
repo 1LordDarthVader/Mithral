@@ -50,7 +50,7 @@ const mount_data = [
     "size": 2,
     "speed": 60,
     "weight": 500,
-    "carry-capacity": 480
+    "carry-capacity": 480,
     "description": "A distant relative of dragons raised from eggs to be used as mounts."
  },
  {
