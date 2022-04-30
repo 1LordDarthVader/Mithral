@@ -44,7 +44,7 @@ const armor_data = [
    "type": 0
  },
  {
-   "name": "Outlaw's Duster, leather",
+   "name": "Outlaw&apos;s Duster, leather",
    "cost": 150,
    "armor-class": 11,
    "max-dex": null,
@@ -77,7 +77,7 @@ const armor_data = [
    "type": 0
  },
  {
-   "name": "Outlaw's Duster, armorweave",
+   "name": "Outlaw&apos;s Duster, armorweave",
    "cost": 350,
    "armor-class": 12,
    "max-dex": null,
@@ -106,7 +106,7 @@ const armor_data = [
    "str-req": null,
    "stealth": "",
    "weight": 20,
-   "description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
+   "description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer&apos;s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
    "type": 1
  },
  {
@@ -139,7 +139,7 @@ const armor_data = [
    "str-req": null,
    "stealth": "",
    "weight": 20,
-   "description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.",
+   "description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer&apos;s vital organs while leaving the wearer relatively unencumbered.",
    "type": 1
  },
  {
@@ -150,7 +150,7 @@ const armor_data = [
    "str-req": null,
    "stealth": "Disadvantage",
    "weight": 40,
-   "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.",
+   "description": "Half plate consists of shaped metal plates that cover most of the wearer&apos;s body. It does not include leg protection beyond simple greaves that are attached with leather straps.",
    "type": 1
  },
  {
@@ -161,7 +161,7 @@ const armor_data = [
    "str-req": null,
    "stealth": "",
    "weight": 40,
-   "description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.",
+   "description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it&apos;s usually worn only by those who can't afford better armor.",
    "type": 2
  },
  {
@@ -227,7 +227,7 @@ const armor_data = [
    "str-req": 20,
    "stealth": "(special)",
    "weight": 85,
-   "description": "Fortress plate, sometimes also called stoneplate, is extraordinarily heavy armor. No part of a wearer's body is left unprotected, and they are not so much wearing the armor as they are vaguely located inside of it.",
+   "description": "Fortress plate, sometimes also called stoneplate, is extraordinarily heavy armor. No part of a wearer&apos;s body is left unprotected, and they are not so much wearing the armor as they are vaguely located inside of it.",
    "type": 2
  }
 ];

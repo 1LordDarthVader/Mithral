@@ -5,8 +5,8 @@ IF YOU ADD A NEW SPELL, ADD IT TO THE END OF THE LIST OR IT'LL BREAK EVERYTHING
 const spell_data = [
   {
     'spell-index': 0,
-    'name': "Abi-Dalzim's Horrid Wilting",
-    'name-linked': "<a href=./spell.html?spell_id=0>Abi-Dalzim's Horrid Wilting</a>",
+    'name': "Abi-Dalzim&apos;s Horrid Wilting",
+    'name-linked': "<a href=./spell.html?spell_id=0>Abi-Dalzim&apos;s Horrid Wilting</a>",
     'school': 'Necromancy',
     'level': 8,
     'casting-time': '1 action',
@@ -103,7 +103,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>Acid rain begins falling within a 40-foot-radius 60-foot-high cylinder centered on a point you choose within range. When a creature moves into the spell's area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 6d4 acid damage, and become covered in acid. On a successful save, a creature takes half the initial damage and is not covered in acid.</p>\n<p>A creature takes 3d4 acid damage if it ends its turn while covered with acid. The target or a creature within 5 feet of it can end this damage by using its action to clear away the acid.</p>",
+    'description': "<p>Acid rain begins falling within a 40-foot-radius 60-foot-high cylinder centered on a point you choose within range. When a creature moves into the spell&apos;s area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 6d4 acid damage, and become covered in acid. On a successful save, a creature takes half the initial damage and is not covered in acid.</p>\n<p>A creature takes 3d4 acid damage if it ends its turn while covered with acid. The target or a creature within 5 feet of it can end this damage by using its action to clear away the acid.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -262,14 +262,14 @@ const spell_data = [
   },
   {
     'spell-index': 12,
-    'name': "Aganazzar's Scorcher",
-    'name-linked': "<a href=./spell.html?spell_id=12>Aganazzar's Scorcher</a>",
+    'name': "Aganazzar&apos;s Scorcher",
+    'name-linked': "<a href=./spell.html?spell_id=12>Aganazzar&apos;s Scorcher</a>",
     'school': 'Evocation',
     'level': 2,
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': '30 feet',
-    'components': 'V, S, M (a red dragon's scale)',
+    'components': 'V, S, M (a red dragon&apos;s scale)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.</p>',
@@ -318,7 +318,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': '1 hour',
-    'description': "<p>For the duration, you gain the ability to read non-magical texts at a rate of 50 pages per minute and have perfect recollection of any information gained during the spell's duration.</p>",
+    'description': "<p>For the duration, you gain the ability to read non-magical texts at a rate of 50 pages per minute and have perfect recollection of any information gained during the spell&apos;s duration.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -429,7 +429,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You touch a creature with at least 1 hit point, transforming it into a gray ooze. An unwilling creature can make a Wisdom saving throw to avoid the effect.</p>\n<p>The transformation lasts for the duration, until the target drops to 0 Hit Points, or dies. The target's game Statistics, including mental Ability Scores, are replaced by the Statistics of a gray ooze. It retains its Alignment and personality.</p>\n<p>The target assumes the Hit Points of its new form. When it reverts to its normal form, the creature returns to the number of Hit Points it had before it transformed. If it reverts as a result of dropping to 0 Hit Points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 Hit Points, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>\n<p>The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>",
+    'description': "<p>You touch a creature with at least 1 hit point, transforming it into a gray ooze. An unwilling creature can make a Wisdom saving throw to avoid the effect.</p>\n<p>The transformation lasts for the duration, until the target drops to 0 Hit Points, or dies. The target&apos;s game Statistics, including mental Ability Scores, are replaced by the Statistics of a gray ooze. It retains its Alignment and personality.</p>\n<p>The target assumes the Hit Points of its new form. When it reverts to its normal form, the creature returns to the number of Hit Points it had before it transformed. If it reverts as a result of dropping to 0 Hit Points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature&apos;s normal form to 0 Hit Points, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>\n<p>The target&apos;s gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -471,7 +471,7 @@ const spell_data = [
     'components': 'V, S, M (1 ounce of blood)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You are able to learn a number of qualities from one ounce of fresh blood, as long as it is not more than 24 hours old. Roll a d4 and choose a number of qualities to learn from the list below, equal to the die score:</p>\n<ul>\n<li>Learn the creature's type</li>\n<li>Learn the creature's age (if applicable)</li>\n<li>Learn the creature's gender (if applicable)</li>\n<li>Learn if the blood carries any traces of poison or disease</li>\n<li>Learn if the creature is within 20 miles of your location</li>\n<li>Learn if the creature is still on your plane of existence</li>\n</ul>\n<p>If you cast this spell using a spell slot, in addition to the information learned above, you will also see a brief glimpse of the moment right before the creature shed blood, from its perspective.</p>",
+    'description': "<p>You are able to learn a number of qualities from one ounce of fresh blood, as long as it is not more than 24 hours old. Roll a d4 and choose a number of qualities to learn from the list below, equal to the die score:</p>\n<ul>\n<li>Learn the creature&apos;s type</li>\n<li>Learn the creature&apos;s age (if applicable)</li>\n<li>Learn the creature&apos;s gender (if applicable)</li>\n<li>Learn if the blood carries any traces of poison or disease</li>\n<li>Learn if the creature is within 20 miles of your location</li>\n<li>Learn if the creature is still on your plane of existence</li>\n</ul>\n<p>If you cast this spell using a spell slot, in addition to the information learned above, you will also see a brief glimpse of the moment right before the creature shed blood, from its perspective.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -673,7 +673,7 @@ const spell_data = [
     'components': 'V, S, M (a pinch of salt)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>This spell creates an undead servant. Choose a corpse of a Medium or Small humanoid within range. Your spell pulls forth dark remnants from creature's cold remains, raising it as a shadow (the DM has the creature&#8217;s game statistics).</p>\n<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>\n<p>The creature is under your control for 24 hours, after which it stops obeying any command you&#8217;ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to two creatures you have animated with this spell, rather than animating a new one.</p>",
+    'description': "<p>This spell creates an undead servant. Choose a corpse of a Medium or Small humanoid within range. Your spell pulls forth dark remnants from creature&apos;s cold remains, raising it as a shadow (the DM has the creature&#8217;s game statistics).</p>\n<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>\n<p>The creature is under your control for 24 hours, after which it stops obeying any command you&#8217;ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to two creatures you have animated with this spell, rather than animating a new one.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 6th level or higher, you animate or reassert control over an additional shadow for every slot level above 5th. Each shadow must come from a different corpse.</p>',
     'lists': [
       'Pale Master',
@@ -821,7 +821,7 @@ const spell_data = [
     'components': 'V, S, M (hacking tools)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You gain advantage on all Intelligence checks using hacking tools to break software encryption or online security when using a foreign system, or to interact with a construct's inner workings.</p>\n<p>This spell also allows you to break 2nd level and lower protective spells such as Arcane Lock or Glyph of Warding by making an Intelligence check using hacking tools against the spell save DC of the spell&#8217;s caster.</p>",
+    'description': "<p>You gain advantage on all Intelligence checks using hacking tools to break software encryption or online security when using a foreign system, or to interact with a construct&apos;s inner workings.</p>\n<p>This spell also allows you to break 2nd level and lower protective spells such as Arcane Lock or Glyph of Warding by making an Intelligence check using hacking tools against the spell save DC of the spell&#8217;s caster.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, you can attempt to counteract a spell set to secure the foreign system if the spell&#8217;s level is equal to or less than the level of the spell slot you used.</p>',
     'lists': [
       'Artificer'
@@ -1027,7 +1027,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>A flame-like radiance burns a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d6 radiant damage, granting you half of the damage dealt as temporary hit points. The target gains no benefit from cover for this saving throw.</p>',
-    'higher-levels': "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+    'higher-levels': "The spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
     'lists': [
       'Cleric',
       'Elemental'
@@ -1036,8 +1036,8 @@ const spell_data = [
   },
   {
     'spell-index': 48,
-    'name': "Ashardalon's Stride",
-    'name-linked': "<a href=./spell.html?spell_id=48>Ashardalon's Stride</a>",
+    'name': "Ashardalon&apos;s Stride",
+    'name-linked': "<a href=./spell.html?spell_id=48>Ashardalon&apos;s Stride</a>",
     'school': 'Transmutation',
     'level': 3,
     'casting-time': '1 bonus action',
@@ -1059,8 +1059,8 @@ const spell_data = [
   },
   {
     'spell-index': 49,
-    'name': "Asmodeous' Eternal Suffering",
-    'name-linked': "<a href=./spell.html?spell_id=49>Asmodeous' Eternal Suffering</a>",
+    'name': "Asmodeous&apos; Eternal Suffering",
+    'name-linked': "<a href=./spell.html?spell_id=49>Asmodeous&apos; Eternal Suffering</a>",
     'school': 'Evocation',
     'level': 9,
     'casting-time': '1 action',
@@ -1069,7 +1069,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Special',
-    'description': "<p>You call upon the Supreme Master of the Nine Hells to mark an unfortunate soul for unending torment. Make a ranged spell against a target you can see within range. On a hit, the target takes 12d8 fire damage and the symbol of Asmodeus is branded into their forehead for 1 minute. The creature takes 6d8 fire damage each time takes an action while it is branded in this manner.</p>\n<p>If a creature is killed while under the effects of this spell, its soul becomes eternally damned. At the start of your next turn, the creature's soul rises as a shadow demon that is under your control for 24 hours, after which it stops obeying any command you've given it.</p>\n<p>Any creature who is killed by this spell can be restored to life only by means of a wish spell if the shadow demon has been slain.</p>",
+    'description': "<p>You call upon the Supreme Master of the Nine Hells to mark an unfortunate soul for unending torment. Make a ranged spell against a target you can see within range. On a hit, the target takes 12d8 fire damage and the symbol of Asmodeus is branded into their forehead for 1 minute. The creature takes 6d8 fire damage each time takes an action while it is branded in this manner.</p>\n<p>If a creature is killed while under the effects of this spell, its soul becomes eternally damned. At the start of your next turn, the creature&apos;s soul rises as a shadow demon that is under your control for 24 hours, after which it stops obeying any command you've given it.</p>\n<p>Any creature who is killed by this spell can be restored to life only by means of a wish spell if the shadow demon has been slain.</p>",
     'higher-levels': '',
     'lists': [
       'Warlock'
@@ -1215,7 +1215,7 @@ const spell_data = [
     'components': 'V, M (a feather)',
     'components-list': 'V, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>A gust of wind begins to swirl around a place on the ground that you can see within range, culminating in power. After a brief moment, a wind geyser 10 feet diameter and up to 60 feet tall abruptly shoots into the air. Any medium or smaller creature that steps into the geyser or is in its space when the geyser is created must make a Dexterity saving throw or be lifted into the air to the geyser's peak. Large creatures make their Dexterity save with advantage, and Huge or larger creatures are unaffected.</p>",
+    'description': "<p>A gust of wind begins to swirl around a place on the ground that you can see within range, culminating in power. After a brief moment, a wind geyser 10 feet diameter and up to 60 feet tall abruptly shoots into the air. Any medium or smaller creature that steps into the geyser or is in its space when the geyser is created must make a Dexterity saving throw or be lifted into the air to the geyser&apos;s peak. Large creatures make their Dexterity save with advantage, and Huge or larger creatures are unaffected.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -1346,8 +1346,8 @@ const spell_data = [
   },
   {
     'spell-index': 62,
-    'name': "Banshee's Grievance",
-    'name-linked': "<a href=./spell.html?spell_id=62>Banshee's Grievance</a>",
+    'name': "Banshee&apos;s Grievance",
+    'name-linked': "<a href=./spell.html?spell_id=62>Banshee&apos;s Grievance</a>",
     'school': 'Enchantment',
     'level': 5,
     'casting-time': '1 action',
@@ -1420,7 +1420,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 24 hours',
-    'description': "<p>You a summon fey spirit, which takes the form of a huge beetle that appears in unoccupied space that you can see within range. The beast is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions. The DM has the creatures' game statistics (stats as a Mammoth but gains 30 ft. fly speed).</p>\n<p>Up to 5 creatures of medium size or smaller can mount the beetle at a time, but it only responds to commands given by you.</p>",
+    'description': "<p>You a summon fey spirit, which takes the form of a huge beetle that appears in unoccupied space that you can see within range. The beast is considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. Roll initiative for the summoned creature, which has its own turns. It obeys any verbal commands that you issue to them (no action required by you). If you don't issue any commands, it will defend itself from hostile creatures, but otherwise take no actions. The DM has the creatures&apos; game statistics (stats as a Mammoth but gains 30 ft. fly speed).</p>\n<p>Up to 5 creatures of medium size or smaller can mount the beetle at a time, but it only responds to commands given by you.</p>",
     'higher-levels': '',
     'lists': [
       'Druid',
@@ -1652,8 +1652,8 @@ const spell_data = [
   },
   {
     'spell-index': 76,
-    'name': "Bigby's Hand",
-    'name-linked': "<a href=./spell.html?spell_id=76>Bigby's Hand</a>",
+    'name': "Bigby&apos;s Hand",
+    'name-linked': "<a href=./spell.html?spell_id=76>Bigby&apos;s Hand</a>",
     'school': 'Evocation',
     'level': 5,
     'casting-time': '1 action',
@@ -1672,8 +1672,8 @@ const spell_data = [
   },
   {
     'spell-index': 77,
-    'name': "Bixmodeus' Binding of Peruding Possession",
-    'name-linked': "<a href=./spell.html?spell_id=77>Bixmodeus' Binding of Peruding Possession</a>",
+    'name': "Bixmodeus&apos; Binding of Peruding Possession",
+    'name-linked': "<a href=./spell.html?spell_id=77>Bixmodeus&apos; Binding of Peruding Possession</a>",
     'school': 'Abjuration',
     'level': 9,
     'casting-time': '1 hour',
@@ -1682,7 +1682,7 @@ const spell_data = [
     'components': 'V, S, M (an item to serve as a receptacle, made of materials worth at least 1,000gp per Hit Die of the target)',
     'components-list': 'V, S, M ',
     'duration': 'Special',
-    'description': "<p>You embed the soul and personality of a willing target into an item. While affected by this spell, the target doesn't need to breathe, eat, or drink, and it doesn't age or die. It retains its senses. Divination spells can't locate or perceive the target.</p>\n<p>The target's perception of the vessel may vary and is chosen by the caster as they form a mental image of the target's place of voluntary imprisonment. The target will be able to verbally communicate with creatures outside of the vessel, and to communicate telepathically with creatures attuned to the item. While within the vessel, the target may summon any mundane items they desire.</p>\n<p>The item used as a vessel gains a magical aura about it and is inured to wear and damage. It also has advantage on saving throws against spells and other magical effects, and resistant to damage originating from such. The item uses the statistics of the bound creature for saving throws, and the maximum value of the bound creature's Hit Dice (including its Constitution modifier) for determining the item's HP. Its AC is 25, and any damage to it is repaired at a rate of 5 HP per round.</p>\n<p><strong><em>Ending the Spell.</em></strong> The spell may be ended through a ceremonial ritual where diamonds worth at least 500gp per Hit Die of the bound target are fired in a brazier for 24 hours, stoked and fueled with rare herbs native to the target's place of birth. The item must be laid upon the diamonds for the duration of the ceremony, and the true name of the target chanted at its zenith. Performing this ritual will expunge the target's soul from the item, releasing it to its expected destination upon death, and destroying the possessed item along with all resources used in the ritual.</p>\n<p>A Dispel Magic spell can end the spell only if it is cast as a 9th-level spell, targeting the item.</p>",
+    'description': "<p>You embed the soul and personality of a willing target into an item. While affected by this spell, the target doesn't need to breathe, eat, or drink, and it doesn't age or die. It retains its senses. Divination spells can't locate or perceive the target.</p>\n<p>The target&apos;s perception of the vessel may vary and is chosen by the caster as they form a mental image of the target&apos;s place of voluntary imprisonment. The target will be able to verbally communicate with creatures outside of the vessel, and to communicate telepathically with creatures attuned to the item. While within the vessel, the target may summon any mundane items they desire.</p>\n<p>The item used as a vessel gains a magical aura about it and is inured to wear and damage. It also has advantage on saving throws against spells and other magical effects, and resistant to damage originating from such. The item uses the statistics of the bound creature for saving throws, and the maximum value of the bound creature&apos;s Hit Dice (including its Constitution modifier) for determining the item&apos;s HP. Its AC is 25, and any damage to it is repaired at a rate of 5 HP per round.</p>\n<p><strong><em>Ending the Spell.</em></strong> The spell may be ended through a ceremonial ritual where diamonds worth at least 500gp per Hit Die of the bound target are fired in a brazier for 24 hours, stoked and fueled with rare herbs native to the target&apos;s place of birth. The item must be laid upon the diamonds for the duration of the ceremony, and the true name of the target chanted at its zenith. Performing this ritual will expunge the target&apos;s soul from the item, releasing it to its expected destination upon death, and destroying the possessed item along with all resources used in the ritual.</p>\n<p>A Dispel Magic spell can end the spell only if it is cast as a 9th-level spell, targeting the item.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -1767,7 +1767,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You utter a phrase so baneful that it pains those who hear it, possibly even killing them. Choose any number of creatures you can see within range. Each creature that can hear you must make a Consitution saving throw. On a failed save, a creature takes 3d10 psychic damage when the spell is cast, and then again at the start of each of its turn for the duration. Additionally, it suffers an effect based on its current hit points:</p>\n<ul>\n<li>90 hit points or less: incapacitated for the duration</li>\n<li>70 hit points or less: stunned for the duration</li>\n<li>50 hit points or less: paralyzed for the duration</li>\n<li>30 hit points or less: killed instantly</li>\n</ul>\n<p>At any point during the spell's duration, if an affected creature's current hit points are reduced to a point that would cause it to suffer a different effect, the creature must make a Constitution saving throw. On a failed save, the creature suffers the new effect. On a success, the spell ends for that creature.</p>\n<p>Any creature who is killed by this spell can be restored to life only by means of a True Resurrection or a Wish spell.</p>",
+    'description': "<p>You utter a phrase so baneful that it pains those who hear it, possibly even killing them. Choose any number of creatures you can see within range. Each creature that can hear you must make a Consitution saving throw. On a failed save, a creature takes 3d10 psychic damage when the spell is cast, and then again at the start of each of its turn for the duration. Additionally, it suffers an effect based on its current hit points:</p>\n<ul>\n<li>90 hit points or less: incapacitated for the duration</li>\n<li>70 hit points or less: stunned for the duration</li>\n<li>50 hit points or less: paralyzed for the duration</li>\n<li>30 hit points or less: killed instantly</li>\n</ul>\n<p>At any point during the spell&apos;s duration, if an affected creature&apos;s current hit points are reduced to a point that would cause it to suffer a different effect, the creature must make a Constitution saving throw. On a failed save, the creature suffers the new effect. On a success, the spell ends for that creature.</p>\n<p>Any creature who is killed by this spell can be restored to life only by means of a True Resurrection or a Wish spell.</p>",
     'higher-levels': '',
     'lists': [
       'Cleric',
@@ -1940,7 +1940,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>You touch a creature with the tip of your finger and attempt to siphon their life force to strengthen your own. Make a melee spell attack against a target, with a successful attack dealing 1d4 necrotic damage and granting you half of the damage dealt as temporary hit points.</p>',
-    'higher-levels': "The spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
+    'higher-levels': "The spell&apos;s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
     'lists': [
       'Arcane',
       'Pale Master',
@@ -2111,7 +2111,7 @@ const spell_data = [
     'components': 'V, S, M (a book worth at least 25 gp)',
     'components-list': 'V, S, M ',
     'duration': '1 hour',
-    'description': "<p>You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell's duration, you have proficiency in the chosen skill. The spell ends early if you cast it again.</p>",
+    'description': "<p>You draw on knowledge from spirits of the past. Choose one skill in which you lack proficiency. For the spell&apos;s duration, you have proficiency in the chosen skill. The spell ends early if you cast it again.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -2132,7 +2132,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You open a rift and are able to reach through to borrow idle time from your future self. Once per round for 1d6+4 rounds, you may take an additional action or bonus action at the end of another creature's turn. Acting in this manner consumes your reaction. At any point for the duration, if you lose your concentration, you become stunned for a number of rounds equal to the initial roll of 1d6.</p>",
+    'description': "<p>You open a rift and are able to reach through to borrow idle time from your future self. Once per round for 1d6+4 rounds, you may take an additional action or bonus action at the end of another creature&apos;s turn. Acting in this manner consumes your reaction. At any point for the duration, if you lose your concentration, you become stunned for a number of rounds equal to the initial roll of 1d6.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -2154,7 +2154,7 @@ const spell_data = [
     'components': 'V, S, M (black sapphire dust worth 100 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': '10 days',
-    'description': "<p>You touch a creature that is unconscious and cause ethereal chains to bind the creature's hands. If the target regains consciousness, it must succeed on a Wisdom saving throw at disadvantage or become charmed by you for the duration. While bound into your servitude in this manner, the target must obey your verbal commands to the best of its ability as your servant. The target will not willingly hurt itself. If you command the target to perform an action strongly opposed by its core values, or you or your companions take an action harmful to it, your DM might allow the creature to make another Wisdom saving throw to break its shackles and end this effect.</p>\n<p>When the spell ends, the creature is no longer bound to you as a servant and has full knowledge of the tasks you made it perform. A Remove Curse, Greater Restoration, or Wish spell also ends it.</p>",
+    'description': "<p>You touch a creature that is unconscious and cause ethereal chains to bind the creature&apos;s hands. If the target regains consciousness, it must succeed on a Wisdom saving throw at disadvantage or become charmed by you for the duration. While bound into your servitude in this manner, the target must obey your verbal commands to the best of its ability as your servant. The target will not willingly hurt itself. If you command the target to perform an action strongly opposed by its core values, or you or your companions take an action harmful to it, your DM might allow the creature to make another Wisdom saving throw to break its shackles and end this effect.</p>\n<p>When the spell ends, the creature is no longer bound to you as a servant and has full knowledge of the tasks you made it perform. A Remove Curse, Greater Restoration, or Wish spell also ends it.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -2452,11 +2452,11 @@ const spell_data = [
     'casting-time': '1 hour',
     'casting-time-list': '1 hour',
     'range': 'Self',
-    'components': "V, S, M (1 ounce of vampire's blood, which the spell consumes, and a chalice worth 2,500 gp)",
+    'components': "V, S, M (1 ounce of vampire&apos;s blood, which the spell consumes, and a chalice worth 2,500 gp)",
     'components-list': 'V, S, M ',
     'duration': 'Up to 24 hours',
-    'description': "<p>You assume the form of a vampire until the next dawn, or the spell's duration, whichever happens first. You transform into an average vampire, one without any class levels or the Spellcasting trait.</p>\n<p>Your game statistics are replaced by the statistics of a vampire, though you retain your alignment and Intelligence, Wisdom, and Charisma scores if they are greater. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of a vampire. If the vampire has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the vampire's bonus in place of yours. You cannot use its Legendary Resistance or its legendary actions in the new form. As a vampire, you do not age.</p>\n<p>You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious. You retain the benefit of any features from your class, race, or other source and can use them, provided that your vampiric form is physically capable of doing so. You can speak all of the languages you knew before the transformation.</p>\n<p>When you transform, you choose whether your equipment falls to the ground or is worn by your new form. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the vampire's shape and size compared to those of your original form. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must fall to the ground. During this spell's duration, you cannot end the spell prematurely.</p>\n<p>You can assume your vampiric form permanently by casting this spell and drinking from the same chalice every day for 10 days. During the night of the 10th consecutive casting of this spell, you must feed on blood from a living humanoid creature to complete your transformation.</p>",
-    'higher-levels': "When you cast this spell using a spell slot of 9th level, you gain one use of the vampire's Legendary Resistance per day. To gain this effect permanently by casting this spell and drinking from the same chalice every day for 10 days, each casting must be done using a 9th level spell slot.</p>",
+    'description': "<p>You assume the form of a vampire until the next dawn, or the spell&apos;s duration, whichever happens first. You transform into an average vampire, one without any class levels or the Spellcasting trait.</p>\n<p>Your game statistics are replaced by the statistics of a vampire, though you retain your alignment and Intelligence, Wisdom, and Charisma scores if they are greater. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of a vampire. If the vampire has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the vampire&apos;s bonus in place of yours. You cannot use its Legendary Resistance or its legendary actions in the new form. As a vampire, you do not age.</p>\n<p>You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious. You retain the benefit of any features from your class, race, or other source and can use them, provided that your vampiric form is physically capable of doing so. You can speak all of the languages you knew before the transformation.</p>\n<p>When you transform, you choose whether your equipment falls to the ground or is worn by your new form. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the vampire&apos;s shape and size compared to those of your original form. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must fall to the ground. During this spell&apos;s duration, you cannot end the spell prematurely.</p>\n<p>You can assume your vampiric form permanently by casting this spell and drinking from the same chalice every day for 10 days. During the night of the 10th consecutive casting of this spell, you must feed on blood from a living humanoid creature to complete your transformation.</p>",
+    'higher-levels': "When you cast this spell using a spell slot of 9th level, you gain one use of the vampire&apos;s Legendary Resistance per day. To gain this effect permanently by casting this spell and drinking from the same chalice every day for 10 days, each casting must be done using a 9th level spell slot.</p>",
     'lists': [
       'Arcane',
       'Pale Master',
@@ -2476,7 +2476,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.</p>\n<table>\n<tr>\n<th>d8</th>\n<th>Damage Type</th>\n</tr>\n<tr>\n<td>1</td>\n<td>Acid</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Cold</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Fire</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Force</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Lightning</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Poison</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Psychic</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Thunder</td>\n</tr>\n</table>\n<p>If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.</p>\n<p>A creature can be targeted only once by each casting of this spell.</p>",
+    'description': "<p>You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack&apos;s damage type, as shown below.</p>\n<table>\n<tr>\n<th>d8</th>\n<th>Damage Type</th>\n</tr>\n<tr>\n<td>1</td>\n<td>Acid</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Cold</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Fire</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Force</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Lightning</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Poison</td>\n</tr>\n<tr>\n<td>7</td>\n<td>Psychic</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Thunder</td>\n</tr>\n</table>\n<p>If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.</p>\n<p>A creature can be targeted only once by each casting of this spell.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.</p>',
     'lists': [
       'Arcane',
@@ -2671,7 +2671,7 @@ const spell_data = [
     'components': 'V, S, M (a diamond worth at least 1000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes. A vessel worth at least 2000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell's casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.</p>\n<p>At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original&#8217;s equipment. The original creature&#8217;s physical remains, if they still exist, become inert and can&#8217;t thereafter be restored to life, since the creature&#8217;s soul is elsewhere.</p>",
+    'description': "<p>This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell&apos;s casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.</p>\n<p>At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original&#8217;s equipment. The original creature&#8217;s physical remains, if they still exist, become inert and can&#8217;t thereafter be restored to life, since the creature&#8217;s soul is elsewhere.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -3010,7 +3010,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
     'description': '<p>You burn a target and make them susceptible to fire. Make a ranged spell attack against the target. On a hit, the target takes 1d6 fire damage and is marked with a fiery rune for the duration of the spell. In any round after the one when this spell is cast, a target that takes fire damage from any source takes an additional 1d6 fire damage. This effect can only occur once per round.</p>',
-    'higher-levels': "Both instances of this spell's damage increase by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+    'higher-levels': "Both instances of this spell&apos;s damage increase by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
     'lists': [
       'Arcane',
       'Artificer',
@@ -3201,7 +3201,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You call forth an shambling mound created from any vegetation around you. Choose an unoccupied area near a source of vegetation that you can see within range. A shambling mound will rise from the ground in this location. The mound disappears when it drops to 0 hit points. The mound is friendly to you and your companions for the duration. Roll initiative for the mound, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the mound, it defends itself from hostile creatures but otherwise takes no actions. If your concentration is broken before the spell's duration is reached, you lose control of the mound and it becomes hostile toward you and your companions. A hostile shambling mound can't be dismissed by you. It disappears when its hit points reach 0 or 1 hour after you summoned it, whichever happens first. The DM has the creature's game statistics.</p>",
+    'description': "<p>You call forth an shambling mound created from any vegetation around you. Choose an unoccupied area near a source of vegetation that you can see within range. A shambling mound will rise from the ground in this location. The mound disappears when it drops to 0 hit points. The mound is friendly to you and your companions for the duration. Roll initiative for the mound, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the mound, it defends itself from hostile creatures but otherwise takes no actions. If your concentration is broken before the spell&apos;s duration is reached, you lose control of the mound and it becomes hostile toward you and your companions. A hostile shambling mound can't be dismissed by you. It disappears when its hit points reach 0 or 1 hour after you summoned it, whichever happens first. The DM has the creature&apos;s game statistics.</p>",
     'higher-levels': 'When you cast this spell using a 9th- level spell slot, you summon two shambling mounds in unoccupied area that you can see.</p>',
     'lists': [
       'Arcane',
@@ -3265,7 +3265,7 @@ const spell_data = [
     'components': 'V, S, M (dragon scales and a jewel worth 10,000 gp, both of which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Up to 8 hours',
-    'description': "<p>You summon a dragon wyrmling of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The color of dragon scales used in the casting determines the type of wyrmling summoned. The wyrmling disappears when it drops to 0 hit points or when the spell ends. The wyrmling is friendly to you and your companions for the duration. Roll initiative for the wyrmling, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the wyrmling, it defends itself from hostile creatures but otherwise takes no actions. The DM has the wyrmling's statistics. You can only have one wyrmling conjured at a time with this spell. Any additional castings of the spell within the duration will cause the prior wyrmling to cease existing or to extend the duration, depending on the scale used.</p>",
+    'description': "<p>You summon a dragon wyrmling of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The color of dragon scales used in the casting determines the type of wyrmling summoned. The wyrmling disappears when it drops to 0 hit points or when the spell ends. The wyrmling is friendly to you and your companions for the duration. Roll initiative for the wyrmling, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the wyrmling, it defends itself from hostile creatures but otherwise takes no actions. The DM has the wyrmling&apos;s statistics. You can only have one wyrmling conjured at a time with this spell. Any additional castings of the spell within the duration will cause the prior wyrmling to cease existing or to extend the duration, depending on the scale used.</p>",
     'higher-levels': 'When you cast this spell using an 8th-level spell slot, the duration is up to 24 hours. When using a 9th-level spell slot, the duration is a year and a day.</p>',
     'lists': [
       'Arcane',
@@ -3568,7 +3568,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You touch a willing creature and strengthen its resolve. Until the end of the creature's next turn, it cannot be frightened. If the target is currently frightened, it can immediately reroll its saving throw if one was required to avoid the condition.</p>",
+    'description': "<p>You touch a willing creature and strengthen its resolve. Until the end of the creature&apos;s next turn, it cannot be frightened. If the target is currently frightened, it can immediately reroll its saving throw if one was required to avoid the condition.</p>",
     'higher-levels': '',
     'lists': [
       'Bard',
@@ -3722,7 +3722,7 @@ const spell_data = [
     'components': 'V, S, M (a vial of quicksilver worth 500 gp and a life-sized human doll, both of which the spell consumes, and an intricate crystal rod worth at least 1,500 gp that is not consumed)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>While casting the spell, you place a vial of quicksilver in the chest of a life-sized human doll stuffed with ash or dust. You then stitch up the doll and drip your blood on it. At the end of the casting, you tap the doll with a crystal rod, transforming it into a magen clothed in whatever the doll was wearing. The type of magen is chosen by you during the casting of the spell.</p>\n<p>When the magen appears, your hit point maximum decreases by an amount equal to the magen's challenge rating (minimum reduction of 1). Only a Wish spell can undo this reduction to your hit point maximum.</p>\n<p>Any magen you create with this spell obeys your commands without question.</p>",
+    'description': "<p>While casting the spell, you place a vial of quicksilver in the chest of a life-sized human doll stuffed with ash or dust. You then stitch up the doll and drip your blood on it. At the end of the casting, you tap the doll with a crystal rod, transforming it into a magen clothed in whatever the doll was wearing. The type of magen is chosen by you during the casting of the spell.</p>\n<p>When the magen appears, your hit point maximum decreases by an amount equal to the magen&apos;s challenge rating (minimum reduction of 1). Only a Wish spell can undo this reduction to your hit point maximum.</p>\n<p>Any magen you create with this spell obeys your commands without question.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane'
@@ -3883,8 +3883,8 @@ const spell_data = [
   },
   {
     'spell-index': 180,
-    'name': "Crusader's Mantle",
-    'name-linked': "<a href=./spell.html?spell_id=180>Crusader's Mantle</a>",
+    'name': "Crusader&apos;s Mantle",
+    'name-linked': "<a href=./spell.html?spell_id=180>Crusader&apos;s Mantle</a>",
     'school': 'Evocation',
     'level': 3,
     'casting-time': '1 action',
@@ -3938,7 +3938,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You touch a humanoid creature that has at least 1 hit point, placing a curse upon it for 1 minute. If the creature dies while the curse is active, it is raised as a zombie under your control (the DM has the creature's game statistics). A remove curse spell ends this effect when cast upon a living creature.</p>\n<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (issuing the same command to each one if you control multiple creatures).</p>\n<p>The creature is under your control for 1 minute, after which it stops obeying any command you've given it.</p>",
+    'description': "<p>You touch a humanoid creature that has at least 1 hit point, placing a curse upon it for 1 minute. If the creature dies while the curse is active, it is raised as a zombie under your control (the DM has the creature&apos;s game statistics). A remove curse spell ends this effect when cast upon a living creature.</p>\n<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (issuing the same command to each one if you control multiple creatures).</p>\n<p>The creature is under your control for 1 minute, after which it stops obeying any command you've given it.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -3982,7 +3982,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You summon a surging mass of water into existence at a point on the ground within range. The mass of water remains cohesive filling a 5 foot radius, though only rises 3 feet from the ground. The area is difficult terrain for any creature without a swimming speed.</p>\n<p>For the duration of the spell, as a bonus action you can move the wave of water up to 30 feet along a surface in any direction. The first time the wave enters any creature's space during a your turn, they must make a Strength saving throw or take 1d6 bludgeoning damage and be knocked prone. A creature automatically fails this saving throw if they are prone.</p>",
+    'description': "<p>You summon a surging mass of water into existence at a point on the ground within range. The mass of water remains cohesive filling a 5 foot radius, though only rises 3 feet from the ground. The area is difficult terrain for any creature without a swimming speed.</p>\n<p>For the duration of the spell, as a bonus action you can move the wave of water up to 30 feet along a surface in any direction. The first time the wave enters any creature&apos;s space during a your turn, they must make a Strength saving throw or take 1d6 bludgeoning damage and be knocked prone. A creature automatically fails this saving throw if they are prone.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -4023,7 +4023,7 @@ const spell_data = [
     'casting-time': '1 bonus action',
     'casting-time-list': '1 bonus action',
     'range': '60 feet',
-    'components': "V, S, M (a vial of vampire's blood)",
+    'components': "V, S, M (a vial of vampire&apos;s blood)",
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>An undead creature of your choice that you can see within range regains 2d4 hit points and has advantage on the next attack roll it makes before the end of its next turn.</p>',
@@ -4043,10 +4043,10 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': '150 feet',
-    'components': "V, S, M (a shard of onyx and a drop of the caster's blood, both of which the spell consumes)",
+    'components': "V, S, M (a shard of onyx and a drop of the caster&apos;s blood, both of which the spell consumes)",
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>This spell creates a sphere centered on a point you choose within range. The sphere can have a radius of up to 40 feet. The area within this sphere is filled with magical darkness and crushing gravitational force.</p>\n<p>For the duration, the spell's area is difficult terrain. A creature with darkvision can't see through the magical darkness, and nonmagical light can't illuminate it. No sound can be created within or pass through the area. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>\n<p>Any creature that enters the spell's area for the first time on a turn or starts its turn there must make a Constitution saving throw. The creature takes 8d10 force damage on a failed save or half as much damage on a successful save. A creature reduced to 0 hit points by this damage is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust.</p>",
+    'description': "<p>This spell creates a sphere centered on a point you choose within range. The sphere can have a radius of up to 40 feet. The area within this sphere is filled with magical darkness and crushing gravitational force.</p>\n<p>For the duration, the spell&apos;s area is difficult terrain. A creature with darkvision can't see through the magical darkness, and nonmagical light can't illuminate it. No sound can be created within or pass through the area. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>\n<p>Any creature that enters the spell&apos;s area for the first time on a turn or starts its turn there must make a Constitution saving throw. The creature takes 8d10 force damage on a failed save or half as much damage on a successful save. A creature reduced to 0 hit points by this damage is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane'
@@ -4191,8 +4191,8 @@ const spell_data = [
   },
   {
     'spell-index': 194,
-    'name': "Death's Grasp",
-    'name-linked': "<a href=./spell.html?spell_id=194>Death's Grasp</a>",
+    'name': "Death&apos;s Grasp",
+    'name-linked': "<a href=./spell.html?spell_id=194>Death&apos;s Grasp</a>",
     'school': 'Necromancy',
     'level': 1,
     'casting-time': '1 action',
@@ -4329,7 +4329,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Up to 10 minutes',
-    'description': "<p>For the duration, you are able to determine the nature of creatures within range in relation to how they conform to societal norms. Creatures will have auras about them relating to their alignment:</p>\n<ul>\n<li>A crisp, lawful aura for those who follow the rules of society, often at the expense of their personal wishes</li>\n<li>A muddled, neutral aura for those who balance their whims against the expectations of society, doing what they can within the confines of order</li>\n<li>A jagged, chaotic aura for those with a tendency toward acting on their feelings and whims, regardless of society's expectations</li>\n</ul>",
+    'description': "<p>For the duration, you are able to determine the nature of creatures within range in relation to how they conform to societal norms. Creatures will have auras about them relating to their alignment:</p>\n<ul>\n<li>A crisp, lawful aura for those who follow the rules of society, often at the expense of their personal wishes</li>\n<li>A muddled, neutral aura for those who balance their whims against the expectations of society, doing what they can within the confines of order</li>\n<li>A jagged, chaotic aura for those with a tendency toward acting on their feelings and whims, regardless of society&apos;s expectations</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Cleric',
@@ -4686,7 +4686,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': '8 hours',
-    'description': "<p>You cast this spell on an object no more than 1 foot on a side, doubling the object's perceived value by adding illusionary flourish or reducing its perceived value by half with the help of illusionary dents and scratches. Anyone examining the object must roll an Investigation check against your spell DC.</p>",
+    'description': "<p>You cast this spell on an object no more than 1 foot on a side, doubling the object&apos;s perceived value by adding illusionary flourish or reducing its perceived value by half with the help of illusionary dents and scratches. Anyone examining the object must roll an Investigation check against your spell DC.</p>",
     'higher-levels': 'When you cast this spell using a higher spell slot, you increase the size of the object by 1 foot per spell slot over 1st.</p>',
     'lists': [
       'Arcane',
@@ -4748,7 +4748,7 @@ const spell_data = [
     'components': 'V, S, M (a nonmagical weapon)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>Your deity imbues a melee weapon you currently possess with an essence of their power and launches it at a foe within 60 feet. Make a melee spell attack against a creature you can see within range. If successful, the target takes the weapon's normal damage plus an additional 2d10 radiant or necrotic damage (your choice). The weapon breaks after it is used in this manner.</p>",
+    'description': "<p>Your deity imbues a melee weapon you currently possess with an essence of their power and launches it at a foe within 60 feet. Make a melee spell attack against a creature you can see within range. If successful, the target takes the weapon&apos;s normal damage plus an additional 2d10 radiant or necrotic damage (your choice). The weapon breaks after it is used in this manner.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for every two slot levels above 1st.</p>',
     'lists': [
       'Cleric',
@@ -4785,7 +4785,7 @@ const spell_data = [
     'casting-time': '10 minutes',
     'casting-time-list': '10 minutes<sup>R</sup>',
     'range': 'Touch',
-    'components': 'V, S, M (some hair, fingernail clippings, or other piece of the creature's body)',
+    'components': 'V, S, M (some hair, fingernail clippings, or other piece of the creature&apos;s body)',
     'components-list': 'V, S, M ',
     'duration': '24 hours',
     'description': '<p>You place your hand upon a willing creature and create a magical bond between you and your target. For the next 24 hours, any spell with a range of touch that you cast upon the target can be cast from up to 30 feet away.</p>',
@@ -4903,8 +4903,8 @@ const spell_data = [
   },
   {
     'spell-index': 227,
-    'name': "Dragon's Breath",
-    'name-linked': "<a href=./spell.html?spell_id=227>Dragon's Breath</a>",
+    'name': "Dragon&apos;s Breath",
+    'name-linked': "<a href=./spell.html?spell_id=227>Dragon&apos;s Breath</a>",
     'school': 'Transmutation',
     'level': 2,
     'casting-time': '1 bonus action',
@@ -4934,7 +4934,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You can weaken one foe by lowering its maximum hit points. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, 2d8 + your spell casting modifier worth of hit points are subtracted from its maximum until it completes a long rest. If this effect reduces the target's total hit points to zero, it dies.</p>",
+    'description': "<p>You can weaken one foe by lowering its maximum hit points. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, 2d8 + your spell casting modifier worth of hit points are subtracted from its maximum until it completes a long rest. If this effect reduces the target&apos;s total hit points to zero, it dies.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>',
     'lists': [
       'Pale Master'
@@ -4943,8 +4943,8 @@ const spell_data = [
   },
   {
     'spell-index': 229,
-    'name': "Drawmij's Instant Summons",
-    'name-linked': "<a href=./spell.html?spell_id=229>Drawmij's Instant Summons</a>",
+    'name': "Drawmij&apos;s Instant Summons",
+    'name-linked': "<a href=./spell.html?spell_id=229>Drawmij&apos;s Instant Summons</a>",
     'school': 'Transposition',
     'level': 6,
     'casting-time': '1 minute',
@@ -5040,7 +5040,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': '8 hours',
-    'description': "<p>You share yourself, and allow others the same opportunity. For the duration of the spell, you and any creature of your choice within range can use their action to enter a shared dreamscape, entering a meditative trance or falling asleep (target's choice).</p>\n<p>The appearance of the dreamscape is up to you; you and any creature of your choice can shape the environment of the dreamscape, creating landscapes, objects, and other images, such as showing past memories. The dreamscape relies on the creativity of its residents, and cannot create something that has not been seen or imagined by a creature within the dreamscape. A creature within the dreamscape can leave at any time, waking from their trance or sleep.</p>\n<p>Regardless of its contents, the dreamscape soothes the soul with its catharsis. A creature that spends at least 4 hours of a long rest within the dreamscape recovers an additional level of exhaustion at the end of the rest.</p>",
+    'description': "<p>You share yourself, and allow others the same opportunity. For the duration of the spell, you and any creature of your choice within range can use their action to enter a shared dreamscape, entering a meditative trance or falling asleep (target&apos;s choice).</p>\n<p>The appearance of the dreamscape is up to you; you and any creature of your choice can shape the environment of the dreamscape, creating landscapes, objects, and other images, such as showing past memories. The dreamscape relies on the creativity of its residents, and cannot create something that has not been seen or imagined by a creature within the dreamscape. A creature within the dreamscape can leave at any time, waking from their trance or sleep.</p>\n<p>Regardless of its contents, the dreamscape soothes the soul with its catharsis. A creature that spends at least 4 hours of a long rest within the dreamscape recovers an additional level of exhaustion at the end of the rest.</p>",
     'higher-levels': '',
     'lists': [
       'Keeper',
@@ -5122,7 +5122,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d8 necrotic damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.</p>\n<p>If a target dies as a result of your ranged attack while using this ammunition, its flesh melts away and it is raised as a skeleton under your control for 8 hours, after which time it stops obeying your commands and will attack you until destroyed. You may control up to 4 skeletons at a time with this spell. If you attempt to take control of another skeleton with a dusk arrow when 4 are currently under your control, you will lose control of the skeleton that has been under your control the longest, and it will attack you.</p>\n<p>On each of your turns, you can use a bonus action to mentally command a skeleton raised by a dusk arrow if it is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). Undead and constructs killed with dusk arrows to not become skeletons under your control.</p>",
+    'description': "<p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d8 necrotic damage. The spell&apos;s magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.</p>\n<p>If a target dies as a result of your ranged attack while using this ammunition, its flesh melts away and it is raised as a skeleton under your control for 8 hours, after which time it stops obeying your commands and will attack you until destroyed. You may control up to 4 skeletons at a time with this spell. If you attempt to take control of another skeleton with a dusk arrow when 4 are currently under your control, you will lose control of the skeleton that has been under your control the longest, and it will attack you.</p>\n<p>On each of your turns, you can use a bonus action to mentally command a skeleton raised by a dusk arrow if it is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). Undead and constructs killed with dusk arrows to not become skeletons under your control.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 5th level or higher, you can control one additional skeleton for each slot level above 4th.</p>',
     'lists': [
       'Arcane',
@@ -5236,7 +5236,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You target one creature you can see within range, causing them to make a Strength saving throw. On a failed save the target is restrained by dirt rising from the ground in the shape of a fist.</p>\n<p>The target may use its action to make a Strength saving throw, breaking free from the earth's grasp on a successful save.</p>",
+    'description': "<p>You target one creature you can see within range, causing them to make a Strength saving throw. On a failed save the target is restrained by dirt rising from the ground in the shape of a fist.</p>\n<p>The target may use its action to make a Strength saving throw, breaking free from the earth&apos;s grasp on a successful save.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -5258,7 +5258,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You call forth a column of dirt to rise out of the ground in a space you can see within range. The pillar has a diameter of 5 feet, a height of 20 feet, an AC of 10 and 15 hit points.</p>\n<p>If the pillar is created under a Medium or smaller creature, that creature must succeed on a Dexterity save or be lifted by the pillar. Large creatures make the save with advantage. Huge or bigger creatures are unaffected as the earthen pillar is unable to be created under the creature's weight. A Large or smaller creature can choose to fail the save.</p>\n<p>If the pillar is prevented from reaching its full height due to contact with another solid surface, a creature on the pillar takes 2d6 bludgeoning damage and is restrained. The restrained creature can use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check (creature's choice) against the spell's save DC. On a success, the creature is no longer restrained and must either move or fall off the pillar.</p>",
+    'description': "<p>You call forth a column of dirt to rise out of the ground in a space you can see within range. The pillar has a diameter of 5 feet, a height of 20 feet, an AC of 10 and 15 hit points.</p>\n<p>If the pillar is created under a Medium or smaller creature, that creature must succeed on a Dexterity save or be lifted by the pillar. Large creatures make the save with advantage. Huge or bigger creatures are unaffected as the earthen pillar is unable to be created under the creature&apos;s weight. A Large or smaller creature can choose to fail the save.</p>\n<p>If the pillar is prevented from reaching its full height due to contact with another solid surface, a creature on the pillar takes 2d6 bludgeoning damage and is restrained. The restrained creature can use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check (creature&apos;s choice) against the spell&apos;s save DC. On a success, the creature is no longer restrained and must either move or fall off the pillar.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, you can increase the height of the pillar by 5 feet and the potential damage it deals by 1d6 for each slot level above 1st.</p>',
     'lists': [
       'Arcane',
@@ -5323,7 +5323,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Conjuration, up to 1 minute',
-    'description': "<p>A creature that you can see within range must succeed on a Strength (Athletics) or Dexterity (Acrobatics) skill check (target's choice) vs your spell DC or become grappled. The target may attempt another skill check at the start of each of its turns to break the grapple.</p>",
+    'description': "<p>A creature that you can see within range must succeed on a Strength (Athletics) or Dexterity (Acrobatics) skill check (target&apos;s choice) vs your spell DC or become grappled. The target may attempt another skill check at the start of each of its turns to break the grapple.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -5782,8 +5782,8 @@ const spell_data = [
   },
   {
     'spell-index': 267,
-    'name': "Evard's Black Tentacles",
-    'name-linked': "<a href=./spell.html?spell_id=267>Evard's Black Tentacles</a>",
+    'name': "Evard&apos;s Black Tentacles",
+    'name-linked': "<a href=./spell.html?spell_id=267>Evard&apos;s Black Tentacles</a>",
     'school': 'Conjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -5983,7 +5983,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>When you cast this spell, choose one humanoid within range that can see and hear you, and that can understand you. The creature must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed in this way, it undertakes to perform any services or activities you ask of it in a friendly manner, to the best of its ability.</p>\n<p>You can set the creature new tasks when a previous task is completed, or if you decide to end its current task. If the service or activity might cause harm to the creature, or if it conflicts with the creature's normal activities and desires, the creature can make another Wisdom saving throw to try to end the effect. This save is made with advantage if you or your companions are fighting the creature. If the activity would result in certain death for the creature, the spell ends.</p>\n<p>When the spell ends, the creature knows it was charmed by you.</p>",
+    'description': "<p>When you cast this spell, choose one humanoid within range that can see and hear you, and that can understand you. The creature must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed in this way, it undertakes to perform any services or activities you ask of it in a friendly manner, to the best of its ability.</p>\n<p>You can set the creature new tasks when a previous task is completed, or if you decide to end its current task. If the service or activity might cause harm to the creature, or if it conflicts with the creature&apos;s normal activities and desires, the creature can make another Wisdom saving throw to try to end the effect. This save is made with advantage if you or your companions are fighting the creature. If the activity would result in certain death for the creature, the spell ends.</p>\n<p>When the spell ends, the creature knows it was charmed by you.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>',
     'lists': [
       'Arcane',
@@ -6209,7 +6209,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': '8 hours',
     'description': "<p>You summon a spirit that assumes the form of a nonmilitary land vehicle of your choice, appearing in an unoccupied space within range. The vehicle has the statistics of a normal vehicle of its sort, though it is celestial, fey, or fiendish (your choice in origin). The physical characteristics of the vehicle reflect its origin to some degree. For example, a fiendish SUV might be jet black in color, with tinted windows and a sinister-looking front grille.</p>\n<p>You have a supernatural bond with the conjured vehicle that allows you to drive beyond your normal ability. While driving the conjured vehicle, you are considered proficient with vehicles of its type, and you add double your proficiency bonus to ability checks related to driving the vehicle. While driving the vehicle, you can make any spell you cast that targets only you also target the vehicle.</p>\n<p>If the vehicle drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss the vehicle at any time as an action, causing it to disappear.</p>\n<p>You can't have more than one vehicle bonded by this spell at a time. As an action, you can release the vehicle from its bond at any time, causing it to disappear.</p>",
-    'higher-levels': "When you cast this spell using a spell slot of 3rd level or higher, you can conjure a nonmilitary water vehicle large enough to carry six Medium creatures. When you cast this spell using a spell slot of 5th level or higher, you can conjure a nonmilitary air vehicle large enough to carry ten Medium creatures. When you cast this spell using a spell slot of 7th level or higher, you can conjure any type of vehicle, subject to the DM's approval.</p>",
+    'higher-levels': "When you cast this spell using a spell slot of 3rd level or higher, you can conjure a nonmilitary water vehicle large enough to carry six Medium creatures. When you cast this spell using a spell slot of 5th level or higher, you can conjure a nonmilitary air vehicle large enough to carry ten Medium creatures. When you cast this spell using a spell slot of 7th level or higher, you can conjure any type of vehicle, subject to the DM&apos;s approval.</p>",
     'lists': [
       'Artificer'
     ],
@@ -6372,8 +6372,8 @@ const spell_data = [
   },
   {
     'spell-index': 294,
-    'name': "Fizban's Platinum Shield",
-    'name-linked': "<a href=./spell.html?spell_id=294>Fizban's Platinum Shield</a>",
+    'name': "Fizban&apos;s Platinum Shield",
+    'name-linked': "<a href=./spell.html?spell_id=294>Fizban&apos;s Platinum Shield</a>",
     'school': 'Abjuration',
     'level': 6,
     'casting-time': '1 bonus action',
@@ -6514,7 +6514,7 @@ const spell_data = [
     'components': 'V, S, M (a pinch of lime, water, and earth)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn&#8217;t affected.</p>\n<p>A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don&#8217;t need to be consecutive; keep track of both until the target collects three of a kind.</p>\n<p>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.</p>",
+    'description': "<p>You attempt to turn one creature that you can see within range into stone. If the target&apos;s body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn&#8217;t affected.</p>\n<p>A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don&#8217;t need to be consecutive; keep track of both until the target collects three of a kind.</p>\n<p>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -6647,7 +6647,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>You hurl a mote of arcane energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 2d4 force damage.</p>',
-    'higher-levels': "This spell's damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 2d4 when you reach 5th level (4d4), 11th level (6d4), and 17th level (8d4).</p>",
     'lists': [
       'Arcane'
     ],
@@ -6832,8 +6832,8 @@ const spell_data = [
   },
   {
     'spell-index': 315,
-    'name': "Fortune's Favor",
-    'name-linked': "<a href=./spell.html?spell_id=315>Fortune's Favor</a>",
+    'name': "Fortune&apos;s Favor",
+    'name-linked': "<a href=./spell.html?spell_id=315>Fortune&apos;s Favor</a>",
     'school': 'Divination',
     'level': 2,
     'casting-time': '1 action',
@@ -7000,7 +7000,7 @@ const spell_data = [
     'components': 'V, S, M (An exquisite weapon rack, 10 feet wide by 6 feet tall, constructed from rare materials worth at least 6,000 gp, and a Tiny replica made from the same materials worth at least 60 gp)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You hide a weapon rack, and all its contents, on the Ethereal Plane. You must touch the rack and the miniature replica that serves as a material component for the spell. The weapon rack can hold 15 pieces of adventuring gear, weapons or armor. While the weapon rack remains on the Ethereal Plane, you can use an action and touch the replica to recall the rack. It appears in an unoccupied space on the ground within 10 feet of you. You can send the weapon rack back to the Ethereal Plane by using an action and touching both the rack and the replica.</p>\n<p>After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica rack is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger weapon rack is on the Ethereal Plane, it is irretrievably lost.</p>",
+    'description': "<p>You hide a weapon rack, and all its contents, on the Ethereal Plane. You must touch the rack and the miniature replica that serves as a material component for the spell. The weapon rack can hold 15 pieces of adventuring gear, weapons or armor. While the weapon rack remains on the Ethereal Plane, you can use an action and touch the replica to recall the rack. It appears in an unoccupied space on the ground within 10 feet of you. You can send the weapon rack back to the Ethereal Plane by using an action and touching both the rack and the replica.</p>\n<p>After 60 days, there is a cumulative 5 percent chance per day that the spell&apos;s effect ends. This effect ends if you cast this spell again, if the smaller replica rack is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger weapon rack is on the Ethereal Plane, it is irretrievably lost.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -7011,8 +7011,8 @@ const spell_data = [
   },
   {
     'spell-index': 323,
-    'name': "Galder's Speedy Courier",
-    'name-linked': "<a href=./spell.html?spell_id=323>Galder's Speedy Courier</a>",
+    'name': "Galder&apos;s Speedy Courier",
+    'name-linked': "<a href=./spell.html?spell_id=323>Galder&apos;s Speedy Courier</a>",
     'school': 'Conjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -7032,8 +7032,8 @@ const spell_data = [
   },
   {
     'spell-index': 324,
-    'name': "Galder's Tower",
-    'name-linked': "<a href=./spell.html?spell_id=324>Galder's Tower</a>",
+    'name': "Galder&apos;s Tower",
+    'name-linked': "<a href=./spell.html?spell_id=324>Galder&apos;s Tower</a>",
     'school': 'Conjuration',
     'level': 3,
     'casting-time': '10 minutes',
@@ -7170,7 +7170,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action<sup>R</sup>',
     'range': 'Touch',
-    'components': 'V, S, M (a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration)',
+    'components': 'V, S, M (a pinch of salt and one copper piece placed on each of the corpse&apos;s eyes, which must remain there for the duration)',
     'components-list': 'V, S, M ',
     'duration': '10 days',
     'description': '<p>You touch a corpse or other remains. For the duration, the target is protected from decay and can&#8217;t become undead.</p>\n<p>The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don&#8217;t count against the time limit of spells such as raise dead.</p>',
@@ -7299,7 +7299,7 @@ const spell_data = [
     'components': 'S, M (a melee weapon worth at least 1 sp)',
     'components-list': 'S, M ',
     'duration': '1 round',
-    'description': "<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes encased in a sheath of ice until the start of your next turn. If the target uses its action to make a weapon attack, it immediately takes 1d8 cold damage, and the spell ends.</p>",
+    'description': "<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell&apos;s range, otherwise the spell fails. On a hit, the target suffers the attack&apos;s normal effects, and it becomes encased in a sheath of ice until the start of your next turn. If the target uses its action to make a weapon attack, it immediately takes 1d8 cold damage, and the spell ends.</p>",
     'higher-levels': 'At 5th level, the melee attack deals an extra 1d8 cold damage to the target, and the damage the target takes for making a weapon attack increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.</p>',
     'lists': [
       'Arcane',
@@ -7323,7 +7323,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>The next time you hit a creature with a melee weapon attack during the spell&#8217;s duration, your weapon carries an ice-cold blast of wind with it, and the attack deals an extra 1d10 cold damage to the target and coats them in icy crystals.</p>\n<p>For the next minute, the target's movement speed is reduced by 10 feet. It can make a Constitution saving throw at the end of each of its turns, shaking off the crystals and ending the spell on a success. In addition, if the target takes any amount of fire damage, the spell ends.</p>",
+    'description': "<p>The next time you hit a creature with a melee weapon attack during the spell&#8217;s duration, your weapon carries an ice-cold blast of wind with it, and the attack deals an extra 1d10 cold damage to the target and coats them in icy crystals.</p>\n<p>For the next minute, the target&apos;s movement speed is reduced by 10 feet. It can make a Constitution saving throw at the end of each of its turns, shaking off the crystals and ending the spell on a success. In addition, if the target takes any amount of fire damage, the spell ends.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d10 for each slot.</p>',
     'lists': [
       'Elemental',
@@ -7497,7 +7497,7 @@ const spell_data = [
     'components': 'V, S, M (a small black disk)',
     'components-list': 'V, S, M ',
     'duration': '1 hour',
-    'description': "<p>A creature you touch is blessed with a sliver of Shar's umbral omniscience. For the duration, they gain blindsight out to a range of 30 feet.</p>",
+    'description': "<p>A creature you touch is blessed with a sliver of Shar&apos;s umbral omniscience. For the duration, they gain blindsight out to a range of 30 feet.</p>",
     'higher-levels': 'When you cast this spell using a 9th level spell slot, you can select one additional creature.</p>',
     'lists': [
       'Arcane',
@@ -7725,8 +7725,8 @@ const spell_data = [
   },
   {
     'spell-index': 356,
-    'name': "Grimlore's Affliction",
-    'name-linked': "<a href=./spell.html?spell_id=356>Grimlore's Affliction</a>",
+    'name': "Grimlore&apos;s Affliction",
+    'name-linked': "<a href=./spell.html?spell_id=356>Grimlore&apos;s Affliction</a>",
     'school': 'Necromancy',
     'level': 3,
     'casting-time': '1 action',
@@ -7735,7 +7735,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You harness necrotic energies and infuse them into your very being. For the next 10 minutes, every time you deal damage with a spell, the target must make a Wisdom saving throw or become frightened of you until the end of its next turn. If a target's saving throw is successful it is immune to being frightened by this spell for the next 24 hours</p>",
+    'description': "<p>You harness necrotic energies and infuse them into your very being. For the next 10 minutes, every time you deal damage with a spell, the target must make a Wisdom saving throw or become frightened of you until the end of its next turn. If a target&apos;s saving throw is successful it is immune to being frightened by this spell for the next 24 hours</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -7747,8 +7747,8 @@ const spell_data = [
   },
   {
     'spell-index': 357,
-    'name': "Grimlore's Aphotic Armor",
-    'name-linked': "<a href=./spell.html?spell_id=357>Grimlore's Aphotic Armor</a>",
+    'name': "Grimlore&apos;s Aphotic Armor",
+    'name-linked': "<a href=./spell.html?spell_id=357>Grimlore&apos;s Aphotic Armor</a>",
     'school': 'Abjuration',
     'level': 6,
     'casting-time': '1 action',
@@ -7768,8 +7768,8 @@ const spell_data = [
   },
   {
     'spell-index': 358,
-    'name': "Grimlore's Calamity",
-    'name-linked': "<a href=./spell.html?spell_id=358>Grimlore's Calamity</a>",
+    'name': "Grimlore&apos;s Calamity",
+    'name-linked': "<a href=./spell.html?spell_id=358>Grimlore&apos;s Calamity</a>",
     'school': 'Necromancy',
     'level': 9,
     'casting-time': '1 action',
@@ -7789,8 +7789,8 @@ const spell_data = [
   },
   {
     'spell-index': 359,
-    'name': "Grimlore's Crippling Incursion",
-    'name-linked': "<a href=./spell.html?spell_id=359>Grimlore's Crippling Incursion</a>",
+    'name': "Grimlore&apos;s Crippling Incursion",
+    'name-linked': "<a href=./spell.html?spell_id=359>Grimlore&apos;s Crippling Incursion</a>",
     'school': 'Necromancy',
     'level': 8,
     'casting-time': '1 action',
@@ -7811,8 +7811,8 @@ const spell_data = [
   },
   {
     'spell-index': 360,
-    'name': "Grimlore's Doom",
-    'name-linked': "<a href=./spell.html?spell_id=360>Grimlore's Doom</a>",
+    'name': "Grimlore&apos;s Doom",
+    'name-linked': "<a href=./spell.html?spell_id=360>Grimlore&apos;s Doom</a>",
     'school': 'Necromancy',
     'level': 7,
     'casting-time': '1 action',
@@ -7832,8 +7832,8 @@ const spell_data = [
   },
   {
     'spell-index': 361,
-    'name': "Grimlore's Influence",
-    'name-linked': "<a href=./spell.html?spell_id=361>Grimlore's Influence</a>",
+    'name': "Grimlore&apos;s Influence",
+    'name-linked': "<a href=./spell.html?spell_id=361>Grimlore&apos;s Influence</a>",
     'school': 'Necromancy',
     'level': 0,
     'casting-time': '1 bonus action',
@@ -7843,7 +7843,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>Any creatures of your choice that are within 30 feet and frightened of you take 1d6 psychic damage.</p>',
-    'higher-levels': "This spell's damage increases by 1d6 and the range increases by 5 feet when you reach 5th level (2d6, 35 feet), 11th level (3d6, 40 feet), and 17th level (4d6, 45 feet).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d6 and the range increases by 5 feet when you reach 5th level (2d6, 35 feet), 11th level (3d6, 40 feet), and 17th level (4d6, 45 feet).</p>",
     'lists': [
       'Arcane',
       'Bard',
@@ -7855,8 +7855,8 @@ const spell_data = [
   },
   {
     'spell-index': 362,
-    'name': "Grimlore's Shadowblight",
-    'name-linked': "<a href=./spell.html?spell_id=362>Grimlore's Shadowblight</a>",
+    'name': "Grimlore&apos;s Shadowblight",
+    'name-linked': "<a href=./spell.html?spell_id=362>Grimlore&apos;s Shadowblight</a>",
     'school': 'Necromancy',
     'level': 1,
     'casting-time': '1 action',
@@ -7876,8 +7876,8 @@ const spell_data = [
   },
   {
     'spell-index': 363,
-    'name': "Grimlore's Shadowgrasp",
-    'name-linked': "<a href=./spell.html?spell_id=363>Grimlore's Shadowgrasp</a>",
+    'name': "Grimlore&apos;s Shadowgrasp",
+    'name-linked': "<a href=./spell.html?spell_id=363>Grimlore&apos;s Shadowgrasp</a>",
     'school': 'Necromancy',
     'level': 2,
     'casting-time': '1 bonus action',
@@ -7897,8 +7897,8 @@ const spell_data = [
   },
   {
     'spell-index': 364,
-    'name': "Grimlore's Touch of Undeath",
-    'name-linked': "<a href=./spell.html?spell_id=364>Grimlore's Touch of Undeath</a>",
+    'name': "Grimlore&apos;s Touch of Undeath",
+    'name-linked': "<a href=./spell.html?spell_id=364>Grimlore&apos;s Touch of Undeath</a>",
     'school': 'Necromancy',
     'level': 5,
     'casting-time': '1 action',
@@ -7918,8 +7918,8 @@ const spell_data = [
   },
   {
     'spell-index': 365,
-    'name': "Grimlore's Writhing Coils",
-    'name-linked': "<a href=./spell.html?spell_id=365>Grimlore's Writhing Coils</a>",
+    'name': "Grimlore&apos;s Writhing Coils",
+    'name-linked': "<a href=./spell.html?spell_id=365>Grimlore&apos;s Writhing Coils</a>",
     'school': 'Necromancy',
     'level': 4,
     'casting-time': '1 action',
@@ -8054,7 +8054,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You extend your hand and touch a creature while muttering the passing prayer of an executioner. The creature must make a Strength saving throw or become restrained by a pair of ethereal chains that bind the target to the ground, and a large magical blade is summoned above their head.</p>\n<p>As a bonus action on your turn, you are able to release the blade down upon your target's neck, dealing 2d8 magical slashing damage. For every round that you do not release the blade with your bonus action after the initial cast, add 1d8 additional damage as a blade ratchets another notch higher above the target.</p>\n<p>The target may use their action to attempt a Strength saving throw to break the chains at the start of each turn. This removes the restrained condition and ends the spell without doing any damage.</p>",
+    'description': "<p>You extend your hand and touch a creature while muttering the passing prayer of an executioner. The creature must make a Strength saving throw or become restrained by a pair of ethereal chains that bind the target to the ground, and a large magical blade is summoned above their head.</p>\n<p>As a bonus action on your turn, you are able to release the blade down upon your target&apos;s neck, dealing 2d8 magical slashing damage. For every round that you do not release the blade with your bonus action after the initial cast, add 1d8 additional damage as a blade ratchets another notch higher above the target.</p>\n<p>The target may use their action to attempt a Strength saving throw to break the chains at the start of each turn. This removes the restrained condition and ends the spell without doing any damage.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d8 for each slot level above 1st.</p>',
     'lists': [
       'Arcane',
@@ -8179,7 +8179,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, an ill omen is placed on the target, causing disadvantage on Strength and Constitution ability checks and saving throws for the duration. While cursed, the target gains 5d10 worth of negative temporary hit points. These negative temporary hit points must be healed through before a target's normal hit points can be healed. A remove curse spell ends this effect.</p>",
+    'description': "<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, an ill omen is placed on the target, causing disadvantage on Strength and Constitution ability checks and saving throws for the duration. While cursed, the target gains 5d10 worth of negative temporary hit points. These negative temporary hit points must be healed through before a target&apos;s normal hit points can be healed. A remove curse spell ends this effect.</p>",
     'higher-levels': "If you cast this spell using a spell slot of 5th level or higher, the Duration is 8 hours. If you use a spell slot of 7th level or higher, the Duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a Duration that doesn't require Concentration.</p>",
     'lists': [
       'Arcane',
@@ -8521,8 +8521,8 @@ const spell_data = [
   },
   {
     'spell-index': 393,
-    'name': "Helm's Everwatchful Eye",
-    'name-linked': "<a href=./spell.html?spell_id=393>Helm's Everwatchful Eye</a>",
+    'name': "Helm&apos;s Everwatchful Eye",
+    'name-linked': "<a href=./spell.html?spell_id=393>Helm&apos;s Everwatchful Eye</a>",
     'school': 'Abjuration',
     'level': 1,
     'casting-time': '1 reaction, which you take when you see a creature within range fail a saving throw',
@@ -8551,7 +8551,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You cause a target's previously healed battle scars to rupture as blood begins exit from these opened wounds. Select a creature within range to make a Constitution saving throw, taking 2d8 slashing damage on a failed save. Additionally, roll a d8 for every two hit dice belonging to the creature. If this number is higher than the target's total hit points at the end of its next turn, it falls to 0 hit points. Temporary hit points do not count towards this total. If the target saves on the initial save, this spell has no effect.</p>",
+    'description': "<p>You cause a target&apos;s previously healed battle scars to rupture as blood begins exit from these opened wounds. Select a creature within range to make a Constitution saving throw, taking 2d8 slashing damage on a failed save. Additionally, roll a d8 for every two hit dice belonging to the creature. If this number is higher than the target&apos;s total hit points at the end of its next turn, it falls to 0 hit points. Temporary hit points do not count towards this total. If the target saves on the initial save, this spell has no effect.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -8567,8 +8567,8 @@ const spell_data = [
   },
   {
     'spell-index': 395,
-    'name': "Heroes' Feast",
-    'name-linked': "<a href=./spell.html?spell_id=395>Heroes' Feast</a>",
+    'name': "Heroes&apos; Feast",
+    'name-linked': "<a href=./spell.html?spell_id=395>Heroes&apos; Feast</a>",
     'school': 'Restoration',
     'level': 6,
     'casting-time': '10 minutes',
@@ -8710,7 +8710,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': 'Self',
-    'components': 'V, S, M (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text)',
+    'components': 'V, S, M (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint&apos;s robe or a piece of parchment from a religious text)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
     'description': '<p>Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a Constitution saving throw or be blinded until the spell ends.</p>',
@@ -8768,10 +8768,10 @@ const spell_data = [
     'casting-time': '1 hour',
     'casting-time-list': '1 hour',
     'range': '10 feet',
-    'components': "V, S, M (50 pounds of flesh and two cupped handfuls of blood taken from a humanoid or beast, which are consumed by the spell, and an esoteric implement, which is buried within the house's chest as the spell is cast)",
+    'components': "V, S, M (50 pounds of flesh and two cupped handfuls of blood taken from a humanoid or beast, which are consumed by the spell, and an esoteric implement, which is buried within the house&apos;s chest as the spell is cast)",
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You shape, structure, and bind a house of life, which appears in an unoccupied space you can see within range. The house has the same statistics as a Flesh Golem, though it lacks the Berserk trait.</p>\n<p>The house is friendly to you and your companions. Roll initiative for the house, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the house, it defends itself from hostile creatures but otherwise takes no actions.</p>\n<p>If a willing creature dies within 60 feet of the house, you can use your reaction to cage its soul within the house. The soul remains within the house until the house is destroyed, or until it chooses to leave. A soul within the house can control it. Its game statistics are replaced by the statistics of the house, though it retains its alignment and its Intelligence, Wisdom, and Charisma scores. It also retains all of its skill and saving throw proficiencies, in addition to gaining those of the house, and it retains the benefits of its own class features.</p>\n<p>The house collapses into a puddle of flesh when it is reduced to 0 hit points, or after 24 hours. To maintain the house's form for another 24 hours, you must cast this spell on the house again before the current 24-hour period ends. When you cast this spell to maintain a house's form, it has a casting time of 1 minute, and you can ignore the spell's material components.</p>",
+    'description': "<p>You shape, structure, and bind a house of life, which appears in an unoccupied space you can see within range. The house has the same statistics as a Flesh Golem, though it lacks the Berserk trait.</p>\n<p>The house is friendly to you and your companions. Roll initiative for the house, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the house, it defends itself from hostile creatures but otherwise takes no actions.</p>\n<p>If a willing creature dies within 60 feet of the house, you can use your reaction to cage its soul within the house. The soul remains within the house until the house is destroyed, or until it chooses to leave. A soul within the house can control it. Its game statistics are replaced by the statistics of the house, though it retains its alignment and its Intelligence, Wisdom, and Charisma scores. It also retains all of its skill and saving throw proficiencies, in addition to gaining those of the house, and it retains the benefits of its own class features.</p>\n<p>The house collapses into a puddle of flesh when it is reduced to 0 hit points, or after 24 hours. To maintain the house&apos;s form for another 24 hours, you must cast this spell on the house again before the current 24-hour period ends. When you cast this spell to maintain a house&apos;s form, it has a casting time of 1 minute, and you can ignore the spell&apos;s material components.</p>",
     'higher-levels': '',
     'lists': [
       'Keeper',
@@ -8791,7 +8791,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You summon a storm cloud up to 60 feet above the ground at a point you can see in range. After 1d4 rounds, the clouds produce rain at an alarming rate, dousing everything in a 10-foot radius cylinder below the cloud. The rain extinguishes all non-magical fire within the area immediately.</p>\n<p>As a bonus action on your turn, you can move the cloud up to 30 feet in any direction that does not exceed the spell's range and to a maximum height of 60 feet.</p>",
+    'description': "<p>You summon a storm cloud up to 60 feet above the ground at a point you can see in range. After 1d4 rounds, the clouds produce rain at an alarming rate, dousing everything in a 10-foot radius cylinder below the cloud. The rain extinguishes all non-magical fire within the area immediately.</p>\n<p>As a bonus action on your turn, you can move the cloud up to 30 feet in any direction that does not exceed the spell&apos;s range and to a maximum height of 60 feet.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -8823,8 +8823,8 @@ const spell_data = [
   },
   {
     'spell-index': 407,
-    'name': "Hunter's Mark",
-    'name-linked': "<a href=./spell.html?spell_id=407>Hunter's Mark</a>",
+    'name': "Hunter&apos;s Mark",
+    'name-linked': "<a href=./spell.html?spell_id=407>Hunter&apos;s Mark</a>",
     'school': 'Divination',
     'level': 1,
     'casting-time': '1 bonus action',
@@ -8944,7 +8944,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>An icy shard shoots from your outstretched hand. Make a ranged spell attack against a single creature, dealing 1d6 cold damage on a successful attack. If your attack roll deals critical damage, the target becomes vulnerable to cold damage until the start of your next turn. Creatures resistant or immune to cold damage do not become vulnerable.</p>',
-    'higher-levels': "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
     'lists': [
       'Arcane',
       'Druid',
@@ -9083,8 +9083,8 @@ const spell_data = [
   },
   {
     'spell-index': 419,
-    'name': "Ilmater's Fortune",
-    'name-linked': "<a href=./spell.html?spell_id=419>Ilmater's Fortune</a>",
+    'name': "Ilmater&apos;s Fortune",
+    'name-linked': "<a href=./spell.html?spell_id=419>Ilmater&apos;s Fortune</a>",
     'school': 'Divination',
     'level': 5,
     'casting-time': '1 action',
@@ -9180,7 +9180,7 @@ const spell_data = [
     'components': 'V, S, M (a link of metal chain)',
     'components-list': 'V, S, M ',
     'duration': '8 hours',
-    'description': "<p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 15 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>",
+    'description': "<p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target&apos;s base AC becomes 15 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane'
@@ -9377,7 +9377,7 @@ const spell_data = [
     'components': 'V, S, M (a spellbook)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You transmute the two pages of your spellbook that contain the scripture for this spell to detach from the book's binding and develop razor-sharp edges. Both pages fly out and slice a creature in range, before safely returning to your spellbook and rebinding to their original location. Choose one creature within range or choose two creatures within range that are within 5 feet of each other. For each page, a creature must make a Dexterity saving throw or take 2d8 slashing damage.</p>",
+    'description': "<p>You transmute the two pages of your spellbook that contain the scripture for this spell to detach from the book&apos;s binding and develop razor-sharp edges. Both pages fly out and slice a creature in range, before safely returning to your spellbook and rebinding to their original location. Choose one creature within range or choose two creatures within range that are within 5 feet of each other. For each page, a creature must make a Dexterity saving throw or take 2d8 slashing damage.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 per page (2d8 total) for every two spell slots level above 1st.</p>',
     'lists': [
       'Arcane'
@@ -9538,7 +9538,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>Necrotic energies race across your body, shedding dim light in a 60-foot radius for the spell's duration. The necrosis doesn't harm you. Until the spell ends, you gain the following benefits:</p>\n<ul>\n<li>You are immune to necrotic damage and resistant to poison damage.</li>\n<li>Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 necrotic damage.</li>\n<li>You can use your action to create a line of necrotic energy 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 necrotic damage on a failed save, or half as much damage on a successful one.</li>\n</ul>",
+    'description': "<p>Necrotic energies race across your body, shedding dim light in a 60-foot radius for the spell&apos;s duration. The necrosis doesn't harm you. Until the spell ends, you gain the following benefits:</p>\n<ul>\n<li>You are immune to necrotic damage and resistant to poison damage.</li>\n<li>Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 necrotic damage.</li>\n<li>You can use your action to create a line of necrotic energy 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 necrotic damage on a failed save, or half as much damage on a successful one.</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -9647,7 +9647,7 @@ const spell_data = [
     'casting-time': '1 reaction, which you take when you see a creature fail a saving throw',
     'casting-time-list': '1 reaction',
     'range': '30 feet',
-    'components': "V, S, M (a metallic dragon's scale worth 100 gp)",
+    'components': "V, S, M (a metallic dragon&apos;s scale worth 100 gp)",
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>You make a plea to the dragon god of justice, asking him to aid one of you allies. Using your reaction, you allow a creature that you can see within range that failed a saving throw to reroll the saving throw with advantage. The creature must keep the second result.</p>',
@@ -9679,8 +9679,8 @@ const spell_data = [
   },
   {
     'spell-index': 446,
-    'name': "Jim's Glowing Coin",
-    'name-linked': "<a href=./spell.html?spell_id=446>Jim's Glowing Coin</a>",
+    'name': "Jim&apos;s Glowing Coin",
+    'name-linked': "<a href=./spell.html?spell_id=446>Jim&apos;s Glowing Coin</a>",
     'school': 'Enchantment',
     'level': 2,
     'casting-time': '1 action',
@@ -9689,7 +9689,7 @@ const spell_data = [
     'components': 'S, M (a coin, 2 gold coins, which is consumed as tax for using the spell)',
     'components-list': 'S, M ',
     'duration': '1 minute',
-    'description': "<p>When you cast the spell, you hurl the coin that is the spell's material component to any spot within range. The coin lights up as if under the effect of a light spell. Each creature of your choice that you can see within 30 feet of the coin must succeed on a Wisdom saving throw or be distracted for the duration. While distracted, a creature has disadvantage on Wisdom (Perception) checks and initiative rolls.</p>",
+    'description': "<p>When you cast the spell, you hurl the coin that is the spell&apos;s material component to any spot within range. The coin lights up as if under the effect of a light spell. Each creature of your choice that you can see within 30 feet of the coin must succeed on a Wisdom saving throw or be distracted for the duration. While distracted, a creature has disadvantage on Wisdom (Perception) checks and initiative rolls.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane'
@@ -9698,8 +9698,8 @@ const spell_data = [
   },
   {
     'spell-index': 447,
-    'name': "Jim's Magic Missile",
-    'name-linked': "<a href=./spell.html?spell_id=447>Jim's Magic Missile</a>",
+    'name': "Jim&apos;s Magic Missile",
+    'name-linked': "<a href=./spell.html?spell_id=447>Jim&apos;s Magic Missile</a>",
     'school': 'Evocation',
     'level': 1,
     'casting-time': '1 action',
@@ -9724,7 +9724,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': 'Touch',
-    'components': 'V, S, M (a grasshopper's hind leg)',
+    'components': 'V, S, M (a grasshopper&apos;s hind leg)',
     'components-list': 'V, S, M ',
     'duration': '1 minute',
     'description': '<p>You touch a creature. The creature&#8217;s jump distance is tripled until the spell ends.</p>',
@@ -9764,8 +9764,8 @@ const spell_data = [
   },
   {
     'spell-index': 450,
-    'name': "Kelemvor's Irradiating Beam",
-    'name-linked': "<a href=./spell.html?spell_id=450>Kelemvor's Irradiating Beam</a>",
+    'name': "Kelemvor&apos;s Irradiating Beam",
+    'name-linked': "<a href=./spell.html?spell_id=450>Kelemvor&apos;s Irradiating Beam</a>",
     'school': 'Evocation',
     'level': 7,
     'casting-time': '1 action',
@@ -9794,7 +9794,7 @@ const spell_data = [
     'components': 'S',
     'components-list': 'S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You magically empower your movement with dancelike steps, giving yourself the following benefits for the duration:</p>\n<ul>\n<li>Your walking speed increases by 10 feet.</li>\n</ul>\n<ul>\n<li>You don't provoke opportunity attacks.</li>\n</ul>\n<ul>\n<li>You can move through the space of another creature, and it doesn't count as difficult terrain. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take 1d8 force damage.</li>\n</ul>",
+    'description': "<p>You magically empower your movement with dancelike steps, giving yourself the following benefits for the duration:</p>\n<ul>\n<li>Your walking speed increases by 10 feet.</li>\n</ul>\n<ul>\n<li>You don't provoke opportunity attacks.</li>\n</ul>\n<ul>\n<li>You can move through the space of another creature, and it doesn't count as difficult terrain. If you end your turn in another creature&apos;s space, you are shunted to the last unoccupied space you occupied, and you take 1d8 force damage.</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -9826,8 +9826,8 @@ const spell_data = [
   },
   {
     'spell-index': 453,
-    'name': "Kossuth's Burning Mark",
-    'name-linked': "<a href=./spell.html?spell_id=453>Kossuth's Burning Mark</a>",
+    'name': "Kossuth&apos;s Burning Mark",
+    'name-linked': "<a href=./spell.html?spell_id=453>Kossuth&apos;s Burning Mark</a>",
     'school': 'Evocation',
     'level': 6,
     'casting-time': '1 action',
@@ -9836,7 +9836,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You burn a fiery rune in the shape of Kossuth's symbol into the forehead of a creature. At the start of the targets turns, it must make a Constitution saving throw. On a failed save, the target takes 1d8 fire damage for every 5 feet it moves on during that turn. On a successful save, the target is not affected during that turn but the spell does not end.</p>",
+    'description': "<p>You burn a fiery rune in the shape of Kossuth&apos;s symbol into the forehead of a creature. At the start of the targets turns, it must make a Constitution saving throw. On a failed save, the target takes 1d8 fire damage for every 5 feet it moves on during that turn. On a successful save, the target is not affected during that turn but the spell does not end.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane'
@@ -9845,8 +9845,8 @@ const spell_data = [
   },
   {
     'spell-index': 454,
-    'name': "Larloch's Minor Drain",
-    'name-linked': "<a href=./spell.html?spell_id=454>Larloch's Minor Drain</a>",
+    'name': "Larloch&apos;s Minor Drain",
+    'name-linked': "<a href=./spell.html?spell_id=454>Larloch&apos;s Minor Drain</a>",
     'school': 'Necromancy',
     'level': 1,
     'casting-time': '1 action',
@@ -9876,7 +9876,7 @@ const spell_data = [
     'components': 'V, S, M (a vial of water)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You raise your hands in a grasping gesture around a creature's neck and begin to fill their lungs with water. The target must succeed on a Constitution saving throw or take 1d8 cold damage, and on your turn(s), you can use your action to deal 1d8 cold damage to the target automatically.</p>\n<p>While the target is affected by the spell, it is considered to be holding its breath. The target can hold its breath for 1 + its Constitution modifier minutes (minimum of 30 seconds), then begins choking. The spell ends if you use your action to do anything else or the target moves more than 30 feet away from you or dies. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>\n<p>This spell has no effect on creatures who don't need to breathe or can breathe underwater.</p>",
+    'description': "<p>You raise your hands in a grasping gesture around a creature&apos;s neck and begin to fill their lungs with water. The target must succeed on a Constitution saving throw or take 1d8 cold damage, and on your turn(s), you can use your action to deal 1d8 cold damage to the target automatically.</p>\n<p>While the target is affected by the spell, it is considered to be holding its breath. The target can hold its breath for 1 + its Constitution modifier minutes (minimum of 30 seconds), then begins choking. The spell ends if you use your action to do anything else or the target moves more than 30 feet away from you or dies. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>\n<p>This spell has no effect on creatures who don't need to breathe or can breathe underwater.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -9889,8 +9889,8 @@ const spell_data = [
   },
   {
     'spell-index': 456,
-    'name': "Lathander's Blessing",
-    'name-linked': "<a href=./spell.html?spell_id=456>Lathander's Blessing</a>",
+    'name': "Lathander&apos;s Blessing",
+    'name-linked': "<a href=./spell.html?spell_id=456>Lathander&apos;s Blessing</a>",
     'school': 'Abjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -9932,8 +9932,8 @@ const spell_data = [
   },
   {
     'spell-index': 458,
-    'name': "Leomund's Secret Chest",
-    'name-linked': "<a href=./spell.html?spell_id=458>Leomund's Secret Chest</a>",
+    'name': "Leomund&apos;s Secret Chest",
+    'name-linked': "<a href=./spell.html?spell_id=458>Leomund&apos;s Secret Chest</a>",
     'school': 'Transposition',
     'level': 4,
     'casting-time': '1 action',
@@ -9952,8 +9952,8 @@ const spell_data = [
   },
   {
     'spell-index': 459,
-    'name': "Leomund's Tiny Hut",
-    'name-linked': "<a href=./spell.html?spell_id=459>Leomund's Tiny Hut</a>",
+    'name': "Leomund&apos;s Tiny Hut",
+    'name-linked': "<a href=./spell.html?spell_id=459>Leomund&apos;s Tiny Hut</a>",
     'school': 'Abjuration',
     'level': 3,
     'casting-time': '1 minute',
@@ -10031,7 +10031,7 @@ const spell_data = [
     'components': 'V, S, M (a blue sapphire worth at least 30,000 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You bury a gemstone 1 foot below the surface and begin to enchant the surrounding area with magical energies native to the Elemental Plane of Air. After a strenuous casting recital consisting of 8 hours of uninterrupted devotion, the landscape begins to tear away from its surroundings up to a 250-foot-radius sphere in any direction from the gemstone, forming an island.</p>\n<p>Once the spell has been completed, the island begins to lift into the air at a rate of 100 feet per 1 hour. You are able to use your action to stop the island from elevating at any point up to 1 mile above the surface. Once stopped, you are able to move the island by spending 1 hour in an uninterrupted recitation. Doing so will allow you to move the island in any direction at a rate of 20 feet per 1 hour. You may stop the island from moving at any time using your action. The buried gemstone can never be higher than 1 mile above the surrounding ground's surface. Removing the gemstone from the place it was buried requires a successful Intelligence (Arcana) and Strength (Athletic) check, each contested by your spell save DC. Succeeding on both checks ends the spell, causing the island to fall back towards the surface at a rate of 192 feet per round.</p>\n<p>You may only have one instance of this spell active at a time. Casting the spell again will cause the other casting of this spell to lose its magical properties and the spell will end.</p>",
+    'description': "<p>You bury a gemstone 1 foot below the surface and begin to enchant the surrounding area with magical energies native to the Elemental Plane of Air. After a strenuous casting recital consisting of 8 hours of uninterrupted devotion, the landscape begins to tear away from its surroundings up to a 250-foot-radius sphere in any direction from the gemstone, forming an island.</p>\n<p>Once the spell has been completed, the island begins to lift into the air at a rate of 100 feet per 1 hour. You are able to use your action to stop the island from elevating at any point up to 1 mile above the surface. Once stopped, you are able to move the island by spending 1 hour in an uninterrupted recitation. Doing so will allow you to move the island in any direction at a rate of 20 feet per 1 hour. You may stop the island from moving at any time using your action. The buried gemstone can never be higher than 1 mile above the surrounding ground&apos;s surface. Removing the gemstone from the place it was buried requires a successful Intelligence (Arcana) and Strength (Athletic) check, each contested by your spell save DC. Succeeding on both checks ends the spell, causing the island to fall back towards the surface at a rate of 192 feet per round.</p>\n<p>You may only have one instance of this spell active at a time. Casting the spell again will cause the other casting of this spell to lose its magical properties and the spell will end.</p>",
     'higher-levels': 'When you cast this spell using a slot of 9th level, you may have multiple instances of this spell active at a time, and casting the spell again no longer causes previous castings of this spell to end. When you complete the 1-hour recitation to move a Levitated Landscape, you instead move all Levitated Landscapes that you control.</p>',
     'lists': [
       'Arcane'
@@ -10161,7 +10161,7 @@ const spell_data = [
     'components-list': 'V',
     'duration': 'Instantaneous',
     'description': '<p>You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.</p>',
-    'higher-levels': "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
     'lists': [
       'Arcane',
       'Artificer',
@@ -10330,7 +10330,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>This spell sends a creature into a magical slumber. Roll 3d4; this is the amount of hit points this spell can affect. Compare this amount to the hit points of a creature you can see within range of the spell. If the total equals or exceeds the target's hit points, it falls unconscious until the spell ends, the target takes damage, or someone uses an action to shake or slap it awake. If the total is less than the target's hit points, it has disadvantage on Wisdom based skill checks until the spell ends or someone takes a hostile action against it.</p>",
+    'description': "<p>This spell sends a creature into a magical slumber. Roll 3d4; this is the amount of hit points this spell can affect. Compare this amount to the hit points of a creature you can see within range of the spell. If the total equals or exceeds the target&apos;s hit points, it falls unconscious until the spell ends, the target takes damage, or someone uses an action to shake or slap it awake. If the total is less than the target&apos;s hit points, it has disadvantage on Wisdom based skill checks until the spell ends or someone takes a hostile action against it.</p>",
     'higher-levels': 'The amount of hit points this spell can affect increases by 2d4 when you reach 5th level (5d4), 11th level (7d4), and 17th level (9d4).</p>',
     'lists': [
       'Bard',
@@ -10759,7 +10759,7 @@ const spell_data = [
     'components': 'V, S, M (a tuft of werewolf fur)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You adopt a spectral visage of a ravenous wolf spirit. For the duration, creatures of your choice within 30 feet of you gain advantage on attack rolls against their target if at least one of their allies is within 5 feet of that target and the ally isn't incapacitated.</p>\n<p>Additionally, actions you take on your turn gain special aspects as you channel Malar's bestial will. If you take the Attack action, creatures of your choice within 10 feet of you when you make the attack must make a Wisdom saving throw or be frightened of you until the end of their next turn; if you take the Dash action your jump distance is tripled; if you take the Disengage action, your movement speed increases by 10 feet; if you take the Dodge action, you gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons that aren't silvered.</p>",
+    'description': "<p>You adopt a spectral visage of a ravenous wolf spirit. For the duration, creatures of your choice within 30 feet of you gain advantage on attack rolls against their target if at least one of their allies is within 5 feet of that target and the ally isn't incapacitated.</p>\n<p>Additionally, actions you take on your turn gain special aspects as you channel Malar&apos;s bestial will. If you take the Attack action, creatures of your choice within 10 feet of you when you make the attack must make a Wisdom saving throw or be frightened of you until the end of their next turn; if you take the Dash action your jump distance is tripled; if you take the Disengage action, your movement speed increases by 10 feet; if you take the Dodge action, you gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons that aren't silvered.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -10792,8 +10792,8 @@ const spell_data = [
   },
   {
     'spell-index': 497,
-    'name': "Martyr's Cloak",
-    'name-linked': "<a href=./spell.html?spell_id=497>Martyr's Cloak</a>",
+    'name': "Martyr&apos;s Cloak",
+    'name-linked': "<a href=./spell.html?spell_id=497>Martyr&apos;s Cloak</a>",
     'school': 'Abjuration',
     'level': 1,
     'casting-time': '1 action',
@@ -10802,7 +10802,7 @@ const spell_data = [
     'components': 'V, S, M (a piece of cloth inscribed with a religious symbol)',
     'components-list': 'V, S, M ',
     'duration': '1 hour',
-    'description': "<p>A spectral light surrounds you, manifesting as a transparent cloak that covers you and your equipment.</p>\n<p>You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these temporary hit points, that creature becomes marked by the cloak's essence. A creature can only have one such mark at a time. The next time you or a creature of your choice hits a marked creature with a melee attack, the mark is consumed and the attack deals an extra 1d8 radiant damage.</p>",
+    'description': "<p>A spectral light surrounds you, manifesting as a transparent cloak that covers you and your equipment.</p>\n<p>You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these temporary hit points, that creature becomes marked by the cloak&apos;s essence. A creature can only have one such mark at a time. The next time you or a creature of your choice hits a marked creature with a melee attack, the mark is consumed and the attack deals an extra 1d8 radiant damage.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 and the damage increases by 1d8 for each slot level above 1st.</p>',
     'lists': [
       'Atavist',
@@ -10902,7 +10902,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': '60 feet',
-    'components': 'V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)',
+    'components': 'V, M (a snake&apos;s tongue and either a bit of honeycomb or a drop of sweet oil)',
     'components-list': 'V, M ',
     'duration': '24 hours',
     'description': '<p>You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can&#8217;t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell.</p>\n<p>Each target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.</p>\n<p>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the first beggar they meet. If the condition isn&#8217;t met before the spell ends, the activity isn&#8217;t performed.</p>\n<p>If you or any of your companions damage a creature affected by this spell, the spell ends for that creature.</p>',
@@ -10936,8 +10936,8 @@ const spell_data = [
   },
   {
     'spell-index': 504,
-    'name': "Maximillian's Earthen Grasp",
-    'name-linked': "<a href=./spell.html?spell_id=504>Maximillian's Earthen Grasp</a>",
+    'name': "Maximillian&apos;s Earthen Grasp",
+    'name-linked': "<a href=./spell.html?spell_id=504>Maximillian&apos;s Earthen Grasp</a>",
     'school': 'Transmutation',
     'level': 2,
     'casting-time': '1 action',
@@ -10999,14 +10999,14 @@ const spell_data = [
   },
   {
     'spell-index': 507,
-    'name': "Melf's Acid Arrow",
-    'name-linked': "<a href=./spell.html?spell_id=507>Melf's Acid Arrow</a>",
+    'name': "Melf&apos;s Acid Arrow",
+    'name-linked': "<a href=./spell.html?spell_id=507>Melf&apos;s Acid Arrow</a>",
     'school': 'Evocation',
     'level': 2,
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': '90 feet',
-    'components': 'V, S, M (powdered rhubarb leaf and an adder's stomach)',
+    'components': 'V, S, M (powdered rhubarb leaf and an adder&apos;s stomach)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.</p>',
@@ -11021,8 +11021,8 @@ const spell_data = [
   },
   {
     'spell-index': 508,
-    'name': "Melf's Minute Meteors",
-    'name-linked': "<a href=./spell.html?spell_id=508>Melf's Minute Meteors</a>",
+    'name': "Melf&apos;s Minute Meteors",
+    'name-linked': "<a href=./spell.html?spell_id=508>Melf&apos;s Minute Meteors</a>",
     'school': 'Evocation',
     'level': 3,
     'casting-time': '1 action',
@@ -11137,7 +11137,7 @@ const spell_data = [
     'components': 'V, S, M (bat fur and a drop of pitch or piece of coal)',
     'components-list': 'V, S, M ',
     'duration': 'Up to 1 hour',
-    'description': "<p>Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.</p>\n<p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p>\n<p>If any of this spell's area overlaps with an area of light created by a spell of 5th level or lower, the spell that created the light is dispelled.</p>",
+    'description': "<p>Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.</p>\n<p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p>\n<p>If any of this spell&apos;s area overlaps with an area of light created by a spell of 5th level or lower, the spell that created the light is dispelled.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -11220,7 +11220,7 @@ const spell_data = [
     'components': 'S',
     'components-list': 'S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking 3d8 psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can&#8217;t become hidden from you, and if it&#8217;s invisible, it gains no benefit from that condition against you.</p>",
+    'description': "<p>You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking 3d8 psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target&apos;s location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can&#8217;t become hidden from you, and if it&#8217;s invisible, it gains no benefit from that condition against you.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>',
     'lists': [
       'Arcane',
@@ -11429,8 +11429,8 @@ const spell_data = [
   },
   {
     'spell-index': 527,
-    'name': "Mordenkainen's Faithful Hound",
-    'name-linked': "<a href=./spell.html?spell_id=527>Mordenkainen's Faithful Hound</a>",
+    'name': "Mordenkainen&apos;s Faithful Hound",
+    'name-linked': "<a href=./spell.html?spell_id=527>Mordenkainen&apos;s Faithful Hound</a>",
     'school': 'Conjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -11450,8 +11450,8 @@ const spell_data = [
   },
   {
     'spell-index': 528,
-    'name': "Mordenkainen's Magnificent Mansion",
-    'name-linked': "<a href=./spell.html?spell_id=528>Mordenkainen's Magnificent Mansion</a>",
+    'name': "Mordenkainen&apos;s Magnificent Mansion",
+    'name-linked': "<a href=./spell.html?spell_id=528>Mordenkainen&apos;s Magnificent Mansion</a>",
     'school': 'Conjuration',
     'level': 7,
     'casting-time': '1 minute',
@@ -11470,8 +11470,8 @@ const spell_data = [
   },
   {
     'spell-index': 529,
-    'name': "Mordenkainen's Private Sanctum",
-    'name-linked': "<a href=./spell.html?spell_id=529>Mordenkainen's Private Sanctum</a>",
+    'name': "Mordenkainen&apos;s Private Sanctum",
+    'name-linked': "<a href=./spell.html?spell_id=529>Mordenkainen&apos;s Private Sanctum</a>",
     'school': 'Abjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -11490,8 +11490,8 @@ const spell_data = [
   },
   {
     'spell-index': 530,
-    'name': "Mordenkainen's Sword",
-    'name-linked': "<a href=./spell.html?spell_id=530>Mordenkainen's Sword</a>",
+    'name': "Mordenkainen&apos;s Sword",
+    'name-linked': "<a href=./spell.html?spell_id=530>Mordenkainen&apos;s Sword</a>",
     'school': 'Conjuration',
     'level': 7,
     'casting-time': '1 action',
@@ -11609,7 +11609,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You touch a humanoid creature and utter an ancient curse. The target must succeed on a Strength saving throw or take 4d8 necrotic damage and become restrained as spectral wrappings begin to tighten around its body. Until the spell ends, as an action on each of your turns, you can cause the target to take an additional 2d8 necrotic damage every round after the spell was initially cast. The target can use its action to make a Strength saving throw, breaking the spectral wrappings and ending the spell.</p>\n<p>A creature that dies while under the effect of this spell becomes a mummy that is friendly to you and your companions for the remaining duration. Roll initiative for the mummy, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don&#8217;t issue any commands to the mummy, it defends itself from hostile creatures but otherwise takes no actions. Once the duration is reached, the mummy dies and turns to ash.</p>\n<p>If your concentration is broken, the mummy doesn&#8217;t die. Instead, you lose control of the mummy, it becomes hostile toward you and your companions, and will attack. An uncontrolled mummy can&#8217;t be dismissed by you, and it turns to ash 10 minutes after the spell was initially cast. The DM has the mummy's statistics.</p>",
+    'description': "<p>You touch a humanoid creature and utter an ancient curse. The target must succeed on a Strength saving throw or take 4d8 necrotic damage and become restrained as spectral wrappings begin to tighten around its body. Until the spell ends, as an action on each of your turns, you can cause the target to take an additional 2d8 necrotic damage every round after the spell was initially cast. The target can use its action to make a Strength saving throw, breaking the spectral wrappings and ending the spell.</p>\n<p>A creature that dies while under the effect of this spell becomes a mummy that is friendly to you and your companions for the remaining duration. Roll initiative for the mummy, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don&#8217;t issue any commands to the mummy, it defends itself from hostile creatures but otherwise takes no actions. Once the duration is reached, the mummy dies and turns to ash.</p>\n<p>If your concentration is broken, the mummy doesn&#8217;t die. Instead, you lose control of the mummy, it becomes hostile toward you and your companions, and will attack. An uncontrolled mummy can&#8217;t be dismissed by you, and it turns to ash 10 minutes after the spell was initially cast. The DM has the mummy&apos;s statistics.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -11643,8 +11643,8 @@ const spell_data = [
   },
   {
     'spell-index': 537,
-    'name': "Myrkul's Power",
-    'name-linked': "<a href=./spell.html?spell_id=537>Myrkul's Power</a>",
+    'name': "Myrkul&apos;s Power",
+    'name-linked': "<a href=./spell.html?spell_id=537>Myrkul&apos;s Power</a>",
     'school': 'Necromancy',
     'level': 6,
     'casting-time': '1 action',
@@ -11665,8 +11665,8 @@ const spell_data = [
   },
   {
     'spell-index': 538,
-    'name': "Mystra's Bequest",
-    'name-linked': "<a href=./spell.html?spell_id=538>Mystra's Bequest</a>",
+    'name': "Mystra&apos;s Bequest",
+    'name-linked': "<a href=./spell.html?spell_id=538>Mystra&apos;s Bequest</a>",
     'school': 'Enchantment',
     'level': 5,
     'casting-time': '1 action',
@@ -11687,8 +11687,8 @@ const spell_data = [
   },
   {
     'spell-index': 539,
-    'name': "Nathair's Mischief",
-    'name-linked': "<a href=./spell.html?spell_id=539>Nathair's Mischief</a>",
+    'name': "Nathair&apos;s Mischief",
+    'name-linked': "<a href=./spell.html?spell_id=539>Nathair&apos;s Mischief</a>",
     'school': 'Illusion',
     'level': 2,
     'casting-time': '1 action',
@@ -11805,7 +11805,7 @@ const spell_data = [
     'components-list': 'S, M ',
     'duration': 'Concentration, up to 1 minute',
     'description': '<p>You conjure an Small shadowy figure in an area that you can see within range that remains until it is slain or the spell ends. The shadowy figure has 10 hit Points, an Armor Class of 14 and a movement speed of 0. When you cast the spell, you can command the shadowy figure to assault the mind of a creature within 30 feet of it that you can see. The target must succeed on an Intelligence saving throw or take 1d8 psychic damage.</p>\n<p>As an action, you can repeat the attack against a creature within 30 feet of it that you can see.</p>',
-    'higher-levels': "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
     'lists': [
       'Arcane',
       'Bard',
@@ -11880,8 +11880,8 @@ const spell_data = [
   },
   {
     'spell-index': 548,
-    'name': "Nystul's Magic Aura",
-    'name-linked': "<a href=./spell.html?spell_id=548>Nystul's Magic Aura</a>",
+    'name': "Nystul&apos;s Magic Aura",
+    'name-linked': "<a href=./spell.html?spell_id=548>Nystul&apos;s Magic Aura</a>",
     'school': 'Illusion',
     'level': 2,
     'casting-time': '1 action',
@@ -11924,8 +11924,8 @@ const spell_data = [
   },
   {
     'spell-index': 550,
-    'name': "Oghma's Knowledge Transferal",
-    'name-linked': "<a href=./spell.html?spell_id=550>Oghma's Knowledge Transferal</a>",
+    'name': "Oghma&apos;s Knowledge Transferal",
+    'name-linked': "<a href=./spell.html?spell_id=550>Oghma&apos;s Knowledge Transferal</a>",
     'school': 'Divination',
     'level': 5,
     'casting-time': '1 reaction, which you take when a creature casts a spell',
@@ -11934,7 +11934,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You are able to magically transfer your knowledge into another willing creature, allowing them to gain some of your arcane insight. When an ally would cast a spell of 3rd level or lower on their turn, you may use your reaction to grant them access to your list of prepared spells to select from, provided they can be cast at the given level.</p>\n<p>Your ally's casting of the spell uses their spell slot of the appropriate level, and it behaves as though they cast it for the purposes of concentration, spell attack rolls, and saving throw DC.</p>",
+    'description': "<p>You are able to magically transfer your knowledge into another willing creature, allowing them to gain some of your arcane insight. When an ally would cast a spell of 3rd level or lower on their turn, you may use your reaction to grant them access to your list of prepared spells to select from, provided they can be cast at the given level.</p>\n<p>Your ally&apos;s casting of the spell uses their spell slot of the appropriate level, and it behaves as though they cast it for the purposes of concentration, spell attack rolls, and saving throw DC.</p>",
     'higher-levels': 'If you cast this spell using a spell slot of 6th level or higher, the spell level that you can cast through an ally increases by one level for each spell level above 5th.</p>',
     'lists': [
       'Arcane',
@@ -12005,8 +12005,8 @@ const spell_data = [
   },
   {
     'spell-index': 554,
-    'name': "Otiluke's Freezing Sphere",
-    'name-linked': "<a href=./spell.html?spell_id=554>Otiluke's Freezing Sphere</a>",
+    'name': "Otiluke&apos;s Freezing Sphere",
+    'name-linked': "<a href=./spell.html?spell_id=554>Otiluke&apos;s Freezing Sphere</a>",
     'school': 'Evocation',
     'level': 6,
     'casting-time': '1 action',
@@ -12025,8 +12025,8 @@ const spell_data = [
   },
   {
     'spell-index': 555,
-    'name': "Otiluke's Resilient Sphere",
-    'name-linked': "<a href=./spell.html?spell_id=555>Otiluke's Resilient Sphere</a>",
+    'name': "Otiluke&apos;s Resilient Sphere",
+    'name-linked': "<a href=./spell.html?spell_id=555>Otiluke&apos;s Resilient Sphere</a>",
     'school': 'Abjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -12045,8 +12045,8 @@ const spell_data = [
   },
   {
     'spell-index': 556,
-    'name': "Otto's Irresistible Dance",
-    'name-linked': "<a href=./spell.html?spell_id=556>Otto's Irresistible Dance</a>",
+    'name': "Otto&apos;s Irresistible Dance",
+    'name-linked': "<a href=./spell.html?spell_id=556>Otto&apos;s Irresistible Dance</a>",
     'school': 'Enchantment',
     'level': 6,
     'casting-time': '1 action',
@@ -12158,7 +12158,7 @@ const spell_data = [
     'components': 'V, S, M (white dragon scales worth 500 gp)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>An icy chill passes over your body, giving you a better understanding of winter's fury. For the duration, when you cast a spell that deals cold damage, you cause your target to become vulnerable to this damage type for the attack. When you cast any spells that deal cold damage to a target that is resistant to that damage type, you cause the target to lose their resistance to cold damage for the attack. When you cast any spells that deal cold damage on a target that is immune to this damage type, you cause your target to become resistant for the attack instead.</p>",
+    'description': "<p>An icy chill passes over your body, giving you a better understanding of winter&apos;s fury. For the duration, when you cast a spell that deals cold damage, you cause your target to become vulnerable to this damage type for the attack. When you cast any spells that deal cold damage to a target that is resistant to that damage type, you cause the target to lose their resistance to cold damage for the attack. When you cast any spells that deal cold damage on a target that is immune to this damage type, you cause your target to become resistant for the attack instead.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -12471,7 +12471,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You touch a creature, causing its heart to fill with a vile poison. The creature must make a Constitution saving throw or take 2d10 poison damage. At the end of each of the target&#8217;s turns before the spell ends, the target must succeed on a Constitution saving throw or take an additional 2d10 poison damage.</p>\n<p>At any point during the spell, if the target dies as a result of the poison damage from this spell, every creature within 5 feet of the target must make a Constitution saving throw as the target's heart explodes. A creature takes 4d10 poison damage on a failed save, or half as much on a successful one.</p>",
+    'description': "<p>You touch a creature, causing its heart to fill with a vile poison. The creature must make a Constitution saving throw or take 2d10 poison damage. At the end of each of the target&#8217;s turns before the spell ends, the target must succeed on a Constitution saving throw or take an additional 2d10 poison damage.</p>\n<p>At any point during the spell, if the target dies as a result of the poison damage from this spell, every creature within 5 feet of the target must make a Constitution saving throw as the target&apos;s heart explodes. A creature takes 4d10 poison damage on a failed save, or half as much on a successful one.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 4th level or higher, all damage dealt from spell increases by 1d10 for every slot level above 3rd.</p>',
     'lists': [
       'Atavist',
@@ -12506,14 +12506,14 @@ const spell_data = [
   },
   {
     'spell-index': 577,
-    'name': "Polyphemus' Might",
-    'name-linked': "<a href=./spell.html?spell_id=577>Polyphemus' Might</a>",
+    'name': "Polyphemus&apos; Might",
+    'name-linked': "<a href=./spell.html?spell_id=577>Polyphemus&apos; Might</a>",
     'school': 'Transmutation',
     'level': 2,
     'casting-time': '1 bonus action',
     'casting-time-list': '1 bonus action',
     'range': '30 feet',
-    'components': "S, M (a giant's eye)",
+    'components': "S, M (a giant&apos;s eye)",
     'components-list': 'S, M ',
     'duration': 'Concentration, up to 1 minute',
     'description': '<p>You imbue one creature of your choice within range a shadow of giant&#8217;s might. The target gains a number of d4s equal to your level in temporary hit points, and while those temporary hit points last, they have advantage on saving throws against being charmed or frightened, and roll damage dice twice for melee attacks, choosing the higher result.</p>',
@@ -12539,7 +12539,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You enter a trance, your mind eclipsing the spirit of a willing creature within range. While in the trance, you possess the target. The target is incapacitated and loses control of its body, but remains dreamily aware of its surroundings. Your body falls into a catatonic state; you are unaware of your body's surroundings, and it can't take actions or move.</p>\n<p>Once you possess a creature's body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features.</p>\n<p>You must make a Constitution saving throw to maintain your concentration on this spell whenever your body or the target's body takes damage. The spell ends early if the target is no longer willing.</p>",
+    'description': "<p>You enter a trance, your mind eclipsing the spirit of a willing creature within range. While in the trance, you possess the target. The target is incapacitated and loses control of its body, but remains dreamily aware of its surroundings. Your body falls into a catatonic state; you are unaware of your body&apos;s surroundings, and it can't take actions or move.</p>\n<p>Once you possess a creature&apos;s body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features.</p>\n<p>You must make a Constitution saving throw to maintain your concentration on this spell whenever your body or the target&apos;s body takes damage. The spell ends early if the target is no longer willing.</p>",
     'higher-levels': "If you cast this spell using a spell slot of 3rd level or higher, the duration is 8 hours, and the spell doesn't require concentration. You can end the spell early at any time (no action required).</p>",
     'lists': [
       'Keeper',
@@ -12706,8 +12706,8 @@ const spell_data = [
   },
   {
     'spell-index': 586,
-    'name': "Practitioner's Rites",
-    'name-linked': "<a href=./spell.html?spell_id=586>Practitioner's Rites</a>",
+    'name': "Practitioner&apos;s Rites",
+    'name-linked': "<a href=./spell.html?spell_id=586>Practitioner&apos;s Rites</a>",
     'school': 'Conjuration',
     'level': 1,
     'casting-time': '1 minute',
@@ -12716,7 +12716,7 @@ const spell_data = [
     'components': 'V, S, M (chalk and a handful of edible food, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You invoke a rite, entreating a boon from nearby spirits. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.</p>\n<p><strong><em>Rite of Elegy.</em></strong> You speak the name of a dead humanoid, and imbue a creature or object precious to it in life—such as a loved one or treasured belonging—with nostalgia. If the dead humanoid became an undead with unfinished business, such as a ghost, spectre, or poltergeist, and is within 1 mile of you, it must succeed on a Wisdom saving throw or spend its turns moving as close to the target as it can for 1 hour or until it takes damage.</p>\n<p><strong><em>Rite of Fertility.</em></strong> One willing creature you touch is imbued with life. Any attempts the affected creature makes to conceive a child within the next 24 hours are successful. If the creature is pregnant, the pregnancy cannot fail or be terminated without the creature's consent, and any disease affecting the creature will not harm their offspring.</p>\n<p><strong><em>Rite of Warding.</em></strong> One homestead or small building is sheltered by a protective blessing until you leave the building or fall unconscious. As part of casting the spell, you touch a number of thresholds, such as doors, windows, or other entryways. For the duration, each threshold has resistance to all damage, and any fey, fiend, or undead that attempts to enter must succeed on a Charisma saving throw be unable to willingly pass through until the end of its next turn. On a successful save, the creature is immune to this effect for 24 hours.</p>\n<p><strong><em>Rite of Wild Sanctuary.</em></strong> One beast you touch with an Intelligence of 6 or lower is shepherded by gentle spirits. The animal has a +10 bonus to all checks made to evade capture and will be led to the nearest source of enough food, water, and shelter to sustain them until they find a safe habitat to live in.</p>",
+    'description': "<p>You invoke a rite, entreating a boon from nearby spirits. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.</p>\n<p><strong><em>Rite of Elegy.</em></strong> You speak the name of a dead humanoid, and imbue a creature or object precious to it in life—such as a loved one or treasured belonging—with nostalgia. If the dead humanoid became an undead with unfinished business, such as a ghost, spectre, or poltergeist, and is within 1 mile of you, it must succeed on a Wisdom saving throw or spend its turns moving as close to the target as it can for 1 hour or until it takes damage.</p>\n<p><strong><em>Rite of Fertility.</em></strong> One willing creature you touch is imbued with life. Any attempts the affected creature makes to conceive a child within the next 24 hours are successful. If the creature is pregnant, the pregnancy cannot fail or be terminated without the creature&apos;s consent, and any disease affecting the creature will not harm their offspring.</p>\n<p><strong><em>Rite of Warding.</em></strong> One homestead or small building is sheltered by a protective blessing until you leave the building or fall unconscious. As part of casting the spell, you touch a number of thresholds, such as doors, windows, or other entryways. For the duration, each threshold has resistance to all damage, and any fey, fiend, or undead that attempts to enter must succeed on a Charisma saving throw be unable to willingly pass through until the end of its next turn. On a successful save, the creature is immune to this effect for 24 hours.</p>\n<p><strong><em>Rite of Wild Sanctuary.</em></strong> One beast you touch with an Intelligence of 6 or lower is shepherded by gentle spirits. The animal has a +10 bonus to all checks made to evade capture and will be led to the nearest source of enough food, water, and shelter to sustain them until they find a safe habitat to live in.</p>",
     'higher-levels': '',
     'lists': [
       'Keeper',
@@ -13078,7 +13078,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You create a 15-foot-radius sphere of thin hazy mist centered on a point you can see within range. The mist spreads around corners. It lasts for the duration or until strong wind disperses it, ending the spell. The area is heavily obscured. Creatures in to mist's area have disadvantage on all Intelligence, Wisdom, and Charisma saving throws and skill checks.</p>",
+    'description': "<p>You create a 15-foot-radius sphere of thin hazy mist centered on a point you can see within range. The mist spreads around corners. It lasts for the duration or until strong wind disperses it, ending the spell. The area is heavily obscured. Creatures in to mist&apos;s area have disadvantage on all Intelligence, Wisdom, and Charisma saving throws and skill checks.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -13247,7 +13247,7 @@ const spell_data = [
     'components': 'V, M (a melee weapon worth at least 1 sp)',
     'components-list': 'V, M ',
     'duration': '1 round',
-    'description': "<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects and it is branded with a visible mark until the beginning of your next turn. The next time the marked creature is hit by an attack by a creature other than you, the attack deals additional radiant damage equal to your spellcasting ability modifier and the mark is consumed.</p>",
+    'description': "<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell&apos;s range, otherwise the spell fails. On a hit, the target suffers the attack&apos;s normal effects and it is branded with a visible mark until the beginning of your next turn. The next time the marked creature is hit by an attack by a creature other than you, the attack deals additional radiant damage equal to your spellcasting ability modifier and the mark is consumed.</p>",
     'higher-levels': 'At 5th level, the melee attack deals an extra 1d6 radiant damage to the target, and the radiant damage when consuming the mark increases to 1d6 + your spellcasting ability modifier. Both damage rolls increase by 1d6 at 11th level and 17th level.</p>',
     'lists': [
       'Cleric'
@@ -13266,7 +13266,7 @@ const spell_data = [
     'components': 'V, S, M (an amulet or holy symbol)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 10 minutes',
-    'description': "<p>You call upon Tempus, the god of war, to grant you the ability to strike down your foes in his name. Using your bonus action, you are able to sheathe a melee weapon you possess with a white burning flame. You can use your action to make a melee attack with the fiery blade. On a hit, the target takes the weapon's normal attack damage plus 1d8 radiant damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p>",
+    'description': "<p>You call upon Tempus, the god of war, to grant you the ability to strike down your foes in his name. Using your bonus action, you are able to sheathe a melee weapon you possess with a white burning flame. You can use your action to make a melee attack with the fiery blade. On a hit, the target takes the weapon&apos;s normal attack damage plus 1d8 radiant damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.</p>',
     'lists': [
       'Atavist',
@@ -13333,7 +13333,7 @@ const spell_data = [
     'components-list': 'S, M ',
     'duration': '1 round',
     'description': '<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell&#8217;s range, otherwise the spell fails. On a hit, the target suffers the attack&#8217;s normal effects, and it becomes engulfed in a 5-foot square of acidic mist. If the target does not move out of this square by the start of your next turn, it immediately takes 1d8 acid damage, and the spell ends.</p>',
-    'higher-levels': "This spell&#8217;s damage and effected area increase when you reach higher levels. At 5th level, the damage is increased by 1d8 and the area covered by the mist is 10 feet in a line away from you, affecting any creatures in the mist at the start of your next turn. Both the damage and area's line increase by 1d8 and 5 feet at 11th level and 17th level.</p>",
+    'higher-levels': "This spell&#8217;s damage and effected area increase when you reach higher levels. At 5th level, the damage is increased by 1d8 and the area covered by the mist is 10 feet in a line away from you, affecting any creatures in the mist at the start of your next turn. Both the damage and area&apos;s line increase by 1d8 and 5 feet at 11th level and 17th level.</p>",
     'lists': [
       'Arcane',
       'Elemental',
@@ -13344,8 +13344,8 @@ const spell_data = [
   },
   {
     'spell-index': 616,
-    'name': "Rary's Telepathic Bond",
-    'name-linked': "<a href=./spell.html?spell_id=616>Rary's Telepathic Bond</a>",
+    'name': "Rary&apos;s Telepathic Bond",
+    'name-linked': "<a href=./spell.html?spell_id=616>Rary&apos;s Telepathic Bond</a>",
     'school': 'Divination',
     'level': 5,
     'casting-time': '1 action',
@@ -13365,8 +13365,8 @@ const spell_data = [
   },
   {
     'spell-index': 617,
-    'name': "Raulothim's Psychic Lance",
-    'name-linked': "<a href=./spell.html?spell_id=617>Raulothim's Psychic Lance</a>",
+    'name': "Raulothim&apos;s Psychic Lance",
+    'name-linked': "<a href=./spell.html?spell_id=617>Raulothim&apos;s Psychic Lance</a>",
     'school': 'Enchantment',
     'level': 4,
     'casting-time': '1 action',
@@ -13397,7 +13397,7 @@ const spell_data = [
     'components': 'V, S, M (a small, nine-pointed star made of iron)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You create a 20-foot-radius sphere of destructive gravitation force centered on a point you can see within range. For the spell's duration, the sphere and any space within 100 feet of it are difficult terrain, and nonmagical objects fully inside the sphere are destroyed if they aren't being worn or carried.</p>\n<p>When the sphere appears and at the start of each of your turns until the spell ends, unsecured objects within 100 feet of the sphere are pulled toward the sphere's center, ending in an unoccupied space as close to the center as possible.</p>\n<p>A creature that starts its turn within 100 feet of the sphere must succeed on a Strength saving throw or be pulled straight toward the sphere's center, ending in an unoccupied space as close to the center as possible. A creature that enters the sphere for the first time on a turn or starts its turn there takes 5d10 force damage and is restrained until it is no longer in the sphere. If the sphere is in the air, the restrained creature hovers inside the sphere. A creature can use its action to make a Strength check against your spell save DC, ending this restrained condition on itself or another creature in the sphere that it can reach. A creature reduced to 0 hit points by this spell is annihilated, along with any nonmagical items it is wearing or carrying.</p>",
+    'description': "<p>You create a 20-foot-radius sphere of destructive gravitation force centered on a point you can see within range. For the spell&apos;s duration, the sphere and any space within 100 feet of it are difficult terrain, and nonmagical objects fully inside the sphere are destroyed if they aren't being worn or carried.</p>\n<p>When the sphere appears and at the start of each of your turns until the spell ends, unsecured objects within 100 feet of the sphere are pulled toward the sphere&apos;s center, ending in an unoccupied space as close to the center as possible.</p>\n<p>A creature that starts its turn within 100 feet of the sphere must succeed on a Strength saving throw or be pulled straight toward the sphere&apos;s center, ending in an unoccupied space as close to the center as possible. A creature that enters the sphere for the first time on a turn or starts its turn there takes 5d10 force damage and is restrained until it is no longer in the sphere. If the sphere is in the air, the restrained creature hovers inside the sphere. A creature can use its action to make a Strength check against your spell save DC, ending this restrained condition on itself or another creature in the sphere that it can reach. A creature reduced to 0 hit points by this spell is annihilated, along with any nonmagical items it is wearing or carrying.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -13481,7 +13481,7 @@ const spell_data = [
     'casting-time': '1 Action',
     'casting-time-list': '1 Action',
     'range': 'Self (15 foot radius)',
-    'components': "V, S, M (a red dragon's scale worth 300 gp)",
+    'components': "V, S, M (a red dragon&apos;s scale worth 300 gp)",
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>You summon a fiery floor of bubbling lava below your feet. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d10 fire damage and may only move up to half of their movement speed until the end of their next turn. Creatures that are within 5 feet of you must make the Dexterity saving throw with disadvantage. Creatures take half damage and do not lose any movement speed on a successful saving throw.</p>',
@@ -13613,7 +13613,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': '10 minutes',
-    'description': "<p>You can use any electronic device within range as if it were in your hands. This is not a telekinesis effect. Rather, this spell allows you to simulate a device's mechanical functions electronically. You are able to access only functions that a person using the device manually would be able to access. You can use remote access with only one device at a time.</p>",
+    'description': "<p>You can use any electronic device within range as if it were in your hands. This is not a telekinesis effect. Rather, this spell allows you to simulate a device&apos;s mechanical functions electronically. You are able to access only functions that a person using the device manually would be able to access. You can use remote access with only one device at a time.</p>",
     'higher-levels': '',
     'lists': [
       'Artificer'
@@ -13739,7 +13739,7 @@ const spell_data = [
     'components': 'V, S, M (a war horn)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You summon warriors to fight for you and your allies with a blast through a war horn that calls them to arms. Choose between a Knight or a Veteran; the chosen creature appears within range, as well as a squad of auxiliary warriors composed of 2d4+4 Guards or Bandits, respectively.</p>\n<p>The summoned warriors are friendly to you and your companions for the duration. Roll initiative for the warriors, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to the warriors, they defend themselves from hostile creatures but otherwise take no actions.</p>\n<p>If your concentration is broken, the warriors don't disappear. Instead, you lose command of them, and they become neutral to you and your companions, following the command of the Knight or Veteran (as appropriate). Uncontrolled warriors can't be dismissed by you and disappear 1 hour after they are summoned. The DM has the warriors' statistics.</p>",
+    'description': "<p>You summon warriors to fight for you and your allies with a blast through a war horn that calls them to arms. Choose between a Knight or a Veteran; the chosen creature appears within range, as well as a squad of auxiliary warriors composed of 2d4+4 Guards or Bandits, respectively.</p>\n<p>The summoned warriors are friendly to you and your companions for the duration. Roll initiative for the warriors, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to the warriors, they defend themselves from hostile creatures but otherwise take no actions.</p>\n<p>If your concentration is broken, the warriors don't disappear. Instead, you lose command of them, and they become neutral to you and your companions, following the command of the Knight or Veteran (as appropriate). Uncontrolled warriors can't be dismissed by you and disappear 1 hour after they are summoned. The DM has the warriors&apos; statistics.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 8th level, the number of auxiliary warriors you may summon increases to 2d6+6. When you cast it using a spell slot of 9th level, this number increases to 2d8+8, or you may summon 12 auxiliary warriors and an additional Knight or Veteran, which must be of the same type as the initial choice.</p>',
     'lists': [
       'Arcane',
@@ -13795,8 +13795,8 @@ const spell_data = [
   },
   {
     'spell-index': 637,
-    'name': "Rime's Binding Ice",
-    'name-linked': "<a href=./spell.html?spell_id=637>Rime's Binding Ice</a>",
+    'name': "Rime&apos;s Binding Ice",
+    'name-linked': "<a href=./spell.html?spell_id=637>Rime&apos;s Binding Ice</a>",
     'school': 'Evocation',
     'level': 2,
     'casting-time': '1 Action',
@@ -13977,7 +13977,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d6 necrotic damage and fall prone.</p>',
-    'higher-levels': "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
     'lists': [
       'Arcane',
       'Cleric',
@@ -13998,7 +13998,7 @@ const spell_data = [
     'components': 'V, S, M (a dragon scale worth 300 gp)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You touch a willing creature. Until the spell ends, the target's skin has a smooth, scale-like appearance, and its AC can't be less than 18, regardless of what kind of armor it is wearing. Also, the target becomes resistant to a single damage type depending on what type of dragon scale you use: white (cold), red (fire), blue (lightning), black (acid), or green (poison).</p>",
+    'description': "<p>You touch a willing creature. Until the spell ends, the target&apos;s skin has a smooth, scale-like appearance, and its AC can't be less than 18, regardless of what kind of armor it is wearing. Also, the target becomes resistant to a single damage type depending on what type of dragon scale you use: white (cold), red (fire), blue (lightning), black (acid), or green (poison).</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -14062,7 +14062,7 @@ const spell_data = [
     'components': 'V, S, M (a ruby worth 1,000 gp)',
     'components-list': 'V, S, M ',
     'duration': 'Up to 8 hours',
-    'description': "<p>You touch a willing creature and strengthen its resolve, allowing it to become dauntless in the face of untold danger. For the duration, the target becomes immune to all conditions. If the target is currently affected with any condition other than exhaustion or is unconscious, casting this spell will remove those conditions from the target. Additionally, if a single source of damage would kill the target while the spell is active, the target's health is set to 1 hit point instead, and the spell ends.</p>",
+    'description': "<p>You touch a willing creature and strengthen its resolve, allowing it to become dauntless in the face of untold danger. For the duration, the target becomes immune to all conditions. If the target is currently affected with any condition other than exhaustion or is unconscious, casting this spell will remove those conditions from the target. Additionally, if a single source of damage would kill the target while the spell is active, the target&apos;s health is set to 1 hit point instead, and the spell ends.</p>",
     'higher-levels': '',
     'lists': [
       'Bard',
@@ -14083,7 +14083,7 @@ const spell_data = [
     'components-list': 'V, S',
     'duration': 'Instantaneous',
     'description': '<p>You touch a target with the tip of your finger, transferring a dark green energy that flows through your finger and infects the target. Make a melee spell attack against the target. On a hit, the target takes 1d8 necrotic damage and suffers disadvantage on a single Constitution saving throw it makes before the start of your next turn.</p>',
-    'higher-levels': "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
     'lists': [
       'Pale Master',
       'Witch'
@@ -14257,7 +14257,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You take control of the shadow belonging to a creature to restrain its master. Make a ranged spell attack against a creature that you can see within range, dealing 2d6 necrotic damage and grappling the target. The grappled creature can use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check (creature's choice) against your spellcasting DC, ending the spell if successful. You are not able to control a target's shadow in this manner if the target is in bright light.</p>",
+    'description': "<p>You take control of the shadow belonging to a creature to restrain its master. Make a ranged spell attack against a creature that you can see within range, dealing 2d6 necrotic damage and grappling the target. The grappled creature can use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check (creature&apos;s choice) against your spellcasting DC, ending the spell if successful. You are not able to control a target&apos;s shadow in this manner if the target is in bright light.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>',
     'lists': [
       'Arcane',
@@ -14674,8 +14674,8 @@ const spell_data = [
   },
   {
     'spell-index': 678,
-    'name': "Silvanus' Blessing",
-    'name-linked': "<a href=./spell.html?spell_id=678>Silvanus' Blessing</a>",
+    'name': "Silvanus&apos; Blessing",
+    'name-linked': "<a href=./spell.html?spell_id=678>Silvanus&apos; Blessing</a>",
     'school': 'Restoration',
     'level': 2,
     'casting-time': '1 action',
@@ -14684,7 +14684,7 @@ const spell_data = [
     'components': 'V, S, M (a small diamond worth at least 50 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You return a dead beast you touch to life, provided that it has been dead no longer than 8 hours. If the beast's soul is both willing and at liberty to rejoin the body, the beast returns to life with half of its total hit points, rejuvenated by the blessing of Silvanus.</p>\n<p>This spell also neutralizes any poisons and cures nonmagical diseases that affected the beast at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the beast returns to life.</p>\n<p>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival - its head, for instance - the spell automatically fails.</p>",
+    'description': "<p>You return a dead beast you touch to life, provided that it has been dead no longer than 8 hours. If the beast&apos;s soul is both willing and at liberty to rejoin the body, the beast returns to life with half of its total hit points, rejuvenated by the blessing of Silvanus.</p>\n<p>This spell also neutralizes any poisons and cures nonmagical diseases that affected the beast at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the beast returns to life.</p>\n<p>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival - its head, for instance - the spell automatically fails.</p>",
     'higher-levels': '',
     'lists': [
       'Cleric',
@@ -14696,8 +14696,8 @@ const spell_data = [
   },
   {
     'spell-index': 679,
-    'name': "Silvanus' Favor",
-    'name-linked': "<a href=./spell.html?spell_id=679>Silvanus' Favor</a>",
+    'name': "Silvanus&apos; Favor",
+    'name-linked': "<a href=./spell.html?spell_id=679>Silvanus&apos; Favor</a>",
     'school': 'Transmutation',
     'level': 2,
     'casting-time': '1 action',
@@ -14706,7 +14706,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You touch a willing beast. Until the spell ends, the beast's non-magical attacks become magical attacks with a +1 bonus to attack rolls and damage rolls.</p>",
+    'description': "<p>You touch a willing beast. Until the spell ends, the beast&apos;s non-magical attacks become magical attacks with a +1 bonus to attack rolls and damage rolls.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.</p>',
     'lists': [
       'Arcane',
@@ -14747,7 +14747,7 @@ const spell_data = [
     'casting-time': '12 hours',
     'casting-time-list': '12 hours',
     'range': 'Touch',
-    'components': 'V, S, M (snow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell)',
+    'components': 'V, S, M (snow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature&apos;s body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell)',
     'components-list': 'V, S, M ',
     'duration': 'Until dispelled',
     'description': '<p>You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creature&#8217;s hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates, except that it is a construct.</p>\n<p>The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor can it regain expended spell slots.</p>\n<p>If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly.</p>\n<p>If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed.</p>',
@@ -14814,7 +14814,7 @@ const spell_data = [
     'components': 'V, S, M (blood, hide, or other remains taken from the desired beast, applied to the target as the spell is cast)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You invite a willing creature into the guise of a mundane animal. A creature you touch transforms into a beast with a challenge rating of 1/4 or lower. This spell has no effect on a creature with 0 hit points.</p>\n<p>While in this form, the target's game statistics are replaced by the statistics of the beast, but it retains its hit points, Intelligence, Wisdom, and Charisma scores. The target retains its alignment and personality, though its mannerisms may be slightly affected by the nature of the beast.</p>\n<p>The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>\n<p>The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>\n<p>The spell ends early if the target is reduced to 0 hit points, or if they end the spell on their turn (no action required).</p>",
+    'description': "<p>You invite a willing creature into the guise of a mundane animal. A creature you touch transforms into a beast with a challenge rating of 1/4 or lower. This spell has no effect on a creature with 0 hit points.</p>\n<p>While in this form, the target&apos;s game statistics are replaced by the statistics of the beast, but it retains its hit points, Intelligence, Wisdom, and Charisma scores. The target retains its alignment and personality, though its mannerisms may be slightly affected by the nature of the beast.</p>\n<p>The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>\n<p>The target&apos;s gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>\n<p>The spell ends early if the target is reduced to 0 hit points, or if they end the spell on their turn (no action required).</p>",
     'higher-levels': '',
     'lists': [
       'Druid',
@@ -14924,7 +14924,7 @@ const spell_data = [
     'components': 'V, S, M (a pinch of dust and a few drops of water)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.</p>\n<p>The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell&#8217;s area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone.</p>\n<p>If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>",
+    'description': "<p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.</p>\n<p>The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell&#8217;s area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone.</p>\n<p>If a creature starts its turn in the spell&apos;s area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -15005,8 +15005,8 @@ const spell_data = [
   },
   {
     'spell-index': 693,
-    'name': "Snilloc's Snowball Swarm",
-    'name-linked': "<a href=./spell.html?spell_id=693>Snilloc's Snowball Swarm</a>",
+    'name': "Snilloc&apos;s Snowball Swarm",
+    'name-linked': "<a href=./spell.html?spell_id=693>Snilloc&apos;s Snowball Swarm</a>",
     'school': 'Evocation',
     'level': 2,
     'casting-time': '1 action',
@@ -15100,7 +15100,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>This spell snatches the soul of a humanoid as it dies and merges it with your own. A possessed soul remains merged with your own until the spell ends or until you release, which ends the spell. While you possess a soul, you can exploit it in any of the ways described below. You can use a possess soul up to ten times. Once you exploit a soul for the tenth time, you have the option to release it or destroy it, and the spell ends. While a soul is possessed, the dead humanoid it came from can&#8217;t be revived.</p>\n<p>You are able to use an action on your turn to invoke one of the following properties, which lasts for 24 hours. You can only have one property active at a time. If you invoke a new property while one is active, the active one ends and is replaced by the new one.</p>\n<p><strong><em>Assimilate.</em></strong> You gain one of the creature's traits (your choice).</p>\n<p><strong><em>Bolster.</em></strong> You gain the creature's damage immunities and damage resistances, if it had any.</p>\n<p><strong><em>Cognizance.</em></strong> If the creature had blind sense, tremor sense or true sight you gain that ability.</p>\n<p><strong><em>Pathfinding.</em></strong> You gain the creature's movement speed, which is added to your own. If the target could fly, swim, climb, or burrow you gain the ability to do so as well.</p>",
+    'description': "<p>This spell snatches the soul of a humanoid as it dies and merges it with your own. A possessed soul remains merged with your own until the spell ends or until you release, which ends the spell. While you possess a soul, you can exploit it in any of the ways described below. You can use a possess soul up to ten times. Once you exploit a soul for the tenth time, you have the option to release it or destroy it, and the spell ends. While a soul is possessed, the dead humanoid it came from can&#8217;t be revived.</p>\n<p>You are able to use an action on your turn to invoke one of the following properties, which lasts for 24 hours. You can only have one property active at a time. If you invoke a new property while one is active, the active one ends and is replaced by the new one.</p>\n<p><strong><em>Assimilate.</em></strong> You gain one of the creature&apos;s traits (your choice).</p>\n<p><strong><em>Bolster.</em></strong> You gain the creature&apos;s damage immunities and damage resistances, if it had any.</p>\n<p><strong><em>Cognizance.</em></strong> If the creature had blind sense, tremor sense or true sight you gain that ability.</p>\n<p><strong><em>Pathfinding.</em></strong> You gain the creature&apos;s movement speed, which is added to your own. If the target could fly, swim, climb, or burrow you gain the ability to do so as well.</p>",
     'higher-levels': '',
     'lists': [
       'Bard',
@@ -15299,7 +15299,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You create a magical zone that enables deception in a 15-foot- radius sphere on a point of your choice within range. Until the spell ends, any creatures of your choosing that enter the spell's area gain advantage on all Deception skill checks.</p>\n<p>Additionally, any creatures in the spell's area that you do not grant this bonus must make a Wisdom saving throw or suffer disadvantage on all Wisdom (Insight) checks made while in the area. When the spell ends, they know that they were deceived in this manner.</p>",
+    'description': "<p>You create a magical zone that enables deception in a 15-foot- radius sphere on a point of your choice within range. Until the spell ends, any creatures of your choosing that enter the spell&apos;s area gain advantage on all Deception skill checks.</p>\n<p>Additionally, any creatures in the spell&apos;s area that you do not grant this bonus must make a Wisdom saving throw or suffer disadvantage on all Wisdom (Insight) checks made while in the area. When the spell ends, they know that they were deceived in this manner.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere is increased by 10 feet for every slot level above 3rd.</p>',
     'lists': [
       'Bard',
@@ -15512,8 +15512,8 @@ const spell_data = [
     'components': 'S, M (a piece of fabric)',
     'components-list': 'S, M ',
     'duration': '1 minute',
-    'description': "<p>Static electricity builds up in a willing creature's hands. Until the spell ends, they can touch a creature as an action, forcing it to make a Constitution saving throw or take 1d6 lightning damage. This spell immediately ends if the user touches a metal object, in which case the user takes lightning damage equal to your spellcasting ability modifier.</p>",
-    'higher-levels': "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). This only applies to the intentional damage, not the backfire damage if the user touches a metal object.</p>",
+    'description': "<p>Static electricity builds up in a willing creature&apos;s hands. Until the spell ends, they can touch a creature as an action, forcing it to make a Constitution saving throw or take 1d6 lightning damage. This spell immediately ends if the user touches a metal object, in which case the user takes lightning damage equal to your spellcasting ability modifier.</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). This only applies to the intentional damage, not the backfire damage if the user touches a metal object.</p>",
     'lists': [
       'Arcane',
       'Artificer',
@@ -15578,7 +15578,7 @@ const spell_data = [
     'components': 'V, S, M (a handful of sticks, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>You transform a bundle of sticks into a Swarm of Poisonous Snakes. The swarm turns back into sticks when it drops to 0 hit points or when the spell ends. The summoned swarm is friendly to you and your companions. The swarm has its own turn, which immediately follows your own on the initiative order. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to it, the swarm defends itself from hostile creatures, but otherwise takes no actions. The DM has the creatures' statistics.</p>",
+    'description': "<p>You transform a bundle of sticks into a Swarm of Poisonous Snakes. The swarm turns back into sticks when it drops to 0 hit points or when the spell ends. The summoned swarm is friendly to you and your companions. The swarm has its own turn, which immediately follows your own on the initiative order. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to it, the swarm defends itself from hostile creatures, but otherwise takes no actions. The DM has the creatures&apos; statistics.</p>",
     'higher-levels': '',
     'lists': [
       'Cleric',
@@ -15601,7 +15601,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You conjure a magical swarm of flying insects that fill a 5 foot cube within range. For the duration of the spell, the swarm is magically replenished and cannot be destroyed. As a bonus action, you can direct the swarm to move up to 30 feet. If the swarm enters another creature's space, it stops and swarms them, stinging repeatedly, and cannot be moved until the start of your next turn. The creature takes 2d4 piercing damage and must make a Constitution saving throw, taking 2d12 poison damage on failure.</p>",
+    'description': "<p>You conjure a magical swarm of flying insects that fill a 5 foot cube within range. For the duration of the spell, the swarm is magically replenished and cannot be destroyed. As a bonus action, you can direct the swarm to move up to 30 feet. If the swarm enters another creature&apos;s space, it stops and swarms them, stinging repeatedly, and cannot be moved until the start of your next turn. The creature takes 2d4 piercing damage and must make a Constitution saving throw, taking 2d12 poison damage on failure.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -15798,7 +15798,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': '30 feet',
-    'components': 'V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)',
+    'components': 'V, M (a snake&apos;s tongue and either a bit of honeycomb or a drop of sweet oil)',
     'components-list': 'V, M ',
     'duration': 'Concentration, up to 8 hours',
     'description': '<p>You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can&#8217;t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.</p>\n<p>The target must make a Wisdom saving throw. On a failed save, it purses the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.</p>\n<p>You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn&#8217;t met before the spell expires, the activity isn&#8217;t preformed.</p>\n<p>If you or any of your companions damage the target, the spell ends.</p>',
@@ -16129,7 +16129,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>The next time you hit with a melee weapon attack during the spell's duration, your attack deals an extra 6d8 radiant damage. The target must make a Strength save or suffer a -5 AC penalty until the end of its next turn.</p>",
+    'description': "<p>The next time you hit with a melee weapon attack during the spell&apos;s duration, your attack deals an extra 6d8 radiant damage. The target must make a Strength save or suffer a -5 AC penalty until the end of its next turn.</p>",
     'higher-levels': '',
     'lists': [
       'Paladin'
@@ -16168,7 +16168,7 @@ const spell_data = [
     'components-list': 'V',
     'duration': 'Instantaneous',
     'description': '<p>You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.</p>',
-    'higher-levels': "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
     'lists': [
       'Arcane',
       'Artificer',
@@ -16188,7 +16188,7 @@ const spell_data = [
     'components': 'V, S, M (mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Until dispelled or triggered',
-    'description': "<p>When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p>\n<p>The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it.</p>\n<p>You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.</p>\n<p>You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.</p>\n<p>When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.</p>\n<ul>\n<li><strong>Death.</strong> Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.</li>\n</ul>\n<ul>\n<li><strong>Discord.</strong> Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks.</li>\n</ul>\n<ul>\n<li><strong>Fear.</strong> Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 20 feet away from the glyph on each of ist turns, if able.</li>\n</ul>\n<ul>\n<li><strong>Hopelessness.</strong> Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can't attack or target any creature with harmful abilities, spells, or other magical effects.</li>\n</ul>\n<ul>\n<li><strong>Insanity.</strong> Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic.</li>\n</ul>\n<ul>\n<li><strong>Pain.</strong> Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save.</li>\n</ul>\n<ul>\n<li><strong>Sleep.</strong> Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.</li>\n</ul>\n<ul>\n<li><strong>Stunning.</strong> Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.</li>\n</ul>",
+    'description': "<p>When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.</p>\n<p>The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it.</p>\n<p>You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or stepping on the glyph, removing another object covering it, approaching within a certain distance of it, or manipulating the object that holds it. For glyphs inscribed within an object, the most common triggers are opening the object, approaching within a certain distance of it, or seeing or reading the glyph.</p>\n<p>You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature&apos;s physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.</p>\n<p>When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.</p>\n<ul>\n<li><strong>Death.</strong> Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.</li>\n</ul>\n<ul>\n<li><strong>Discord.</strong> Each target must make a Constitution saving throw. On a failed save, a target bickers and argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has disadvantage on attack rolls and ability checks.</li>\n</ul>\n<ul>\n<li><strong>Fear.</strong> Each target must make a Wisdom saving throw and becomes frightened for 1 minute on a failed save. While frightened, the target drops whatever it is holding and must move at least 20 feet away from the glyph on each of ist turns, if able.</li>\n</ul>\n<ul>\n<li><strong>Hopelessness.</strong> Each target must make a Charisma saving throw. On a failed save, the target is overwhelmed with despair for 1 minute. During this time, it can't attack or target any creature with harmful abilities, spells, or other magical effects.</li>\n</ul>\n<ul>\n<li><strong>Insanity.</strong> Each target must make an Intelligence saving throw. On a failed save, the target is driven insane for 1 minute. An insane creature can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish. The DM controls its movement, which is erratic.</li>\n</ul>\n<ul>\n<li><strong>Pain.</strong> Each target must make a Constitution saving throw and becomes incapacitated with excruciating pain for 1 minute on a failed save.</li>\n</ul>\n<ul>\n<li><strong>Sleep.</strong> Each target must make a Wisdom saving throw and falls unconscious for 10 minutes on a failed save. A creature awakens if it takes damage or if someone uses an action to shake or slap it awake.</li>\n</ul>\n<ul>\n<li><strong>Stunning.</strong> Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -16234,7 +16234,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>The creature you touch feels reality subtly shifted to its favor while this spell is in effect. The target isn't inconvenienced by mundane delays of any sort. Traffic lights are always green, there's always a waiting elevator, and a taxi is always around the corner. The target can run at full speed through dense crowds, and attacks of opportunity provoked by the target's movement are made with disadvantage.</p>\n<p>Synchronicity grants advantage to Dexterity (Stealth) checks, since the target always finds a handy piece of cover available. Additionally, the target has advantage on all ability checks made to drive a vehicle.</p>\n<p>In the event that two or more creatures under the effect of synchronicity are attempting to avoid being inconvenienced by each other, the creatures engage in a contest of Charisma each time the effects of the spells would oppose each other.</p>",
+    'description': "<p>The creature you touch feels reality subtly shifted to its favor while this spell is in effect. The target isn't inconvenienced by mundane delays of any sort. Traffic lights are always green, there&apos;s always a waiting elevator, and a taxi is always around the corner. The target can run at full speed through dense crowds, and attacks of opportunity provoked by the target&apos;s movement are made with disadvantage.</p>\n<p>Synchronicity grants advantage to Dexterity (Stealth) checks, since the target always finds a handy piece of cover available. Additionally, the target has advantage on all ability checks made to drive a vehicle.</p>\n<p>In the event that two or more creatures under the effect of synchronicity are attempting to avoid being inconvenienced by each other, the creatures engage in a contest of Charisma each time the effects of the spells would oppose each other.</p>",
     'higher-levels': '',
     'lists': [
       'Artificer'
@@ -16262,8 +16262,8 @@ const spell_data = [
   },
   {
     'spell-index': 751,
-    'name': "Tamara's Rebirth",
-    'name-linked': "<a href=./spell.html?spell_id=751>Tamara's Rebirth</a>",
+    'name': "Tamara&apos;s Rebirth",
+    'name-linked': "<a href=./spell.html?spell_id=751>Tamara&apos;s Rebirth</a>",
     'school': 'Restoration',
     'level': 9,
     'casting-time': '1 action',
@@ -16283,8 +16283,8 @@ const spell_data = [
   },
   {
     'spell-index': 752,
-    'name': "Tasha's Caustic Brew",
-    'name-linked': "<a href=./spell.html?spell_id=752>Tasha's Caustic Brew</a>",
+    'name': "Tasha&apos;s Caustic Brew",
+    'name-linked': "<a href=./spell.html?spell_id=752>Tasha&apos;s Caustic Brew</a>",
     'school': 'Evocation',
     'level': 1,
     'casting-time': '1 action',
@@ -16306,8 +16306,8 @@ const spell_data = [
   },
   {
     'spell-index': 753,
-    'name': "Tasha's Hideous Laughter",
-    'name-linked': "<a href=./spell.html?spell_id=753>Tasha's Hideous Laughter</a>",
+    'name': "Tasha&apos;s Hideous Laughter",
+    'name-linked': "<a href=./spell.html?spell_id=753>Tasha&apos;s Hideous Laughter</a>",
     'school': 'Enchantment',
     'level': 1,
     'casting-time': '1 action',
@@ -16327,8 +16327,8 @@ const spell_data = [
   },
   {
     'spell-index': 754,
-    'name': "Tasha's Mind Whip",
-    'name-linked': "<a href=./spell.html?spell_id=754>Tasha's Mind Whip</a>",
+    'name': "Tasha&apos;s Mind Whip",
+    'name-linked': "<a href=./spell.html?spell_id=754>Tasha&apos;s Mind Whip</a>",
     'school': 'Enchantment',
     'level': 2,
     'casting-time': '1 action',
@@ -16348,8 +16348,8 @@ const spell_data = [
   },
   {
     'spell-index': 755,
-    'name': "Tasha's Otherworldly Guise",
-    'name-linked': "<a href=./spell.html?spell_id=755>Tasha's Otherworldly Guise</a>",
+    'name': "Tasha&apos;s Otherworldly Guise",
+    'name-linked': "<a href=./spell.html?spell_id=755>Tasha&apos;s Otherworldly Guise</a>",
     'school': 'Transmutation',
     'level': 6,
     'casting-time': '1 bonus action',
@@ -16421,7 +16421,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Instantaneous',
-    'description': "<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can&#8217;t be held or carried by an unwilling creature.</p>\n<p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table.</p>\n<table>\n<tr>\n<th>Familiarity</th>\n<th>Mishap</th>\n<th>Similar Area</th>\n<th>Off Target</th>\n<th>On Target</th>\n</tr>\n<tr>\n<td>Permanent circle</td>\n<td>—</td>\n<td>—</td>\n<td>—</td>\n<td>01-100</td>\n</tr>\n<tr>\n<td>Associated object</td>\n<td>—</td>\n<td>—</td>\n<td>—</td>\n<td>01-100</td>\n</tr>\n<tr>\n<td>Very familiar</td>\n<td>01-05</td>\n<td>06-13</td>\n<td>14-24</td>\n<td>25-100</td>\n</tr>\n<tr>\n<td>Seen casually</td>\n<td>01-33</td>\n<td>34-43</td>\n<td>44-53</td>\n<td>54-100</td>\n</tr>\n<tr>\n<td>Viewed once</td>\n<td>01-43</td>\n<td>44-53</td>\n<td>54-73</td>\n<td>74-100</td>\n</tr>\n<tr>\n<td>Description</td>\n<td>01-43</td>\n<td>44-53</td>\n<td>54-73</td>\n<td>74-100</td>\n</tr>\n<tr>\n<td>False destination</td>\n<td>01-50</td>\n<td>51-100</td>\n<td>—</td>\n<td>—</td>\n</tr>\n</table>\n<p>&quot;Permanent circle&quot; means a permanent Teleportation Circle whose sigil sequence you know.</p>\n<p>&quot;Associated object&quot; means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.</p>\n<p>&quot;Very familiar&quot; is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</p>\n<p>&quot;Seen casually&quot; is someplace you have seen more than once but with which you aren't very familiar.</p>\n<p>&quot;Viewed once&quot; is a place you have seen once, possibly using magic.</p>\n<p>&quot;Description&quot; is a place whose location and appearance you know through someone else's description, perhaps from a map.</p>\n<p>&quot;False destination&quot; is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p>\n<ul>\n<li><strong>On Target.</strong> You and your group (or the target object) appear where you want to.</li>\n</ul>\n<ul>\n<li><strong>Off Target.</strong> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</li>\n</ul>\n<ul>\n<li><strong>Similar Area.</strong> You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</li>\n</ul>\n<ul>\n<li><strong>Mishap.</strong> The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</li>\n</ul>",
+    'description': "<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can&#8217;t be held or carried by an unwilling creature.</p>\n<p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table.</p>\n<table>\n<tr>\n<th>Familiarity</th>\n<th>Mishap</th>\n<th>Similar Area</th>\n<th>Off Target</th>\n<th>On Target</th>\n</tr>\n<tr>\n<td>Permanent circle</td>\n<td>—</td>\n<td>—</td>\n<td>—</td>\n<td>01-100</td>\n</tr>\n<tr>\n<td>Associated object</td>\n<td>—</td>\n<td>—</td>\n<td>—</td>\n<td>01-100</td>\n</tr>\n<tr>\n<td>Very familiar</td>\n<td>01-05</td>\n<td>06-13</td>\n<td>14-24</td>\n<td>25-100</td>\n</tr>\n<tr>\n<td>Seen casually</td>\n<td>01-33</td>\n<td>34-43</td>\n<td>44-53</td>\n<td>54-100</td>\n</tr>\n<tr>\n<td>Viewed once</td>\n<td>01-43</td>\n<td>44-53</td>\n<td>54-73</td>\n<td>74-100</td>\n</tr>\n<tr>\n<td>Description</td>\n<td>01-43</td>\n<td>44-53</td>\n<td>54-73</td>\n<td>74-100</td>\n</tr>\n<tr>\n<td>False destination</td>\n<td>01-50</td>\n<td>51-100</td>\n<td>—</td>\n<td>—</td>\n</tr>\n</table>\n<p>&quot;Permanent circle&quot; means a permanent Teleportation Circle whose sigil sequence you know.</p>\n<p>&quot;Associated object&quot; means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard&apos;s library, bed linen from a royal suite, or a chunk of marble from a lich&apos;s secret tomb.</p>\n<p>&quot;Very familiar&quot; is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</p>\n<p>&quot;Seen casually&quot; is someplace you have seen more than once but with which you aren't very familiar.</p>\n<p>&quot;Viewed once&quot; is a place you have seen once, possibly using magic.</p>\n<p>&quot;Description&quot; is a place whose location and appearance you know through someone else&apos;s description, perhaps from a map.</p>\n<p>&quot;False destination&quot; is a place that doesn't exist. Perhaps you tried to scry an enemy&apos;s sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p>\n<ul>\n<li><strong>On Target.</strong> You and your group (or the target object) appear where you want to.</li>\n</ul>\n<ul>\n<li><strong>Off Target.</strong> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The DM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</li>\n</ul>\n<ul>\n<li><strong>Similar Area.</strong> You and your group (or the target object) wind up in a different area that&apos;s visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard&apos;s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</li>\n</ul>\n<ul>\n<li><strong>Mishap.</strong> The spell&apos;s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -16495,8 +16495,8 @@ const spell_data = [
   },
   {
     'spell-index': 762,
-    'name': "Tenser's Floating Disk",
-    'name-linked': "<a href=./spell.html?spell_id=762>Tenser's Floating Disk</a>",
+    'name': "Tenser&apos;s Floating Disk",
+    'name-linked': "<a href=./spell.html?spell_id=762>Tenser&apos;s Floating Disk</a>",
     'school': 'Conjuration',
     'level': 1,
     'casting-time': '1 action',
@@ -16515,8 +16515,8 @@ const spell_data = [
   },
   {
     'spell-index': 763,
-    'name': "Tenser's Transformation",
-    'name-linked': "<a href=./spell.html?spell_id=763>Tenser's Transformation</a>",
+    'name': "Tenser&apos;s Transformation",
+    'name-linked': "<a href=./spell.html?spell_id=763>Tenser&apos;s Transformation</a>",
     'school': 'Transmutation',
     'level': 6,
     'casting-time': '1 action',
@@ -16578,8 +16578,8 @@ const spell_data = [
   },
   {
     'spell-index': 766,
-    'name': "Thieves' Ruse",
-    'name-linked': "<a href=./spell.html?spell_id=766>Thieves' Ruse</a>",
+    'name': "Thieves&apos; Ruse",
+    'name-linked': "<a href=./spell.html?spell_id=766>Thieves&apos; Ruse</a>",
     'school': 'Illusion',
     'level': 0,
     'casting-time': '1 action',
@@ -16765,7 +16765,7 @@ const spell_data = [
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
     'description': '<p>You release a blast of sound that can be heard up to 60 feet away. A creature that you can see within range must make a Constitution saving throw or take 2d4 thunder damage and become deafened until the end of its next turn.</p>',
-    'higher-levels': "This spell's damage increases by 2d4 when you reach 5th level (4d4), 11th (6d4), and 17th (8d4).</p>",
+    'higher-levels': "This spell&apos;s damage increases by 2d4 when you reach 5th level (4d4), 11th (6d4), and 17th (8d4).</p>",
     'lists': [
       'Bard',
       'Elemental'
@@ -17008,8 +17008,8 @@ const spell_data = [
   },
   {
     'spell-index': 786,
-    'name': "Torm's Safeguard",
-    'name-linked': "<a href=./spell.html?spell_id=786>Torm's Safeguard</a>",
+    'name': "Torm&apos;s Safeguard",
+    'name-linked': "<a href=./spell.html?spell_id=786>Torm&apos;s Safeguard</a>",
     'school': 'Abjuration',
     'level': 4,
     'casting-time': '1 action',
@@ -17142,7 +17142,7 @@ const spell_data = [
     'components': 'V, S, M (a drop of mercury, a dollop of gum arabic, and a wisp of smoke)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 hour',
-    'description': "<p>Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into a nonmagical object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent.</p>\n<p>Shapechangers aren&#8217;t affected by this spell. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn&#8217;t affected by this spell.</p>\n<p>This spell can&#8217;t affect a target that has 0 hit points.</p>\n<ul>\n<li><strong>Creature into Creature.</strong>\n<ul>\n<li>If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target&#8217;s (or its level, if the target doesn&#8217;t have a challenge rating). The target&#8217;s game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.</li>\n<li>The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn&#8217;t reduce the creature&#8217;s normal form to 0 hit points, it isn&#8217;t knocked unconscious.</li>\n<li>The creature is limited in the actions it can perform by the nature of its new form, and it can&#8217;t speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.</li>\n<li>The target&#8217;s gear melds into the new form. The creature can&#8217;t activate, use, wield, or otherwise benefit from any of its equipment.</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Object into Creature.</strong>\n<ul>\n<li>You can turn an object into any kind of creature, as long as the creature&#8217;s size is no larger than the object&#8217;s size and the creature&#8217;s challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature&#8217;s statistics and resolves all of its actions and movement.</li>\n<li>If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Creature into Object.</strong>\n<ul>\n<li>If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature&#8217;s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.</li>\n</ul>\n</li>\n</ul>",
+    'description': "<p>Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into a nonmagical object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent.</p>\n<p>Shapechangers aren&#8217;t affected by this spell. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn&#8217;t affected by this spell.</p>\n<p>This spell can&#8217;t affect a target that has 0 hit points.</p>\n<ul>\n<li><strong>Creature into Creature.</strong>\n<ul>\n<li>If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target&#8217;s (or its level, if the target doesn&#8217;t have a challenge rating). The target&#8217;s game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.</li>\n<li>The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn&#8217;t reduce the creature&#8217;s normal form to 0 hit points, it isn&#8217;t knocked unconscious.</li>\n<li>The creature is limited in the actions it can perform by the nature of its new form, and it can&#8217;t speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions.</li>\n<li>The target&#8217;s gear melds into the new form. The creature can&#8217;t activate, use, wield, or otherwise benefit from any of its equipment.</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Object into Creature.</strong>\n<ul>\n<li>You can turn an object into any kind of creature, as long as the creature&#8217;s size is no larger than the object&#8217;s size and the creature&#8217;s challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature&#8217;s statistics and resolves all of its actions and movement.</li>\n<li>If the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><strong>Creature into Object.</strong>\n<ul>\n<li>If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object&apos;s size is no larger than the creature&apos;s size. The creature&#8217;s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.</li>\n</ul>\n</li>\n</ul>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -17243,8 +17243,8 @@ const spell_data = [
   },
   {
     'spell-index': 797,
-    'name': "Ubtao's Tiny Terraform",
-    'name-linked': "<a href=./spell.html?spell_id=797>Ubtao's Tiny Terraform</a>",
+    'name': "Ubtao&apos;s Tiny Terraform",
+    'name-linked': "<a href=./spell.html?spell_id=797>Ubtao&apos;s Tiny Terraform</a>",
     'school': 'Transmutation',
     'level': 2,
     'casting-time': '1 action',
@@ -17253,7 +17253,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You touch the ground beneath you and ask Ubtao, god of creation, to cause it to vibrate. Each creature in a 20-foot cube below the ground's surface must make a Dexterity saving throw. A creature takes 4d6 bludgeoning damage and has its movement speed halved until the end of its next turn on a failed save, or half as much damage on a successful one. You briefly learn the location of each creature that takes damage from this spell.</p>",
+    'description': "<p>You touch the ground beneath you and ask Ubtao, god of creation, to cause it to vibrate. Each creature in a 20-foot cube below the ground&apos;s surface must make a Dexterity saving throw. A creature takes 4d6 bludgeoning damage and has its movement speed halved until the end of its next turn on a failed save, or half as much damage on a successful one. You briefly learn the location of each creature that takes damage from this spell.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>',
     'lists': [
       'Arcane',
@@ -17276,8 +17276,8 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You touch a creature and attempt to sear their mind with pain depending on how different their beliefs are from your own. Make a melee spell attack against a creature you can see. On a hit, the target takes 1d4 force damage if its moral identity (good, neutral, or evil) differs from your own. Additionally, if the target's ideals towards society and order (lawful, neutral, or chaotic) also differ from your own, it takes an additional 1d4 force damage. If the target shares your alignment, the spell has no effect. This spell does not reveal a creature's alignment to you.</p>",
-    'higher-levels': "Both instances of this spell's damage increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
+    'description': "<p>You touch a creature and attempt to sear their mind with pain depending on how different their beliefs are from your own. Make a melee spell attack against a creature you can see. On a hit, the target takes 1d4 force damage if its moral identity (good, neutral, or evil) differs from your own. Additionally, if the target&apos;s ideals towards society and order (lawful, neutral, or chaotic) also differ from your own, it takes an additional 1d4 force damage. If the target shares your alignment, the spell has no effect. This spell does not reveal a creature&apos;s alignment to you.</p>",
+    'higher-levels': "Both instances of this spell&apos;s damage increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
     'lists': [
       'Bard',
       'Cleric',
@@ -17317,7 +17317,7 @@ const spell_data = [
     'components': 'V, S, M (a pinch of bone dust)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You sever a hand from your body and grant it sentience. Your hand becomes a crawling claw with the creature's game statistics, except that it gains proficiency in the Sleight of Hand and Stealth skills, and has advantage on checks made with these skills (the DM has the creature&#8217;s game statistics).</p>\n<p>On each of your turns, you can use a bonus action to mentally command it if the crawling claw is within 1 mile of you. You decide what action the crawling claw will take and where it will move during its next turn, or you can issue a general command. If you issue no commands, the crawling claw only defends itself against hostile creatures. Once given an order, the crawling claw continues to follow it until its task is complete.</p>\n<p>You can use a bonus action to reattach the crawl claw to your body, returning your hand to normal. The crawling claw is under your control for 24 hours, after which you must reattach it to your body or it dies. If the crawling claw dies by any means, it cannot be reattached to your body unless by magical means (such as a regenerate spell).</p>",
+    'description': "<p>You sever a hand from your body and grant it sentience. Your hand becomes a crawling claw with the creature&apos;s game statistics, except that it gains proficiency in the Sleight of Hand and Stealth skills, and has advantage on checks made with these skills (the DM has the creature&#8217;s game statistics).</p>\n<p>On each of your turns, you can use a bonus action to mentally command it if the crawling claw is within 1 mile of you. You decide what action the crawling claw will take and where it will move during its next turn, or you can issue a general command. If you issue no commands, the crawling claw only defends itself against hostile creatures. Once given an order, the crawling claw continues to follow it until its task is complete.</p>\n<p>You can use a bonus action to reattach the crawl claw to your body, returning your hand to normal. The crawling claw is under your control for 24 hours, after which you must reattach it to your body or it dies. If the crawling claw dies by any means, it cannot be reattached to your body unless by magical means (such as a regenerate spell).</p>",
     'higher-levels': 'If you cast this spell using a spell slot of 4th level or higher, the crawling claw is under your control for 10 days. If you use a spell slot of 6th level or higher, the crawling claw is under your control for 90 days. If you use a spell slot of 8th level or higher, the crawling claw is under your control for a year and 1 day.</p>',
     'lists': [
       'Pale Master'
@@ -17422,7 +17422,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with a misty white shroud and the attack deals an extra 3d8 radiant damage to the target. Immediately after the attack, your form turns into a gaseous vapor and you are able to travel up to 15 feet without provoking attacks of opportunity. You return to your normal form at the end of your turn.</p>",
+    'description': "<p>The next time you hit a creature with a melee weapon attack during this spell&apos;s duration, your weapon flares with a misty white shroud and the attack deals an extra 3d8 radiant damage to the target. Immediately after the attack, your form turns into a gaseous vapor and you are able to travel up to 15 feet without provoking attacks of opportunity. You return to your normal form at the end of your turn.</p>",
     'higher-levels': '',
     'lists': [
       'Paladin'
@@ -17438,7 +17438,7 @@ const spell_data = [
     'casting-time': '10 minutes',
     'casting-time-list': '10 minutes<sup>R</sup>',
     'range': 'Touch',
-    'components': "V, S, M (an drop of the target's blood)",
+    'components': "V, S, M (an drop of the target&apos;s blood)",
     'components-list': 'V, S, M ',
     'duration': 'Up to 1 hour',
     'description': '<p>You can attempt to force a creature to truthfully answer your questions. Upon casting this spell, you immediately gain 1d4+1 levels of exhaustion.</p>\n<p>If your current level of exhaustion does not result in your death, roll 1d4. This is the number of questions you can ask the target. After each question is asked, the target can make a Wisdom saving throw before it answers. You do not know if the target succeeds on their save. If the target fails its save, it must answer your question briefly in a truthful manner, while not providing any misleading information or it will take 4d6 psychic damage. If the target does not know the answer, it must say so or take 4d6 psychic damage as if it were lying. If the target succeeds the save, it can answer the question in any manner it wishes and does not take damage.</p>',
@@ -17484,7 +17484,7 @@ const spell_data = [
     'components': 'V, S, M (a small moonstone)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You summon a swirling mass of elements in a 15-foot-radius, 40-foot-tall cylinder centered on a point you can see within range. Each creature that begins their turn in the veil or moves into it during their turn must make a Dexterity saving throw. A creature takes 3d6 damage from an element of your choosing (cold, fire, lightning, thunder) on a failed save, or half as much on a successful one, which expends that damage type from the veil.</p>\n<p>The spell ends once all four damage types are expended, or the spell's duration is reached.</p>",
+    'description': "<p>You summon a swirling mass of elements in a 15-foot-radius, 40-foot-tall cylinder centered on a point you can see within range. Each creature that begins their turn in the veil or moves into it during their turn must make a Dexterity saving throw. A creature takes 3d6 damage from an element of your choosing (cold, fire, lightning, thunder) on a failed save, or half as much on a successful one, which expends that damage type from the veil.</p>\n<p>The spell ends once all four damage types are expended, or the spell&apos;s duration is reached.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 3rd level or higher, the damage from each element increases 1d6 for each slot level above 2nd.</p>',
     'lists': [
       'Arcane',
@@ -17504,7 +17504,7 @@ const spell_data = [
     'components': 'S, M (a weapon worth at least 1 sp)',
     'components-list': 'S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>As part of the action used to cast this spell, you imbue a magical poison on a weapon you touch and must make an attack with a it against one creature within the weapon's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects plus 1d4 poison damage. If your attack roll deals critical damage, the target becomes poisoned until the end of its next turn. Targets resistant or immune to poison damage or immune to the poisoned condition do not become poisoned.</p>\n<p>This spell deals an additional 1d4 poison damage when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4).</p>",
+    'description': "<p>As part of the action used to cast this spell, you imbue a magical poison on a weapon you touch and must make an attack with a it against one creature within the weapon&apos;s range, otherwise the spell fails. On a hit, the target suffers the attack&apos;s normal effects plus 1d4 poison damage. If your attack roll deals critical damage, the target becomes poisoned until the end of its next turn. Targets resistant or immune to poison damage or immune to the poisoned condition do not become poisoned.</p>\n<p>This spell deals an additional 1d4 poison damage when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4).</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -17526,7 +17526,7 @@ const spell_data = [
     'components': 'V, S, M (a weapon)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>You channel the rage of Talos, god of storms, to strike down a foe where it stands. Make a melee attack with a weapon. On hit, the target suffers the attack's normal effects plus 6d8 lightning damage and becomes stunned until the start of its next turn. Additionally, every creature of Large size or smaller other than yourself within 20 feet of the target must make a Dexterity saving throw or be knocked prone, regardless of whether the initial attack was successful.</p>",
+    'description': "<p>You channel the rage of Talos, god of storms, to strike down a foe where it stands. Make a melee attack with a weapon. On hit, the target suffers the attack&apos;s normal effects plus 6d8 lightning damage and becomes stunned until the start of its next turn. Additionally, every creature of Large size or smaller other than yourself within 20 feet of the target must make a Dexterity saving throw or be knocked prone, regardless of whether the initial attack was successful.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>',
     'lists': [
       'Arcane',
@@ -17550,7 +17550,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Instantaneous',
-    'description': "<p>You beckon a spirit to your side, feeding it a vengeful rage. The spirit rushes towards a creature or object within range, seeking to destroy it. Make a melee spell attack against the target. On a hit, the target takes 3d8 necrotic damage. Hit or miss, the spirit then vanishes.</p>\n<p>If the target has attacked you or targeted you with a harmful spell since the end of your last turn, the spirit's lust for vengeance is set aflame. If the attack hit, the spirit hounds the target a moment longer, preventing it from taking reactions until the start of its next turn.</p>",
+    'description': "<p>You beckon a spirit to your side, feeding it a vengeful rage. The spirit rushes towards a creature or object within range, seeking to destroy it. Make a melee spell attack against the target. On a hit, the target takes 3d8 necrotic damage. Hit or miss, the spirit then vanishes.</p>\n<p>If the target has attacked you or targeted you with a harmful spell since the end of your last turn, the spirit&apos;s lust for vengeance is set aflame. If the attack hit, the spirit hounds the target a moment longer, preventing it from taking reactions until the start of its next turn.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>',
     'lists': [
       'Keeper',
@@ -17570,7 +17570,7 @@ const spell_data = [
     'components': 'V, S, M (two dead rats and onyx dust worth at least 100 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 8 hours',
-    'description': "<p>You conjure a huge swarm of rats in any location you can see within range. The swarm dies when it drops to 0 hit points. The swarm is friendly to you and your companions. Roll initiative for the swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands, the swarm will spend its turn seeking out the nearest source of food. If a swarm is alive after 8 hours, you will lose your control over it and the swarm will disband into an appropriate number of tiny rats. You can recast the spell before it expires to regain control over the swarm again. The DM has the swarms' statistics (swarm of rats with 216 hit points).</p>",
+    'description': "<p>You conjure a huge swarm of rats in any location you can see within range. The swarm dies when it drops to 0 hit points. The swarm is friendly to you and your companions. Roll initiative for the swarm, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands, the swarm will spend its turn seeking out the nearest source of food. If a swarm is alive after 8 hours, you will lose your control over it and the swarm will disband into an appropriate number of tiny rats. You can recast the spell before it expires to regain control over the swarm again. The DM has the swarms&apos; statistics (swarm of rats with 216 hit points).</p>",
     'higher-levels': '',
     'lists': [
       'Cleric',
@@ -17612,7 +17612,7 @@ const spell_data = [
     'components': 'V, S',
     'components-list': 'V, S',
     'duration': 'Concentration, up to 1 minute',
-    'description': "<p>You fill the air with poisonous vapors in a cube 5 feet on each side. A creature must make a Constitution saving throw when it enters the spell's area for the first time on their turn or starts its turn there. On a failed save, they take 1d12 poison damage and become poisoned until the end of their next turn. On a successful save, they take half as much damage and do not become poisoned.</p>\n<p>You can move the cloud of vapors up to 20 feet as a bonus action during your turn.</p>",
+    'description': "<p>You fill the air with poisonous vapors in a cube 5 feet on each side. A creature must make a Constitution saving throw when it enters the spell&apos;s area for the first time on their turn or starts its turn there. On a failed save, they take 1d12 poison damage and become poisoned until the end of their next turn. On a successful save, they take half as much damage and do not become poisoned.</p>\n<p>You can move the cloud of vapors up to 20 feet as a bonus action during your turn.</p>",
     'higher-levels': '',
     'lists': [
       'Arcane',
@@ -18254,8 +18254,8 @@ const spell_data = [
     'components': 'V, S, M (a piece of ammunition or weapon with the thrown property worth at least 1 cp)',
     'components-list': 'V, S, M ',
     'duration': 'Instantaneous',
-    'description': "<p>Make an attack using this spell's material component as part of the action used to cast this spell, turning it into a ranged spell attack. This attack ignores cover. On hit, it deals 1d8 damage of the weapon's damage type.</p>",
-    'higher-levels': "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+    'description': "<p>Make an attack using this spell&apos;s material component as part of the action used to cast this spell, turning it into a ranged spell attack. This attack ignores cover. On hit, it deals 1d8 damage of the weapon&apos;s damage type.</p>",
+    'higher-levels': "This spell&apos;s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
     'lists': [
       'Arcane',
       'Druid',
@@ -18450,8 +18450,8 @@ const spell_data = [
   },
   {
     'spell-index': 854,
-    'name': "Wyrmling's Vitriol",
-    'name-linked': "<a href=./spell.html?spell_id=854>Wyrmling's Vitriol</a>",
+    'name': "Wyrmling&apos;s Vitriol",
+    'name-linked': "<a href=./spell.html?spell_id=854>Wyrmling&apos;s Vitriol</a>",
     'school': 'Transmutation',
     'level': 3,
     'casting-time': '1 bonus action',
@@ -18460,7 +18460,7 @@ const spell_data = [
     'components': 'V',
     'components-list': 'V',
     'duration': '10 minutes',
-    'description': "<p>You touch a creature and bestow it with the ability to harness a black dragon's mastery of toxic acid. For the duration, the target is resistant to acid damage and can use an action on its turns to launch a dark green ball of acid up to 30 feet in a straight line. The acid ball hits the first creature in its path, which must make a Dexterity saving throw. The creature takes 4d4 acid damage on a failed save, or half as much damage on a successful one. Additionally, if the creature fails its saving throw, each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d4 acid damage.</p>",
+    'description': "<p>You touch a creature and bestow it with the ability to harness a black dragon&apos;s mastery of toxic acid. For the duration, the target is resistant to acid damage and can use an action on its turns to launch a dark green ball of acid up to 30 feet in a straight line. The acid ball hits the first creature in its path, which must make a Dexterity saving throw. The creature takes 4d4 acid damage on a failed save, or half as much damage on a successful one. Additionally, if the creature fails its saving throw, each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d4 acid damage.</p>",
     'higher-levels': 'When you cast this spell using a spell slot of 4th level or higher, both damage instances increase by 1d4 for every two slot levels above 3rd.</p>',
     'lists': [
       'Arcane',
@@ -18493,8 +18493,8 @@ const spell_data = [
   },
   {
     'spell-index': 856,
-    'name': "Zariel's Memento",
-    'name-linked': "<a href=./spell.html?spell_id=856>Zariel's Memento</a>",
+    'name': "Zariel&apos;s Memento",
+    'name-linked': "<a href=./spell.html?spell_id=856>Zariel&apos;s Memento</a>",
     'school': 'Evocation',
     'level': 6,
     'casting-time': '1 action',

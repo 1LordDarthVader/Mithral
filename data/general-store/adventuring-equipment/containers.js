@@ -4,7 +4,7 @@ const container_data = [
    "cost": 1,
    "weight": 1,
    "capacity": "0.25 ft<sup>3</sup>",
-   "description": "A small box for religious donations, typically found in a priest's pack."
+   "description": "A small box for religious donations, typically found in a priest&apos;s pack."
  },
  {
    "name": "Backpack",

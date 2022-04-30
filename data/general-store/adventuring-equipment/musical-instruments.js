@@ -93,7 +93,7 @@ const musical_instrument_data = [
    "name": "Thelarr",
    "cost": 2,
    "weight": 1,
-   "description": "Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children — to the parents' delight or regret."
+   "description": "Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children — to the parents&apos; delight or regret."
  },
  {
    "name": "Tocken",

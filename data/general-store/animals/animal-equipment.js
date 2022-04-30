@@ -75,7 +75,7 @@ const animal_equipment_data = [
         "name": "Saddlebags",
         "cost": 4,
         "weight": 8,
-        "description": "Standard saddlebags that can be attached to a mount's saddle."
+        "description": "Standard saddlebags that can be attached to a mount&apos;s saddle."
     },
     {
         "name": "Stabling",

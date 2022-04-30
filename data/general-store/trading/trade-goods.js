@@ -5,7 +5,7 @@ const trade_good_data = [
    "description": "A cheaply made loaf of bread, such as hardtack, that mostly consists of just flour and water"
  },
  {
-   "name": "Eggs, chicken's (dozen)",
+   "name": "Eggs, chicken&apos;s (dozen)",
    "cost": 0.01,
    "description": "Eggs that come from chickens"
  },
@@ -40,7 +40,7 @@ const trade_good_data = [
    "description": "A cooking fat rendered from pig fat"
  },
  {
-   "name": "Milk, cow's (gallon)",
+   "name": "Milk, cow&apos;s (gallon)",
    "cost": 0.02,
    "description": "A thick, creamy white liquid that comes from cows"
  },
@@ -75,7 +75,7 @@ const trade_good_data = [
    "description": "A black rock that can be used as fuel"
  },
  {
-   "name": "Eggs, duck's (dozen)",
+   "name": "Eggs, duck&apos;s (dozen)",
    "cost": 0.05,
    "description": "Larger, richer eggs that come from ducks"
  },
@@ -130,7 +130,7 @@ const trade_good_data = [
    "description": "A soft, dark-colored metal with a low melting point"
  },
  {
-   "name": "Milk, goat's (gallon)",
+   "name": "Milk, goat&apos;s (gallon)",
    "cost": 0.1,
    "description": "A stronger-tasting liquid that comes from goats"
  },
@@ -222,7 +222,7 @@ const trade_good_data = [
  {
    "name": "Wool (pound)",
    "cost": 1,
-   "description": "A fluffy white product derived from sheep's fur used in making fabric"
+   "description": "A fluffy white product derived from sheep&apos;s fur used in making fabric"
  },
  {
    "name": "Brass (ingot)",
