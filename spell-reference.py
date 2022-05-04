@@ -4,6 +4,8 @@ spell_reference = {"Abi-Dalzim's Horrid Wilting": "<a href=\"base_url/spell.html
 
 spell_reference = dict((k.lower(), v) for k, v in spell_reference.items())
 
+# kjbwakjfdbwajkfwa
+
 while True:
     page_type = input('Page Type: ')
     if page_type.lower() == 'c':  # class page
