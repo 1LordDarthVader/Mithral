@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title></title>
+		<link rel="icon" href="../../adamantine.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../data/general-store/magic-items/magic-items.js"></script>
+		<script>
+			function load_item() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const item_id = urlParams.get('id');
+
+				let item = magic_item_data[item_id];
+
+				window.document.title = "Adamantine - " + item['name'];
+
+				$('#breadcrumb-name').html(item['name']);
+				$('#name').html(item['name']);
+				$('#description').html(item['desc']);
+
+				let rarity = item['rarity'];
+				let item_type = item['type'];
+				let attunement = item['attunement'];
+				let attunement_desc = item['attunement_desc'];
+
+				switch (rarity) {
+					case 0:
+						rarity = "common"
+						break;
+					case 1:
+						rarity = "uncommon"
+						break;
+					case 2:
+						rarity = "rare"
+						break;
+					case 3:
+						rarity = "very rare"
+						break;
+					case 4:
+					    rarity = "legendary"
+					    break;
+					case 5:
+					    rarity = "artifact"
+					    break;
+				}
+
+				if (attunement) {
+				    attunement = "(requires attunement";
+				    if (attunement_desc) {
+				        attunement += " " + attunement_desc;
+				    }
+				    attunement += ")";
+				}
+				else {
+				    attunement = "";
+				}
+
+				let first_line = "<em>" + item_type.charAt(0).toUpperCase() + item_type.slice(1) + ", " + rarity + " " + attunement + "</em>";
+
+				$('#rarity-type').html(first_line);
+			}
+		</script>
+		<style>
+			table, th, td {
+				border: 1px solid;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body onload="load_item();">
+	<a class="breadcrumb" href="../../index.html">Home</a> > General Store > <a href="./magic-items.html">Magic Items</a> > <span id="breadcrumb-name"></span>
+
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">magicItem</h1>
+		<div id="rarity-type"></div><br>
+        <div id="description"></div>
+	</body>
+</html>

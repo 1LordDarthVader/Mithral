@@ -1,52 +1,187 @@
 <html>
-<head>
-    <title>Adamantine - Magic Items</title>
-    <link rel="icon" href="./adamantine.png">
-</head>
-<body>
-    <a href="../../index.html">Home</a> > General Store > Magic Items
-    <h1>Magic Items</h1>
+	<head>
+		<title>Adamantine - Magic Items</title>
+        <link rel="icon" href="../../adamantine.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../data/general-store/magic-items/magic-items.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
-    As magic items are both rare and vary in the exact way they were made, their costs vary fairly significantly, but general costs are listed below:
+        <script>
+		    let tables = [];
 
-    <table>
-        <tr>
-            <th>Rarity</th>
-            <th>Consumable Cost Range</th>
-            <th>Persistent Cost Range</th>
-        </tr>
-        <tr>
-            <td>Common</td>
-            <td>25 - 50 gp</td>
-            <td>50 - 100 gp</td>
-        </tr>
-        <tr>
-            <td>Uncommon</td>
-            <td>51 - 250 gp</td>
-            <td>101 - 500 gp</td>
-        </tr>
-        <tr>
-            <td>Rare</td>
-            <td>251 - 2,500 gp</td>
-            <td>501 - 5,000 gp</td>
-        </tr>
-        <tr>
-            <td>Very Rare</td>
-            <td>2,501 gp - 25,000 gp</td>
-            <td>5,001 gp - 50,000 gp</td>
-        </tr>
-        <tr>
-            <td>Legendary</td>
-            <td>25,001+ gp</td>
-            <td>50,001+ gp</td>
-        </tr>
-    </table>
+			function load_items() {
+			    $('.tabcontent').each(function () {
+			        $(this).html(`<table id="${$(this).attr('id')}_table" style="width: 100%" class="compact hover stripe row-border">
+                                        <thead>
+                                            <th>Magic Item</th>
+                                            <th>Type</th>
+                                            <th>Attunement</th>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>`);
+			    });
 
-    <h2>Quick Links</h2>
+			    let local_data = magic_item_data.filter(function () {return true;});
 
-    <ul>
-        <li><a href="./consumable.html">Consumable Magic Items</a></li>
-        <li><a href="./persistent.html">Persistent Magic Items</a></li>
-    </ul>
-</body>
+			    for (let i = 0; i < local_data.length; i++) {
+			        let item = local_data[i];
+			        item['name'] = "<a href='./magic-item.html?id=" + i + "'>" + item['name'] + "</a>";
+			        local_data[i] = item;
+			    }
+
+			    let item_data_c = local_data.filter(function (element) {return element['rarity'] === 0;});
+			    let item_data_u = local_data.filter(function (element) {return element['rarity'] === 1});
+			    let item_data_r = local_data.filter(function (element) {return element['rarity'] === 2;});
+			    let item_data_v = local_data.filter(function (element) {return element['rarity'] === 3;});
+			    let item_data_l = local_data.filter(function (element) {return element['rarity'] === 4;});
+			    let item_data_a = local_data.filter(function (element) {return element['rarity'] === 5;});
+
+				let table = $('#items_c_table').DataTable({
+				    data: item_data_c,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#items_u_table').DataTable({
+				    data: item_data_u,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#items_r_table').DataTable({
+				    data: item_data_r,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#items_v_table').DataTable({
+				    data: item_data_v,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#items_l_table').DataTable({
+				    data: item_data_l,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				table = $('#items_a_table').DataTable({
+				    data: item_data_a,
+				    columns: [
+				        {data: 'name'},
+				        {data: 'type'},
+				        {data: 'attunement'},
+				    ],
+				    order: [[0, "desc"]],
+paging: false, ordering: false, info: false
+				});
+				tables.push(table);
+
+				$('#tab_button_0').click();
+			}
+			function openTab(evt, rarity) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(rarity).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+		</script>
+        <style>
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+            }
+            .tab button {
+                background-color: #ddd;
+            }
+            .tab button.active {
+                background-color: #ccc;
+            }
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border 1px solid #ccc;
+                border-top: none;
+            }
+
+            a.breadcrumb {
+                all: revert;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+	</head>
+	<body onload="load_items();">
+        <a class="breadcrumb" href="../../index.html">Home</a> > General Store > Magic Items
+
+		<h1 id="name" style="padding-botton: 0; margin-bottom:0;">Magic Items</h1>
+
+        <div class="tab">
+            <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'items_c');">Common</button>
+            <button class="tablinks" onclick="openTab(event, 'items_u');">Uncommon</button>
+            <button class="tablinks" onclick="openTab(event, 'items_r');">Rare</button>
+            <button class="tablinks" onclick="openTab(event, 'items_v');">Very Rare</button>
+            <button class="tablinks" onclick="openTab(event, 'items_l');">Legendary</button>
+            <button class="tablinks" onclick="openTab(event, 'items_a');">Artifact</button>
+        </div>
+        <div id="items_c" class="tabcontent"></div>
+        <div id="items_u" class="tabcontent"></div>
+        <div id="items_r" class="tabcontent"></div>
+        <div id="items_v" class="tabcontent"></div>
+        <div id="items_l" class="tabcontent"></div>
+        <div id="items_a" class="tabcontent"></div>
+	</body>
 </html>
