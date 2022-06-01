@@ -98,6 +98,13 @@ const tool_data = [
    "description": "Pouches, clippers, leather gloves, a mortar and pestle, and glass jars"
  },
  {
+    "name": "Horologist's Tools",
+    "cost": 40,
+    "weight": 3,
+    "ability": "Intelligence",
+    "description": "A small saw, a small hammer, files, pliers, tweezers, and a small magnifying glass"
+ },
+ {
    "name": "Jeweler&apos;s Tools",
    "cost": 25,
    "weight": 2,
