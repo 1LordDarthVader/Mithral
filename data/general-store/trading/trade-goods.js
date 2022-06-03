@@ -365,7 +365,7 @@ const trade_good_data = [
    "description": "An incredibly tough metal favored for armor production"
  },
  {
-   "name": "Adamantine (ingot)",
+   "name": "Mithral (ingot)",
    "cost": 500,
    "description": "A very tough but light metal found in meteorites"
  },
