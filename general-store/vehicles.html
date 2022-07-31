@@ -37,6 +37,9 @@
             $('#air_table').DataTable({
                 paging: false, ordering: false, info: false, search: false
             });
+            $('#sj_table').DataTable({
+                paging: false, ordering: false, info: false, search: false
+            });
 
             $('#tab_button_0').click();
         }
@@ -71,6 +74,7 @@
     <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'land');">Land Vehicles</button>
     <button class="tablinks" onclick="openTab(event, 'water');">Water Vehicles</button>
     <button class="tablinks" onclick="openTab(event, 'air');">Air Vehicles</button>
+    <button class="tablinks" onclick="openTab(event, 'sj');">Spelljammers</button>
 </div>
 
 <div class="tabcontent" id="land">
@@ -270,6 +274,42 @@
                 <td>120</td>
                 <td>450 tons</td>
                 <td>An air galley outfitted for war.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="tabcontent" id="sj">
+    <table id="sj_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Top Speed</th>
+                <th>Minimum Crew</th>
+                <th>Maximum Passengers</th>
+                <th>Weight</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hammerhead Ship</td>
+                <td>4000 pp</td>
+                <td>4 mph</td>
+                <td>1</td>
+                <td>15</td>
+                <td>2,000 lbs</td>
+                <td>A small, mass-produced spelljammer favored by those from terrestrial worlds.</td>
+            </tr>
+            <tr>
+                <td>Squid Ship</td>
+                <td>2500 pp</td>
+                <td>3.5 mph</td>
+                <td>1</td>
+                <td>13</td>
+                <td>1,500 lbs</td>
+                <td>A squid-shaped spelljammer of mind flayer design.</td>
             </tr>
         </tbody>
     </table>
