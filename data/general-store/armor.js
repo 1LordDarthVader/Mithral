@@ -176,7 +176,7 @@ const armor_data = [
    "type": 0
  },
 {
-"name": Brigandine,
+"name": "Brigandine",
 "cost": 25,
 "armor-class": 13,
 "max-dex": 2,
