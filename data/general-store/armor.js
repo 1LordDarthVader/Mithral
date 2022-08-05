@@ -212,7 +212,7 @@ const armor_data = [
    "name": "Breastplate",
    "cost": 400,
    "armor-class": 14,
-   "max-dex": 3,
+   "max-dex": 2,
    "str-req": null,
    "stealth": "",
    "weight": 20,
