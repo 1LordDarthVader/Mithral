@@ -120,54 +120,6 @@ const general_equipment_data = [
    "description": "A climber&apos;s kit includes special pitons, boot tips, gloves, and a harness. You can use the climber&apos;s kit as an action to anchor yourself; when you do, you can&apos;t fall more than 25 feet from the point where you anchored yourself, and you can&apos;t climb more than 25 feet away from that point without undoing the anchor."
  },
  {
-   "name": "Clothes, Cold Weather",
-   "cost": 10,
-   "weight": 8,
-   "description": "This outfit consists of a heavy fur coat or cloak over layers of wool clothing, as well as a fur-lined hat or hood, goggles, and fur-lined leather boots and gloves. As long as cold weather clothing remains dry, its wearer automatically succeeds on saving throws against the effects of extreme cold."
- },
- {
-   "name": "Clothes, Common",
-   "cost": 0.5,
-   "weight": 2,
-   "description": "This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes."
- },
- {
-   "name": "Clothes, Costume",
-   "cost": 1,
-   "weight": 4,
-   "description": "This set of clothes is fashioned after a particular costume, typically meant for entertaining."
- },
- {
-   "name": "Clothes, Fine",
-   "cost": 15,
-   "weight": 6,
-   "description": "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing."
- },
- {
-   "name": "Clothes, Hot Weather",
-   "cost": 10,
-   "weight": 2,
-   "description": "This outfit consists of a loose tunic made of linen and a broad hat or a hood. Its wearer automatically succeeds on saving throws against the effects of extreme heat."
- },
- {
-   "name": "Clothes, Robes",
-   "cost": 1,
-   "weight": 6,
-   "description": "A standard set of robes, commonly used by wizards."
- },
- {
-   "name": "Clothes, Traveler&apos;s",
-   "cost": 2,
-   "weight": 4,
-   "description": "This set of clothes could consist of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood."
- },
- {
-   "name": "Clothes, Vestments",
-   "cost": 10,
-   "weight": 6,
-   "description": "Religious clothing, typically found in a priest&apos;s pack."
- },
- {
    "name": "Compass",
    "cost": 10,
    "weight": 0.25,
