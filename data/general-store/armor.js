@@ -175,6 +175,17 @@ const armor_data = [
    "description": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.",
    "type": 0
  },
+{
+"name": Brigandine,
+"cost": 25,
+"armor-class": 13,
+"max-dex": 2,
+"str-req": null,
+"stealth": "",
+"weight": 15,
+"description": "Made of raw hides, tanned leather, and small metal plates or sections of chain mail, this armor is favored by bandits, barbarians, and primitive cultures.",
+"type": 1
+},
  {
    "name": "Chain Shirt",
    "cost": 50,
