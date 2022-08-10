@@ -3808,7 +3808,7 @@ const spell_data = [
     'components': 'V, S, M (a tiny piece of matter of the same type of the item you plan to create)',
     'components-list': 'V, S, M ',
     'duration': 'Special',
-    'description': '<p>You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p>\n<p>The duration depends on the object&#8217;s material. If the object is composed of multiple materials, use the shortest duration.</p>\n<table>\n<tr>\n<th>Material</th>\n<th>Duration</th>\n</tr>\n<tr>\n<td>Vegetable matter</td>\n<td>1 day</td>\n</tr>\n<tr>\n<td>Stone, crystal</td>\n<td>12 hours</td>\n</tr>\n<tr>\n<td>Precious metals</td>\n<td>1 hour</td>\n</tr>\n<tr>\n<td>Gems</td>\n<td>10 minutes</td>\n</tr>\n<tr>\n<td>Adamantine, Mithral</td>\n<td>1 minute</td>\n</tr>\n</table>\n<p>Using any material created by this spell as another spell&#8217;s material component causes that spell to fail.</p>',
+    'description': '<p>You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.</p>\n<p>The duration depends on the object&#8217;s material. If the object is composed of multiple materials, use the shortest duration.</p>\n<table>\n<tr>\n<th>Material</th>\n<th>Duration</th>\n</tr>\n<tr>\n<td>Vegetable matter</td>\n<td>1 day</td>\n</tr>\n<tr>\n<td>Stone, crystal</td>\n<td>12 hours</td>\n</tr>\n<tr>\n<td>Precious metals</td>\n<td>1 hour</td>\n</tr>\n<tr>\n<td>Gems</td>\n<td>10 minutes</td>\n</tr>\n<tr>\n<td>Mithral, Mithral</td>\n<td>1 minute</td>\n</tr>\n</table>\n<p>Using any material created by this spell as another spell&#8217;s material component causes that spell to fail.</p>',
     'higher-levels': 'When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.</p>',
     'lists': [
         'Arcane',
@@ -9668,7 +9668,7 @@ const spell_data = [
     'casting-time': '1 action',
     'casting-time-list': '1 action',
     'range': 'Self',
-    'components': 'V, S, M (a small piece of adamantine worth at least 500 gp, which the spell consumes)',
+    'components': 'V, S, M (a small piece of mithral worth at least 500 gp, which the spell consumes)',
     'components-list': 'V, S, M ',
     'duration': 'Concentration, up to 10 minutes',
     'description': '<p>You are immune to all damage until the spell ends.</p>',

@@ -102,7 +102,7 @@ const general_equipment_data = [
    "description": "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
  },
  {
-   "name": "Chain (10 ft), adamantine",
+   "name": "Chain (10 ft), mithral",
    "cost": 200,
    "weight": 8,
    "description": "Chain that has 35 hit points, is immune to nonmagical damage, and cannot be burst with a Strength check."
@@ -330,10 +330,10 @@ const general_equipment_data = [
    "description": "These manacles are made of cold iron, and are thus innately warded against transposition magic.  A creature restrained by cold iron manacles cannot use transposition magic to escape them.  They are otherwise normal manacles."
  },
  {
-   "name": "Manacles, Adamantine",
+   "name": "Manacles, Mithral",
    "cost": 500,
    "weight": 4,
-   "description": "These manacles are made of adamantine, and are thus far tougher than normal manacles. They have 45 hit points, the DCs to escape or pick the lock is increased to 30, and they are immune to nonmagical damage."
+   "description": "These manacles are made of mithral, and are thus far tougher than normal manacles. They have 45 hit points, the DCs to escape or pick the lock is increased to 30, and they are immune to nonmagical damage."
  },
  {
    "name": "Map Case",
