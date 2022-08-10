@@ -3,8 +3,35 @@
     <title>Mithral - General Gameplay</title>
     <link rel="icon" href="../../mithral.png">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script>
+        function calc_throw() {
+            let thrower_str = parseInt($('#thrower_str').val());
+            let throwee_weight = parseInt($('#throwee_weight').val());
+            let size_mod = parseFloat($('#effective_size').val());
+
+            let lift_capacity = thrower_str * 30 * size_mod;
+
+            let normal_range = Math.floor((1 - (throwee_weight / lift_capacity)) * 80 / 5) * 5;
+            let long_range = normal_range * 3;
+            let damage = Math.floor(throwee_weight / 50);
+
+            if (normal_range > 0) {
+                $('#throwable').html('Yes');
+                $('#range').val(normal_range + '/' + long_range);
+                $('#damage').val(damage + 'd6');
+            }
+            else {
+                $('#throwable').html('No');
+                $('#range').val('N/A');
+                $('#damage').val('N/A');
+            }
+        }
+    </script>
+
 </head>
 <body>
     <a href="../index.html">Home</a> > House Rules > General Gameplay
@@ -73,7 +100,7 @@
     <h3>Throwing Damage</h3>
     In order to determine the damage that throwing that creature deals, use the following formula, rounded down, with a minimum of 1 damage:
     <br><br>
-    \[D = \frac{W}{25}\]
+    \[D = \frac{W}{50}\]
     <br><br>
     <div style="text-align: center">
         <em>
@@ -81,6 +108,43 @@
         <br>
         W: weight of the throwee
         </em>
+    </div>
+
+    <div style="border: 1px solid; padding: 3px">
+        <label for="thrower_str"><strong>Thrower's Strength Score</strong></label>
+        <input type="number" id="thrower_str">
+        <br>
+        <label for="effective_size"><strong>Thrower's Effective Size</strong></label>
+        <select id="effective_size">
+            <option value="0.0625">Fine</option>
+            <option value="0.125">Diminutive</option>
+            <option value="0.25">Tiny</option>
+            <option value="0.5">Small</option>
+            <option value="1" selected>Medium</option>
+            <option value="2">Large</option>
+            <option value="4">Huge</option>
+            <option value="8">Gargantuan</option>
+            <option value="16">Titanic</option>
+            <option value="32">Colossal</option>
+            <option value="64">Kaiju</option>
+        </select>
+        Enter the effective size for carrying capacity, after effects such as the Powerful Build trait.
+        <br>
+        <label for="throwee_weight"><strong>Throwee's Weight (in pounds)</strong></label>
+        <input type="number" id="throwee_weight">
+        <br>
+        <button type="button" onclick="calc_throw();">Calculate</button>
+        <br><br>
+
+        <strong>Can be Thrown:</strong> <span id="throwable"></span>
+
+        <br><br>
+
+        <label for="range"><strong>Range</strong></label>
+        <input type="text" id="range" disabled>
+        <br>
+        <label for="damage"><strong>Damage</strong></label>
+        <input type="text" id="damage" disabled>
     </div>
 
     <h2>Trading Actions Down</h2>

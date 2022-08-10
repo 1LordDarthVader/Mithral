@@ -1,4 +1,114 @@
 const armor_data = [
+{
+   "name": "Clothes, common",
+   "cost": 0.5,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 2,
+   "description": "This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes.",
+   "type": -1
+ },
+ {
+   "name": "Clothes, costume",
+   "cost": 1,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 4,
+   "description": "This set of clothes is fashioned after a particular costume, typically meant for entertaining.",
+   "type": -1
+ },
+ {
+   "name": "Clothes, fine",
+   "cost": 15,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 6,
+   "description": "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.",
+   "type": -1
+ },
+ {
+   "name": "Clothes, hot weather",
+   "cost": 10,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 2,
+   "description": "This outfit consists of a loose tunic made of linen and a broad hat or a hood. Its wearer automatically succeeds on saving throws against the effects of extreme heat.",
+   "type": -1
+ },
+  {
+   "name": "Clothes, robes",
+   "cost": 1,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 6,
+   "description": "A standard set of robes, commonly used by wizards.",
+   "type": -1
+ },
+  {
+   "name": "Clothes, vestments",
+   "cost": 1,
+   "armor-class": 10,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 6,
+   "description": "Religious clothing, typically found in a priest's pack.",
+   "type": -1
+ },
+ {
+   "name": "Clothes, cold weather",
+   "cost": 10,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 12,
+   "description": "This outfit consists of a heavy fur coat or cloak over layers of wool clothing, as well as a fur-lined hat or hood, goggles, and fur-lined leather boots and gloves. As long as cold weather clothing remains dry, its wearer automatically succeeds on saving throws against the effects of extreme cold.",
+   "type": -1
+ },
+  {
+   "name": "Clothes, traveler's",
+   "cost": 2,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 4,
+   "description": "This set of clothes could consist of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood.",
+   "type": -1
+ },
+ {
+   "name": "Outlaw's Duster",
+   "cost": 150,
+   "armor-class": 11,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 5,
+   "description": "A heavy leather duster with many hidden pockets.",
+   "type": -1
+ },
+ {
+   "name": "Outfit, pride silk",
+   "cost": 500,
+   "armor-class": 12,
+   "max-dex": null,
+   "str-req": null,
+   "stealth": "",
+   "weight": 4,
+   "description": "A set of fine clothing made from a material that affords it modest protection.",
+   "type": -1
+ },
  {
    "name": "Padded",
    "cost": 5,
@@ -33,28 +143,6 @@ const armor_data = [
    "type": 0
  },
  {
-   "name": "Outfit, pride silk",
-   "cost": 500,
-   "armor-class": 11,
-   "max-dex": null,
-   "str-req": null,
-   "stealth": "",
-   "weight": 4,
-   "description": "A set of fine clothing made from a material that affords it modest protection.",
-   "type": 0
- },
- {
-   "name": "Outlaw&apos;s Duster, leather",
-   "cost": 150,
-   "armor-class": 11,
-   "max-dex": null,
-   "str-req": null,
-   "stealth": "",
-   "weight": 5,
-   "description": "A leather duster with many hidden pockets.",
-   "type": 0
- },
- {
    "name": "Studded Leather",
    "cost": 45,
    "armor-class": 12,
@@ -77,17 +165,6 @@ const armor_data = [
    "type": 0
  },
  {
-   "name": "Outlaw&apos;s Duster, armorweave",
-   "cost": 350,
-   "armor-class": 12,
-   "max-dex": null,
-   "str-req": null,
-   "stealth": "",
-   "weight": 6,
-   "description": "A duster made of a tough fabric called armorweave with many hidden pockets.",
-   "type": 0
- },
- {
    "name": "Hide",
    "cost": 10,
    "armor-class": 12,
@@ -98,6 +175,17 @@ const armor_data = [
    "description": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.",
    "type": 0
  },
+{
+"name": "Brigandine",
+"cost": 25,
+"armor-class": 13,
+"max-dex": 2,
+"str-req": null,
+"stealth": "",
+"weight": 15,
+"description": "Made of raw hides, tanned leather, and small metal plates or sections of chain mail, this armor is favored by bandits, barbarians, and primitive cultures.",
+"type": 1
+},
  {
    "name": "Chain Shirt",
    "cost": 50,
@@ -124,9 +212,9 @@ const armor_data = [
    "name": "Lamellar",
    "cost": 200,
    "armor-class": 14,
-   "max-dex": 3,
+   "max-dex": 2,
    "str-req": null,
-   "stealth": "Disadvantage",
+   "stealth": "",
    "weight": 20,
    "description": "This armor consists of leather amor covered with heavier metal, similar to scale mail. It is favored by elves.",
    "type": 1
@@ -135,7 +223,7 @@ const armor_data = [
    "name": "Breastplate",
    "cost": 400,
    "armor-class": 14,
-   "max-dex": 3,
+   "max-dex": 2,
    "str-req": null,
    "stealth": "",
    "weight": 20,

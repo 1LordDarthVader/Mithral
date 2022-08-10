@@ -60,6 +60,11 @@
             return item_list;
         }
         function load_items() {
+            let unarmored_data = modify_item_list(armor_data.filter(function (element){
+                if (element['type'] === -1) {
+                    return true;
+                }
+            }));
             let light_data = modify_item_list(armor_data.filter(function (element){
                 if (element['type'] === 0) {
                     return true;
@@ -78,16 +83,26 @@
 
             let local_shield_data = modify_item_list(shield_data.filter(function (){return true}));
 
+            $('#unarmored_table').DataTable({
+                data: unarmored_data,
+                columns: [
+                    {data: 'name'},
+                    {data: 'cost'},
+                    {data: 'armor-class'},
+                    {data: 'weight'},
+                    {data: 'description'}
+                ],
+                paging: false, ordering: false, info: false
+            });
             $('#light_table').DataTable({
                 data: light_data,
                 columns: [
                     {data: 'name'},
                     {data: 'cost'},
-                    {data: 'weight'},
                     {data: 'armor-class'},
                     {data: 'max-dex'},
-                    {data: 'str-req'},
                     {data: 'stealth'},
+                    {data: 'weight'},
                     {data: 'description'}
                 ],
                 paging: false, ordering: false, info: false
@@ -97,11 +112,10 @@
                 columns: [
                     {data: 'name'},
                     {data: 'cost'},
-                    {data: 'weight'},
                     {data: 'armor-class'},
                     {data: 'max-dex'},
-                    {data: 'str-req'},
                     {data: 'stealth'},
+                    {data: 'weight'},
                     {data: 'description'}
                 ],
                 paging: false, ordering: false, info: false
@@ -111,11 +125,11 @@
                 columns: [
                     {data: 'name'},
                     {data: 'cost'},
-                    {data: 'weight'},
                     {data: 'armor-class'},
                     {data: 'max-dex'},
                     {data: 'str-req'},
                     {data: 'stealth'},
+                    {data: 'weight'},
                     {data: 'description'}
                 ],
                 paging: false, ordering: false, info: false
@@ -165,12 +179,33 @@
 <h1>Armor</h1>
 
 <div class="tab">
-    <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'light');">Light Armor</button>
+    <button id="tab_button_0" class="tablinks" onclick="openTab(event, 'unarmored');">Unarmored</button>
+    <button class="tablinks" onclick="openTab(event, 'light');">Light Armor</button>
     <button class="tablinks" onclick="openTab(event, 'medium');">Medium Armor</button>
     <button class="tablinks" onclick="openTab(event, 'heavy');">Heavy Armor</button>
     <button class="tablinks" onclick="openTab(event, 'shields');">Shields</button>
 </div>
 
+<div class="tabcontent" id="unarmored">
+    Wearing these types of armor count as being unarmored for the purposes of features and traits, and do not require proficiency to use.  You may use another source of Armor Class, such as an Unarmored Defense or Natural Armor feature, if it would provide you with a higher Armor Class.
+    <br><br>
+    In addition, all can be worn with other types of armor, which override their Armor Class calculations.
+    <table id="unarmored_table" style="width: 100%" class="compact hover stripe row-border">
+        <thead>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Armor<br>Class</th>
+            <th>Weight</th>
+            <th>Description</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Special Properties</h2>
+    <ul>
+        <li>Outlaw's dusters have three hidden pockets, each of which can hold up to 1 cubic foot of equipment.  An Intelligence (Investigation) check against the wearer's passive Dexterity (Sleight of Hand) score must be made to find a hidden pocket.</li>
+    </ul>
+</div>
 <div class="tabcontent" id="light">
     <table id="light_table" style="width: 100%" class="compact hover stripe row-border">
         <thead>
@@ -178,7 +213,6 @@
             <th>Cost</th>
             <th>Armor<br>Class</th>
             <th>Max<br>DEX</th>
-            <th>STR<br>Requirement</th>
             <th>Stealth</th>
             <th>Weight</th>
             <th>Description</th>
@@ -189,7 +223,6 @@
     <h2>Special Properties</h2>
     <ul>
         <li>Dark leather and dark studded leather grant advantage on Dexterity (Stealth) checks made to hide while in dim light or darkness.</li>
-        <li>Outlaw's dusters have three hidden pockets, each of which can hold up to 1 cubic foot of equipment.  A DC 15 Intelligence (Investigation) check is needed to find a hidden pocket.</li>
     </ul>
 </div>
 <div class="tabcontent" id="medium">
@@ -199,13 +232,17 @@
             <th>Cost</th>
             <th>Armor<br>Class</th>
             <th>Max<br>DEX</th>
-            <th>STR<br>Requirement</th>
             <th>Stealth</th>
             <th>Weight</th>
             <th>Description</th>
         </thead>
         <tbody></tbody>
     </table>
+
+<h2>Special Properties</h2>
+<ul>
+        <li>You can wear a chain shirt or a breastplate under a shirt or coat, requiring an Intelligence (Investigation) check against the wearer's passive Dexterity (Sleight of Hand) score to spot when worn in this way.</li>
+    </ul>
 </div>
 <div class="tabcontent" id="heavy">
     <table id="heavy_table" style="width: 100%" class="compact hover stripe row-border">
